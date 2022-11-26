@@ -14,14 +14,14 @@ jobs:
     - name: Install dependencies
       run: |
         sudo apt-get install make python gcc git bison
-        git clone -b v0.5.2 --depth=1 https://github.com/gbdev/rgbds
+        git clone -b v0.6.0 --depth=1 https://github.com/gbdev/rgbds
         pushd rgbds
         sudo make install
         popd
-    - name: Build Rangi42/polishedcrystal
+    - name: Build hyperdriveguy/deseret-crystal
       run: |
-        git clone https://github.com/Rangi42/polishedcrystal.git
-        pushd polishedcrystal
+        git clone "https://hyperdriveguy:$GITHUB_TOKEN@github.com/hyperdriveguy/deseret-crystal.git"
+        pushd deseret-crystal
         mkdir build
         make -j4
         mv polishedcrystal-3.0.0-beta.gbc build/polishedcrystal-3.0.0-beta.gbc
@@ -53,9 +53,9 @@ jobs:
       env:
         GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
       run: |
-        pushd polishedcrystal
+        pushd deseret-crystal
         git tag v3.0.0-beta-nightly -f
-        git push --tags -f "https://Rangi42:$GITHUB_TOKEN@github.com/Rangi42/polishedcrystal.git"
+        git push --tags -f "https://hyperdriveguy:$GITHUB_TOKEN@github.com/hyperdriveguy/deseret-crystal.git"
         popd
     - name: Create new release
       id: create_release
@@ -66,7 +66,7 @@ jobs:
         tag_name: v3.0.0-beta-nightly
         release_name: 3.0.0 beta nightly
         body: |
-          This is the current Polished Crystal 3.0.0 *beta* release. The assets all have an 8-character "commit hash" at the end to identify the exact code they're built from.
+          This is the current Deseret Crystal **alpha** release. The assets all have an 8-character "commit hash" at the end to identify the exact code they're built from.
           
           The **.gbc** assets are ROMs. If you just want to play the game, download one (regular or `-faithful`) and load it in [BGB](https://bgb.bircd.org/), [mGBA](https://mgba.io/), [Gambatte](https://github.com/sinamas/gambatte), or another accurate Game Boy Color emulator. (***Do not use VBA*** or VBA-M.)
           
