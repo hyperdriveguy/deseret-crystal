@@ -3344,7 +3344,7 @@ _WarnVBAText::
 	line "emulator has bugs"
 
 	para "that may crash"
-	line "Polished Crystal."
+	line "Deseret Crystal."
 
 	para "Please use a more"
 	line "accurate emulator,"

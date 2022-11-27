@@ -75,7 +75,7 @@ jobs:
           The **.bsp** asset is a [BSP](https://github.com/aaaaaa123456789/bsp) save file patch in case you need to upgrade a save file from an older nightly build, using a patcher like the one for [Pokémon Prism](http://pokemonprism.com/patcher.html).
           Note that this save patch doesn't really do anything at the moment. Development is so early that it doesn't make sense to attempt to port saves yet.
           
-          The **polisheddebug** assets are ROMs and symbol files with extra features to help debug the game. Do ***not*** download these to just play with; use them to help the developers diagnose and fix bugs, or create new features.
+          The **deseret-crystal-debug** assets are ROMs and symbol files with extra features to help debug the game. Do ***not*** download these to just play with; use them to help the developers diagnose and fix bugs, or create new features.
         draft: false
         prerelease: true
     - name: Upload ROM

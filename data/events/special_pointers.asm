@@ -139,7 +139,7 @@ SpecialsPointers::
 	add_special Special_BattleTower_BeginChallenge
 	add_special Special_BattleTower_LoadOpponentTrainerAndPokemonsWithOTSprite
 
-; Polished Crystal
+; Deseret Crystal
 	add_special SaveOptions
 	add_special WonderTrade
 	add_special RespawnOneOffs

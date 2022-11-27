@@ -2,7 +2,7 @@ CheckFaint:
 	farjp ResolveFaints
 
 HandleBetweenTurnEffects:
-; Things handled at endturn. Things commented out are currently not in Polished.
+; Things handled at endturn. Things commented out are currently not in Deseret Crystal.
 	ld hl, wTotalBattleTurns
 	inc [hl]
 	jr nz, .done_turn_increment
