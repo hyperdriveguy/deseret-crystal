@@ -2,6 +2,8 @@
 
 A hack of Pokémon Crystal set in the region of Deseret.
 
+[![Nightly build](https://github.com/hyperdriveguy/deseret-crystal/actions/workflows/main.yml/badge.svg?branch=master&event=push)](https://github.com/hyperdriveguy/deseret-crystal/actions/workflows/main.yml)
+
 # Contributors
 
 Thanks to the people that made this possible!
