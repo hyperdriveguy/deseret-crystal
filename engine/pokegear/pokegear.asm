@@ -717,7 +717,7 @@ TownMap_ConvertLineBreakCharacters:
 	ret
 
 TownMap_GetJohtoLandmarkLimits:
-	lb de, SILVER_CAVE, NEW_BARK_TOWN
+	lb de, BEAR_LAKE, NEPHI_CITY
 	ret
 
 TownMap_GetKantoLandmarkLimits:
@@ -1425,7 +1425,7 @@ RadioChannels:
 
 .RuinsOfAlphRadio:
 	ld a, [wPokegearMapPlayerIconLandmark]
-	cp RUINS_OF_ALPH
+	cp PROVO_CANYON
 	jr nz, NoRadioStation
 	jmp LoadStation_UnownRadio
 
@@ -1526,7 +1526,7 @@ LoadStation_LuckyChannel:
 LoadStation_BuenasPassword:
 	ld de, EmptyString
 	ld a, [wStatusFlags2]
-	bit 0, a ; ENGINE_ROCKETS_IN_RADIO_TOWER
+	bit 0, a ; ENGINE_ROCKETS_IN_SALT_LAKE_VALLEY
 	jr z, .ok
 	ld de, BuenasPasswordName
 .ok
@@ -2624,16 +2624,7 @@ GetNextTownMapTilePalette:
 	ret
 
 .PalMap:
-townmappals: MACRO
-rept _NARG / 2
-	dn \2, \1
-	shift 2
-endr
-ENDM
-	townmappals 2, 2, 2, 3, 3, 6, 1, 1, 4, 4, 4, 5, 6, 7, 7, 6
-	townmappals 2, 2, 2, 3, 3, 6, 1, 1, 4, 4, 4, 6, 4, 4, 1, 1
-	townmappals 2, 2, 2, 6, 6, 6, 1, 1, 4, 4, 4, 7, 2, 4, 1, 1
-	townmappals 2, 2, 2, 2, 4, 4, 6, 0, 0, 0, 0, 0, 0, 0, 0, 0
+INCLUDE "gfx/town_map/town_map_palette_map.asm"
 
 TownMapJohtoFlips:
 	decoord 0, 0, JohtoMap
