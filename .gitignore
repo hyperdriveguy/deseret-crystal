@@ -27,3 +27,6 @@ bank_ends.txt
 # local tools
 rgbds/
 deploy.sh
+
+# game saves
+*.sav
