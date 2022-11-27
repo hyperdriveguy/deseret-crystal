@@ -25,7 +25,7 @@ BT_SwapRentals:
 	ld [hli], a
 	inc a
 	ld [hl], a
-	ld a, PARTYMENUACTION_BATTLE_TOWER
+	ld a, PARTYMENUACTION_ROUTE_67
 	ld [wPartyMenuActionText], a
 	call DisableSpriteUpdates
 	call ClearBGPalettes
@@ -177,7 +177,7 @@ BT_SwapRentals:
 	db "Trade which <PK><MN>?   @"
 
 BT_PartySelect:
-	ld a, PARTYMENUACTION_BATTLE_TOWER
+	ld a, PARTYMENUACTION_ROUTE_67
 	ld [wPartyMenuActionText], a
 	call DisableSpriteUpdates
 	call ClearBGPalettes

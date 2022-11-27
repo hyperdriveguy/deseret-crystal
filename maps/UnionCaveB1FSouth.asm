@@ -4,17 +4,17 @@ UnionCaveB1FSouth_MapScriptHeader:
 	def_callbacks
 
 	def_warp_events
-	warp_event  3,  5, UNION_CAVE_1F, 2
-	warp_event 17,  3, UNION_CAVE_B2F, 1
-	warp_event  5, 33, MURKY_SWAMP, 3
-	warp_event 17, 23, ROUTE_32_COAST, 1
+	warp_event  3,  5, ROUTE_US40_1F, 2
+	warp_event 17,  3, ROUTE_US40_B2F, 1
+	warp_event  5, 33, PRICE_CITY, 3
+	warp_event 17, 23, HEBER_CITY, 1
 
 	def_coord_events
 
 	def_bg_events
-	bg_event  2, 18, BGEVENT_ITEM + X_SPCL_DEF, EVENT_UNION_CAVE_B1F_SOUTH_HIDDEN_X_SPCL_DEF
-	bg_event 12, 25, BGEVENT_ITEM + NUGGET, EVENT_UNION_CAVE_B1F_SOUTH_HIDDEN_NUGGET
-	bg_event  4, 30, BGEVENT_ITEM + FULL_RESTORE, EVENT_UNION_CAVE_B1F_SOUTH_HIDDEN_FULL_RESTORE
+	bg_event  2, 18, BGEVENT_ITEM + X_SPCL_DEF, EVENT_ROUTE_US40_B1F_SOUTH_HIDDEN_X_SPCL_DEF
+	bg_event 12, 25, BGEVENT_ITEM + NUGGET, EVENT_ROUTE_US40_B1F_SOUTH_HIDDEN_NUGGET
+	bg_event  4, 30, BGEVENT_ITEM + FULL_RESTORE, EVENT_ROUTE_US40_B1F_SOUTH_HIDDEN_FULL_RESTORE
 
 	def_object_events
 	object_event  5,  4, SPRITE_POKEMANIAC, SPRITEMOVEDATA_STANDING_LEFT, 0, 0, -1, -1, 0, OBJECTTYPE_GENERICTRAINER, 3, GenericTrainerPokemaniacAndrew, -1
@@ -28,9 +28,9 @@ UnionCaveB1FSouth_MapScriptHeader:
 	strengthboulder_event  8, 32
 	smashrock_event 11, 15
 	smashrock_event 12, 24
-	itemball_event 14, 20, DUSK_STONE, 1, EVENT_UNION_CAVE_B1F_SOUTH_DUSK_STONE
-	itemball_event  8, 26, SUPER_REPEL, 1, EVENT_UNION_CAVE_B1F_SOUTH_SUPER_REPEL
-	itemball_event  2, 28, LIGHT_CLAY, 1, EVENT_UNION_CAVE_B1F_SOUTH_LIGHT_CLAY
+	itemball_event 14, 20, DUSK_STONE, 1, EVENT_ROUTE_US40_B1F_SOUTH_DUSK_STONE
+	itemball_event  8, 26, SUPER_REPEL, 1, EVENT_ROUTE_US40_B1F_SOUTH_SUPER_REPEL
+	itemball_event  2, 28, LIGHT_CLAY, 1, EVENT_ROUTE_US40_B1F_SOUTH_LIGHT_CLAY
 
 GenericTrainerPokemaniacAndrew:
 	generictrainer POKEMANIAC, ANDREW, EVENT_BEAT_POKEMANIAC_ANDREW, PokemaniacAndrewSeenText, PokemaniacAndrewBeatenText

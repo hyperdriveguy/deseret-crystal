@@ -285,10 +285,10 @@ _GetSpritePalette::
 	farjp GetOverworldMonIconPalette
 
 .not_doll
-	cp GROUP_ROUTE_34
+	cp GROUP_ROUTE_191
 	jr nz, .not_daycare
 	ld a, [wMapNumber]
-	cp MAP_ROUTE_34
+	cp MAP_ROUTE_191
 	jr nz, .not_daycare
 	farcall GetOverworldMonIconPalette
 

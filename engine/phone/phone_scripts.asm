@@ -33,11 +33,11 @@ MomPhoneLandmark:
 
 MomPhoneInTown:
 	readvar VAR_MAPGROUP
-	ifequal GROUP_NEW_BARK_TOWN, .newbark
-	ifequal GROUP_CHERRYGROVE_CITY, .cherrygrove
-	ifequal GROUP_VIOLET_CITY, .violet
-	ifequal GROUP_AZALEA_TOWN, .azalea
-	ifequal GROUP_GOLDENROD_CITY, .goldenrod
+	ifequal GROUP_NEPHI_CITY, .newbark
+	ifequal GROUP_PROVO_CITY, .cherrygrove
+	ifequal GROUP_UTAH_LAKE, .violet
+	ifequal GROUP_ROUTE_87, .azalea
+	ifequal GROUP_ROUTE_55, .goldenrod
 	farwritetext MomPhoneGenericAreaText
 	promptbutton
 	sjump MomSavingMoney
@@ -53,13 +53,13 @@ MomPhoneInTown:
 	sjump MomSavingMoney
 
 .violet
-	getlandmarkname SPROUT_TOWER, 1
+	getlandmarkname OREM_CITY, 1
 	sjump MomPhoneLandmark
 .azalea
-	getlandmarkname SLOWPOKE_WELL, 1
+	getlandmarkname VERNAL_CITY, 1
 	sjump MomPhoneLandmark
 .goldenrod
-	getlandmarkname RADIO_TOWER, 1
+	getlandmarkname SALT_LAKE_VALLEY, 1
 	sjump MomPhoneLandmark
 
 MomPhoneOnRoute:
@@ -415,7 +415,7 @@ UnknownScript_0xbd0ef:
 	farsjump JackPhoneTipsScript
 
 UnknownScript_0xbd0f3:
-	getlandmarkname NATIONAL_PARK, $2
+	getlandmarkname WENDOVER_CITY, $2
 	farsjump JackWantsBattleScript
 
 JackPhoneScript2:
@@ -439,7 +439,7 @@ JackMondayMorning:
 	setflag ENGINE_JACK_MONDAY_MORNING
 
 JackWantsToBattle:
-	getlandmarkname NATIONAL_PARK, $2
+	getlandmarkname WENDOVER_CITY, $2
 	setflag ENGINE_JACK_READY_FOR_REMATCH
 	farsjump PhoneScript_WantsToBattle_Male
 
@@ -459,7 +459,7 @@ BeverlyPhoneScript1:
 	farsjump BeverlyHangUpScript
 
 UnknownScript_0xbd151:
-	getlandmarkname NATIONAL_PARK, $2
+	getlandmarkname WENDOVER_CITY, $2
 	farsjump BeverlyComePickUpScript
 
 BeverlyPhoneScript2:
@@ -475,7 +475,7 @@ UnknownScript_0xbd16e:
 
 UnknownScript_0xbd172:
 	setflag ENGINE_BEVERLY_HAS_NUGGET
-	getlandmarkname NATIONAL_PARK, $2
+	getlandmarkname WENDOVER_CITY, $2
 	farsjump PhoneScript_FoundItem_Female
 
 ; Huey
@@ -497,7 +497,7 @@ UnknownScript_0xbd19b:
 	farsjump HueyHangUpScript
 
 UnknownScript_0xbd1a2:
-	getlandmarkname LIGHTHOUSE, $2
+	getlandmarkname MOUNT_TIMPANOGOS, $2
 	farsjump HueyWantsBattleScript
 
 HueyPhoneScript2:
@@ -518,7 +518,7 @@ HueyWednesdayNight:
 	setflag ENGINE_HUEY_WEDNESDAY_NIGHT
 
 HueyWantsBattle:
-	getlandmarkname LIGHTHOUSE, $2
+	getlandmarkname MOUNT_TIMPANOGOS, $2
 	setflag ENGINE_HUEY_READY_FOR_REMATCH
 	farsjump PhoneScript_WantsToBattle_Male
 
@@ -736,7 +736,7 @@ UnknownScript_0xbd392:
 	farsjump PhoneScript_HangupText_Male
 
 UnknownScript_0xbd399:
-	getlandmarkname ROUTE_30, $2
+	getlandmarkname MTC_CAMPUS, $2
 	farsjump JoeyReminderScript
 
 JoeyPhoneScript2:
@@ -757,7 +757,7 @@ JoeyMondayAfternoon:
 	setflag ENGINE_JOEY_MONDAY_AFTERNOON
 
 JoeyWantsBattle:
-	getlandmarkname ROUTE_30, $2
+	getlandmarkname MTC_CAMPUS, $2
 	setflag ENGINE_JOEY_READY_FOR_REMATCH
 	farsjump PhoneScript_WantsToBattle_Male
 
@@ -794,11 +794,11 @@ UnknownScript_0xbd416:
 	farsjump PhoneScript_BugCatchingContest
 
 UnknownScript_0xbd41a:
-	getlandmarkname ROUTE_31, $2
+	getlandmarkname BYU_UNDERGROUND, $2
 	farsjump WadeQuickBattleScript
 
 UnknownScript_0xbd421:
-	getlandmarkname ROUTE_31, $2
+	getlandmarkname BYU_UNDERGROUND, $2
 	farsjump WadeComeQuickScript
 
 WadePhoneScript2:
@@ -839,7 +839,7 @@ WadeTuesdayNight:
 	setflag ENGINE_WADE_TUESDAY_NIGHT
 
 WadeWantsBattle2:
-	getlandmarkname ROUTE_31, $2
+	getlandmarkname BYU_UNDERGROUND, $2
 	setflag ENGINE_WADE_READY_FOR_REMATCH
 	farsjump PhoneScript_WantsToBattle_Male
 
@@ -848,7 +848,7 @@ WadeFoundRare:
 
 WadeHasItem2:
 	setflag ENGINE_WADE_HAS_ITEM
-	getlandmarkname ROUTE_31, $2
+	getlandmarkname BYU_UNDERGROUND, $2
 	clearevent EVENT_WADE_HAS_ORAN_BERRY
 	clearevent EVENT_WADE_HAS_PECHA_BERRY
 	clearevent EVENT_WADE_HAS_CHERI_BERRY
@@ -896,11 +896,11 @@ Ralph_CheckSwarm:
 	farsjump RalphNoItemScript
 
 Ralph_Rematch:
-	getlandmarkname ROUTE_32, $2
+	getlandmarkname TIMPANOGOS_PASS, $2
 	farsjump RalphReminderScript
 
 Ralph_ReportSwarm:
-	getlandmarkname ROUTE_32, $2
+	getlandmarkname TIMPANOGOS_PASS, $2
 	farsjump RalphHurryScript
 
 RalphPhoneScript2:
@@ -922,7 +922,7 @@ Ralph_CheckSwarm2:
 Ralph_WednesdayMorning:
 	setflag ENGINE_RALPH_WEDNESDAY_MORNING
 Ralph_FightMe:
-	getlandmarkname ROUTE_32, $2
+	getlandmarkname TIMPANOGOS_PASS, $2
 	setflag ENGINE_RALPH_READY_FOR_REMATCH
 	farsjump PhoneScript_WantsToBattle_Male
 
@@ -931,7 +931,7 @@ Ralph_SetUpSwarm:
 	iftrue UnknownScript_0xbd55c
 	setflag ENGINE_FISH_SWARM
 	getmonname QWILFISH, $1
-	getlandmarkname ROUTE_32, $2
+	getlandmarkname TIMPANOGOS_PASS, $2
 	setval FISHSWARM_QWILFISH
 	special Special_ActivateFishingSwarm
 	farsjump RalphItemScript
@@ -958,7 +958,7 @@ UnknownScript_0xbd57f:
 	farsjump LizHangUpScript
 
 UnknownScript_0xbd586:
-	getlandmarkname ROUTE_32, $2
+	getlandmarkname TIMPANOGOS_PASS, $2
 	farsjump LizReminderScript
 
 LizPhoneScript2:
@@ -986,7 +986,7 @@ LizThursdayAfternoon:
 	setflag ENGINE_LIZ_THURSDAY_AFTERNOON
 
 LizWantsBattle:
-	getlandmarkname ROUTE_32, $2
+	getlandmarkname TIMPANOGOS_PASS, $2
 	setflag ENGINE_LIZ_READY_FOR_REMATCH
 	farsjump PhoneScript_WantsToBattle_Female
 
@@ -1064,11 +1064,11 @@ UnknownScript_0xbd653:
 	farsjump AnthonyHangUpScript
 
 UnknownScript_0xbd65d:
-	getlandmarkname ROUTE_33, $2
+	getlandmarkname DUCHESNE_CITY, $2
 	farsjump AnthonyReminderScript
 
 UnknownScript_0xbd664:
-	getlandmarkname ROUTE_33, $2
+	getlandmarkname DUCHESNE_CITY, $2
 	farsjump AnthonyHurryScript
 
 AnthonyPhoneScript2:
@@ -1092,7 +1092,7 @@ AnthonyFridayNight:
 	setflag ENGINE_ANTHONY_FRIDAY_NIGHT
 
 AnthonyWantsBattle:
-	getlandmarkname ROUTE_33, $2
+	getlandmarkname DUCHESNE_CITY, $2
 	setflag ENGINE_ANTHONY_READY_FOR_REMATCH
 	farsjump PhoneScript_WantsToBattle_Male
 
@@ -1128,7 +1128,7 @@ UnknownScript_0xbd6e0:
 	farsjump ToddNoItemScript
 
 UnknownScript_0xbd6ea:
-	getlandmarkname ROUTE_34, $2
+	getlandmarkname ROUTE_191, $2
 	farsjump ToddForwardScript
 
 UnknownScript_0xbd6f1:
@@ -1159,7 +1159,7 @@ ToddSaturdayMorning:
 	setflag ENGINE_TODD_SATURDAY_MORNING
 
 ToddWantsBattle:
-	getlandmarkname ROUTE_34, $2
+	getlandmarkname ROUTE_191, $2
 	setflag ENGINE_TODD_READY_FOR_REMATCH
 	farsjump PhoneScript_WantsToBattle_Male
 
@@ -1187,7 +1187,7 @@ GinaPhoneScript1:
 	iftrue GinaSundayDay
 
 UnknownScript_0xbd768:
-	checkflag ENGINE_ROCKETS_IN_RADIO_TOWER
+	checkflag ENGINE_ROCKETS_IN_SALT_LAKE_VALLEY
 	iftrue UnknownScript_0xbd772
 	farsjump GinaHangUpScript
 
@@ -1195,17 +1195,17 @@ UnknownScript_0xbd772:
 	farsjump GinaRocketRumorScript
 
 UnknownScript_0xbd776:
-	getlandmarkname ROUTE_34, $2
+	getlandmarkname ROUTE_191, $2
 	farsjump GinaReminderScript
 
 UnknownScript_0xbd77d:
-	getlandmarkname ROUTE_34, $2
+	getlandmarkname ROUTE_191, $2
 	farsjump GinaComePickUpScript
 
 GinaPhoneScript2:
 	gettrainername PICNICKER, GINA1, $0
 	farscall PhoneScript_GreetPhone_Female
-	checkflag ENGINE_ROCKETS_IN_RADIO_TOWER
+	checkflag ENGINE_ROCKETS_IN_SALT_LAKE_VALLEY
 	iftrue GinaRockets
 	checkflag ENGINE_GINA_READY_FOR_REMATCH
 	iftrue UnknownScript_0xbd7c8
@@ -1233,7 +1233,7 @@ GinaSundayDay:
 	setflag ENGINE_GINA_SUNDAY_AFTERNOON
 
 GinaWantsBattle:
-	getlandmarkname ROUTE_34, $2
+	getlandmarkname ROUTE_191, $2
 	setflag ENGINE_GINA_READY_FOR_REMATCH
 	farsjump PhoneScript_WantsToBattle_Female
 
@@ -1242,7 +1242,7 @@ GinaRockets:
 
 GinaHasLeafStone:
 	setflag ENGINE_GINA_HAS_LEAF_STONE
-	getlandmarkname ROUTE_34, $2
+	getlandmarkname ROUTE_191, $2
 	farsjump PhoneScript_FoundItem_Female
 
 ; Irwin
@@ -1250,7 +1250,7 @@ GinaHasLeafStone:
 IrwinPhoneScript1:
 	gettrainername JUGGLER, IRWIN1, $0
 	farscall PhoneScript_AnswerPhone_Male
-	checkflag ENGINE_ROCKETS_IN_RADIO_TOWER
+	checkflag ENGINE_ROCKETS_IN_SALT_LAKE_VALLEY
 	iftrue UnknownScript_0xbd7f9
 	farsjump IrwinRandomTextScript
 
@@ -1260,7 +1260,7 @@ UnknownScript_0xbd7f9:
 IrwinPhoneScript2:
 	gettrainername JUGGLER, IRWIN1, $0
 	farscall PhoneScript_GreetPhone_Male
-	checkflag ENGINE_ROCKETS_IN_RADIO_TOWER
+	checkflag ENGINE_ROCKETS_IN_SALT_LAKE_VALLEY
 	iftrue UnknownScript_0xbd80f
 	farsjump IrwinRumorScript
 
@@ -1287,11 +1287,11 @@ UnknownScript_0xbd832:
 	farsjump ArnieHangUpScript
 
 UnknownScript_0xbd83c:
-	getlandmarkname ROUTE_35, $2
+	getlandmarkname TOOLE_CITY, $2
 	farsjump ArnieReminderScript
 
 UnknownScript_0xbd843:
-	getlandmarkname ROUTE_35, $2
+	getlandmarkname TOOLE_CITY, $2
 	farsjump ArnieHurryScript
 
 ArniePhoneScript2:
@@ -1315,7 +1315,7 @@ ArnieTuesdayMorning:
 	setflag ENGINE_ARNIE_TUESDAY_MORNING
 
 ArnieWantsBattle:
-	getlandmarkname ROUTE_35, $2
+	getlandmarkname TOOLE_CITY, $2
 	setflag ENGINE_ARNIE_READY_FOR_REMATCH
 	farsjump PhoneScript_WantsToBattle_Male
 
@@ -1324,8 +1324,8 @@ ArnieYanmaSwarm: ; start swarm
 	iftrue ArnieYanmaAlreadySwarming
 	setflag ENGINE_YANMA_SWARM
 	getmonname YANMA, $1
-	swarm SWARM_YANMA, ROUTE_35
-	getlandmarkname ROUTE_35, $2
+	swarm SWARM_YANMA, TOOLE_CITY
+	getlandmarkname TOOLE_CITY, $2
 	farsjump ArnieSwarmScript
 
 ArnieFoundRare:
@@ -1354,11 +1354,11 @@ UnknownScript_0xbd8cb:
 	farsjump AlanHangUpScript
 
 UnknownScript_0xbd8cf:
-	getlandmarkname ROUTE_36, $2
+	getlandmarkname SALT_LAKE_CITY, $2
 	farsjump AlanReminderScript
 
 UnknownScript_0xbd8d6:
-	getlandmarkname ROUTE_36, $2
+	getlandmarkname SALT_LAKE_CITY, $2
 	farsjump AlanComePickUpScript
 
 AlanPhoneScript2:
@@ -1388,13 +1388,13 @@ AlanWednesdayDay:
 	setflag ENGINE_ALAN_WEDNESDAY_AFTERNOON
 
 AlanWantsBattle:
-	getlandmarkname ROUTE_36, $2
+	getlandmarkname SALT_LAKE_CITY, $2
 	setflag ENGINE_ALAN_READY_FOR_REMATCH
 	farsjump PhoneScript_WantsToBattle_Male
 
 AlanHasFireStone:
 	setflag ENGINE_ALAN_HAS_FIRE_STONE
-	getlandmarkname ROUTE_36, $2
+	getlandmarkname SALT_LAKE_CITY, $2
 	farsjump PhoneScript_FoundItem_Male
 
 ; Dana
@@ -1417,11 +1417,11 @@ UnknownScript_0xbd955:
 	farsjump DanaHangUpScript
 
 UnknownScript_0xbd959:
-	getlandmarkname ROUTE_38, $2
+	getlandmarkname PARK_CITY_SLOPES, $2
 	farsjump DanaReminderScript
 
 UnknownScript_0xbd960:
-	getlandmarkname ROUTE_38, $2
+	getlandmarkname PARK_CITY_SLOPES, $2
 	farsjump DanaComePickUpScript
 
 DanaPhoneScript2:
@@ -1453,7 +1453,7 @@ DanaThursdayNight:
 	setflag ENGINE_DANA_THURSDAY_NIGHT
 
 DanaWantsBattle:
-	getlandmarkname ROUTE_38, $2
+	getlandmarkname PARK_CITY_SLOPES, $2
 	setflag ENGINE_DANA_READY_FOR_REMATCH
 	farsjump PhoneScript_WantsToBattle_Female
 
@@ -1462,7 +1462,7 @@ DanaFoundRare:
 
 DanaHasThunderstone:
 	setflag ENGINE_DANA_HAS_THUNDERSTONE
-	getlandmarkname ROUTE_38, $2
+	getlandmarkname PARK_CITY_SLOPES, $2
 	farsjump PhoneScript_FoundItem_Female
 
 ; Chad
@@ -1483,7 +1483,7 @@ UnknownScript_0xbd9e5:
 	farsjump ChadHangUpScript
 
 UnknownScript_0xbd9e9:
-	getlandmarkname ROUTE_38, $2
+	getlandmarkname PARK_CITY_SLOPES, $2
 	farsjump ChadReminderScript
 
 ChadPhoneScript2:
@@ -1507,7 +1507,7 @@ ChadFridayMorning:
 	setflag ENGINE_CHAD_FRIDAY_MORNING
 
 ChadWantsBattle:
-	getlandmarkname ROUTE_38, $2
+	getlandmarkname PARK_CITY_SLOPES, $2
 	setflag ENGINE_CHAD_READY_FOR_REMATCH
 	farsjump PhoneScript_WantsToBattle_Male
 
@@ -1538,7 +1538,7 @@ UnknownScript_0xbda63:
 	farsjump PhoneScript_BugCatchingContest
 
 UnknownScript_0xbda67:
-	getlandmarkname ROUTE_39, $2
+	getlandmarkname JORDANELLE_PASS, $2
 	farsjump DerekComePickUpScript
 
 DerekPhoneScript2:
@@ -1563,7 +1563,7 @@ UnknownScript_0xbda9e:
 
 UnknownScript_0xbdaa2:
 	setflag ENGINE_DEREK_HAS_NUGGET
-	getlandmarkname ROUTE_39, $2
+	getlandmarkname JORDANELLE_PASS, $2
 	farsjump PhoneScript_FoundItem_Male
 
 TullyPhoneScript1:

@@ -4,8 +4,8 @@ VioletPokeCenter1F_MapScriptHeader:
 	def_callbacks
 
 	def_warp_events
-	warp_event  5,  7, VIOLET_CITY, 5
-	warp_event  6,  7, VIOLET_CITY, 5
+	warp_event  5,  7, UTAH_LAKE, 5
+	warp_event  6,  7, UTAH_LAKE, 5
 	warp_event  0,  7, POKECENTER_2F, 1
 
 	def_coord_events
@@ -58,7 +58,7 @@ VioletPokeCenter1FElmsAideScript:
 	setevent EVENT_GOT_TOGEPI_EGG_FROM_ELMS_AIDE
 	clearevent EVENT_ELMS_AIDE_IN_LAB
 	clearevent EVENT_TOGEPI_HATCHED
-	setmapscene ROUTE_32, $1
+	setmapscene TIMPANOGOS_PASS, $1
 	writetext .GoodbyeText
 	waitbutton
 	closetext

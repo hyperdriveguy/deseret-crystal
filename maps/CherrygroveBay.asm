@@ -16,8 +16,8 @@ CherrygroveBay_MapScriptHeader:
 	object_event  7, 39, SPRITE_SWIMMER_GUY, SPRITEMOVEDATA_SPINCLOCKWISE, 0, 0, -1, -1, 0, OBJECTTYPE_GENERICTRAINER, 2, GenericTrainerSwimmermThomas, -1
 	object_event  7, 22, SPRITE_SWIMMER_GIRL, SPRITEMOVEDATA_SPINCOUNTERCLOCKWISE, 0, 0, -1, -1, 0, OBJECTTYPE_GENERICTRAINER, 4, GenericTrainerSwimmerfSally, -1
 	object_event 22, 39, SPRITE_SWIMMER_GIRL, SPRITEMOVEDATA_SPINRANDOM_SLOW, 0, 0, -1, -1, 0, OBJECTTYPE_GENERICTRAINER, 4, GenericTrainerSwimmerfTara, -1
-	itemball_event 22, 24, SHINY_STONE, 1, EVENT_CHERRYGROVE_BAY_SHINY_STONE
-	cuttree_event  3,  8, EVENT_CHERRYGROVE_BAY_CUT_TREE
+	itemball_event 22, 24, SHINY_STONE, 1, EVENT_BYU_CAMPUS_SHINY_STONE
+	cuttree_event  3,  8, EVENT_BYU_CAMPUS_CUT_TREE
 
 CherrygroveBayHikerScript:
 	faceplayer

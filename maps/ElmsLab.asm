@@ -13,8 +13,8 @@ ElmsLab_MapScriptHeader:
 	callback MAPCALLBACK_OBJECTS, ElmsLabCallback_MoveElm
 
 	def_warp_events
-	warp_event  4, 11, NEW_BARK_TOWN, 1
-	warp_event  5, 11, NEW_BARK_TOWN, 1
+	warp_event  4, 11, NEPHI_CITY, 1
+	warp_event  5, 11, NEPHI_CITY, 1
 
 	def_coord_events
 	coord_event  4,  6, 1, LabTryToLeaveScript
@@ -331,7 +331,7 @@ endc
 	turnobject ELMSLAB_ELM, DOWN
 	showtext ElmDirectionsText3
 	setevent EVENT_GOT_A_POKEMON_FROM_ELM
-	setevent EVENT_RIVAL_CHERRYGROVE_CITY
+	setevent EVENT_RIVAL_PROVO_CITY
 	setscene $6
 	end
 
@@ -378,10 +378,10 @@ ElmAfterTheftScript:
 	promptbutton
 	setevent EVENT_GAVE_MYSTERY_EGG_TO_ELM
 	setflag ENGINE_BUG_CONTEST_ON
-	clearevent EVENT_LYRA_ROUTE_29
-	setmapscene ROUTE_29, $1
-	clearevent EVENT_ROUTE_30_YOUNGSTER_JOEY
-	setevent EVENT_ROUTE_30_BATTLE
+	clearevent EVENT_LYRA_ROUTE_I15
+	setmapscene ROUTE_I15, $1
+	clearevent EVENT_MTC_CAMPUS_YOUNGSTER_JOEY
+	setevent EVENT_MTC_CAMPUS_BATTLE
 	setscene $2
 	jumpopenedtext ElmAfterTheftText6
 

@@ -4,8 +4,8 @@ VioletNicknameSpeechHouse_MapScriptHeader:
 	def_callbacks
 
 	def_warp_events
-	warp_event  3,  7, VIOLET_CITY, 4
-	warp_event  4,  7, VIOLET_CITY, 4
+	warp_event  3,  7, UTAH_LAKE, 4
+	warp_event  4,  7, UTAH_LAKE, 4
 
 	def_coord_events
 

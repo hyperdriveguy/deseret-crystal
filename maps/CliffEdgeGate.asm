@@ -4,13 +4,13 @@ CliffEdgeGate_MapScriptHeader:
 	def_callbacks
 
 	def_warp_events
-	warp_event 17, 19, CIANWOOD_CITY, 8
-	warp_event  3, 19, ROUTE_47, 1
+	warp_event 17, 19, ROUTE_US89, 8
+	warp_event  3, 19, BEAR_LAKE_PASS, 1
 
 	def_coord_events
 
 	def_bg_events
-	bg_event 17,  6, BGEVENT_ITEM + BIG_PEARL, EVENT_CLIFF_EDGE_GATE_HIDDEN_BIG_PEARL
+	bg_event 17,  6, BGEVENT_ITEM + BIG_PEARL, EVENT_LOGAN_CITY_HIDDEN_BIG_PEARL
 
 	def_object_events
 	object_event 11, 16, SPRITE_RECEPTIONIST, SPRITEMOVEDATA_STANDING_DOWN, 0, 0, -1, -1, PAL_NPC_GREEN, OBJECTTYPE_COMMAND, jumptextfaceplayer, CliffEdgeGateReceptionistText, EVENT_YELLOW_FOREST_ROCKET_TAKEOVER

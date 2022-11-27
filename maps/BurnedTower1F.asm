@@ -6,24 +6,24 @@ BurnedTower1F_MapScriptHeader:
 	callback MAPCALLBACK_TILES, BurnedTower1FHoleAndLadder
 
 	def_warp_events
-	warp_event  7, 15, ECRUTEAK_CITY, 13
-	warp_event  8, 15, ECRUTEAK_CITY, 13
-	warp_event  8,  9, BURNED_TOWER_B1F, 1
-	warp_event  5, 15, BURNED_TOWER_B1F, 2
+	warp_event  7, 15, ANTELOPE_ISLAND, 13
+	warp_event  8, 15, ANTELOPE_ISLAND, 13
+	warp_event  8,  9, PARK_CITY_B1F, 1
+	warp_event  5, 15, PARK_CITY_B1F, 2
 
 	def_coord_events
 	coord_event  9,  9, 1, BurnedTowerRivalBattleScript
 
 	def_bg_events
-	bg_event  6,  7, BGEVENT_ITEM + ETHER, EVENT_BURNED_TOWER_1F_HIDDEN_ETHER
-	bg_event 11, 11, BGEVENT_ITEM + ULTRA_BALL, EVENT_BURNED_TOWER_1F_HIDDEN_ULTRA_BALL
+	bg_event  6,  7, BGEVENT_ITEM + ETHER, EVENT_PARK_CITY_1F_HIDDEN_ETHER
+	bg_event 11, 11, BGEVENT_ITEM + ULTRA_BALL, EVENT_PARK_CITY_1F_HIDDEN_ULTRA_BALL
 
 	def_object_events
-	object_event 10, 12, SPRITE_EUSINE, SPRITEMOVEDATA_SPINRANDOM_SLOW, 0, 0, -1, -1, 0, OBJECTTYPE_COMMAND, jumptextfaceplayer, BurnedTower1FEusineText, EVENT_BURNED_TOWER_1F_EUSINE
-	object_event  6,  9, SPRITE_SILVER, SPRITEMOVEDATA_STANDING_LEFT, 0, 0, -1, -1, 0, OBJECTTYPE_SCRIPT, 0, ObjectEvent, EVENT_RIVAL_BURNED_TOWER
+	object_event 10, 12, SPRITE_EUSINE, SPRITEMOVEDATA_SPINRANDOM_SLOW, 0, 0, -1, -1, 0, OBJECTTYPE_COMMAND, jumptextfaceplayer, BurnedTower1FEusineText, EVENT_PARK_CITY_1F_EUSINE
+	object_event  6,  9, SPRITE_SILVER, SPRITEMOVEDATA_STANDING_LEFT, 0, 0, -1, -1, 0, OBJECTTYPE_SCRIPT, 0, ObjectEvent, EVENT_RIVAL_PARK_CITY
 	smashrock_event 13, 4
-	object_event 12, 14, SPRITE_MORTY, SPRITEMOVEDATA_WANDER, 1, 1, -1, -1, 0, OBJECTTYPE_COMMAND, jumptextfaceplayer, BurnedTower1FMortyText, EVENT_BURNED_TOWER_MORTY
-	itemball_event 13,  1, HP_UP, 1, EVENT_BURNED_TOWER_1F_HP_UP
+	object_event 12, 14, SPRITE_MORTY, SPRITEMOVEDATA_WANDER, 1, 1, -1, -1, 0, OBJECTTYPE_COMMAND, jumptextfaceplayer, BurnedTower1FMortyText, EVENT_PARK_CITY_MORTY
+	itemball_event 13,  1, HP_UP, 1, EVENT_PARK_CITY_1F_HP_UP
 	object_event  1,  1, SPRITE_HEX_MANIAC, SPRITEMOVEDATA_STANDING_RIGHT, 0, 0, -1, -1, 0, OBJECTTYPE_GENERICTRAINER, 2, GenericTrainerHexManiacTamara, -1
 	object_event 11,  3, SPRITE_FIREBREATHER, SPRITEMOVEDATA_STANDING_RIGHT, 0, 0, -1, -1, 0, OBJECTTYPE_GENERICTRAINER, 2, GenericTrainerFirebreatherNed, -1
 
@@ -36,7 +36,7 @@ BurnedTower1FTrigger0:
 	end
 
 BurnedTower1FHoleAndLadder:
-	checkevent EVENT_HOLE_IN_BURNED_TOWER
+	checkevent EVENT_HOLE_IN_PARK_CITY
 	iftrue .Next
 	changeblock 8, 8, $32 ; hole
 .Next:
@@ -100,7 +100,7 @@ BurnedTowerRivalBattleScript:
 	playmusic MUSIC_RIVAL_AFTER
 	showtext BurnedTowerSilver_AfterText1
 	setscene $2
-	setevent EVENT_RIVAL_BURNED_TOWER
+	setevent EVENT_RIVAL_PARK_CITY
 	special Special_FadeOutMusic
 	pause 15
 	earthquake 50
@@ -114,7 +114,7 @@ BurnedTowerRivalBattleScript:
 	playsound SFX_KINESIS
 	showemote EMOTE_SHOCK, BURNEDTOWER1F_SILVER, 20
 	showtext BurnedTowerSilver_AfterText2
-	setevent EVENT_HOLE_IN_BURNED_TOWER
+	setevent EVENT_HOLE_IN_PARK_CITY
 	pause 15
 	warpcheck
 	end

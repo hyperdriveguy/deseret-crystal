@@ -6,10 +6,10 @@ Route32_MapScriptHeader:
 	callback MAPCALLBACK_OBJECTS, Route32Frieda
 
 	def_warp_events
-	warp_event 11, 73, ROUTE_32_POKECENTER_1F, 1
-	warp_event  4,  2, ROUTE_32_RUINS_OF_ALPH_GATE, 3
-	warp_event  4,  3, ROUTE_32_RUINS_OF_ALPH_GATE, 4
-	warp_event  6, 79, UNION_CAVE_1F, 4
+	warp_event 11, 73, TIMPANOGOS_PASS_POKECENTER_1F, 1
+	warp_event  4,  2, TIMPANOGOS_PASS_PROVO_CANYON_GATE, 3
+	warp_event  4,  3, TIMPANOGOS_PASS_PROVO_CANYON_GATE, 4
+	warp_event  6, 79, ROUTE_US40_1F, 4
 	warp_event  4, 24, HIDDEN_TREE_GROTTO, 1
 
 	def_coord_events
@@ -24,19 +24,19 @@ Route32_MapScriptHeader:
 	bg_event 13,  5, BGEVENT_JUMPTEXT, Route32SignText
 	bg_event  9,  1, BGEVENT_JUMPTEXT, Route32RuinsSignText
 	bg_event 10, 84, BGEVENT_JUMPTEXT, Route32UnionCaveSignText
-	bg_event 12, 67, BGEVENT_ITEM + GREAT_BALL, EVENT_ROUTE_32_HIDDEN_GREAT_BALL_1
-	bg_event 11, 40, BGEVENT_ITEM + SUPER_POTION, EVENT_ROUTE_32_HIDDEN_SUPER_POTION_1
-	bg_event  8, 10, BGEVENT_ITEM + SUPER_POTION, EVENT_ROUTE_32_HIDDEN_SUPER_POTION_2
-	bg_event 18, 49, BGEVENT_ITEM + GOLD_LEAF, EVENT_ROUTE_32_HIDDEN_GOLD_LEAF
-	bg_event  8, 80, BGEVENT_ITEM + GREAT_BALL, EVENT_ROUTE_32_HIDDEN_GREAT_BALL_2
-	bg_event  4, 23, BGEVENT_JUMPSTD, treegrotto, HIDDENGROTTO_ROUTE_32
-	bg_event  5, 23, BGEVENT_JUMPSTD, treegrotto, HIDDENGROTTO_ROUTE_32
+	bg_event 12, 67, BGEVENT_ITEM + GREAT_BALL, EVENT_TIMPANOGOS_PASS_HIDDEN_GREAT_BALL_1
+	bg_event 11, 40, BGEVENT_ITEM + SUPER_POTION, EVENT_TIMPANOGOS_PASS_HIDDEN_SUPER_POTION_1
+	bg_event  8, 10, BGEVENT_ITEM + SUPER_POTION, EVENT_TIMPANOGOS_PASS_HIDDEN_SUPER_POTION_2
+	bg_event 18, 49, BGEVENT_ITEM + GOLD_LEAF, EVENT_TIMPANOGOS_PASS_HIDDEN_GOLD_LEAF
+	bg_event  8, 80, BGEVENT_ITEM + GREAT_BALL, EVENT_TIMPANOGOS_PASS_HIDDEN_GREAT_BALL_2
+	bg_event  4, 23, BGEVENT_JUMPSTD, treegrotto, HIDDENGROTTO_TIMPANOGOS_PASS
+	bg_event  5, 23, BGEVENT_JUMPSTD, treegrotto, HIDDENGROTTO_TIMPANOGOS_PASS
 
 	def_object_events
 	object_event 19,  8, SPRITE_ACE_TRAINER_M, SPRITEMOVEDATA_STANDING_LEFT, 0, 0, -1, -1, 0, OBJECTTYPE_SCRIPT, 0, Route32CooltrainermPetrieScript, -1
-	object_event  7, 70, SPRITE_FAT_GUY, SPRITEMOVEDATA_STANDING_DOWN, 0, 0, -1, -1, PAL_NPC_PURPLE, OBJECTTYPE_SCRIPT, 0, SlowpokeTailSalesmanScript, EVENT_SLOWPOKE_WELL_ROCKETS
-	object_event 12, 67, SPRITE_LASS, SPRITEMOVEDATA_STANDING_LEFT, 0, 0, -1, -1, PAL_NPC_RED, OBJECTTYPE_SCRIPT, 0, FriedaScript, EVENT_ROUTE_32_FRIEDA_OF_FRIDAY
-	object_event 13, 29, SPRITE_LYRA, SPRITEMOVEDATA_STANDING_UP, 0, 0, -1, -1, 0, OBJECTTYPE_SCRIPT, 0, ObjectEvent, EVENT_LYRA_ROUTE_32
+	object_event  7, 70, SPRITE_FAT_GUY, SPRITEMOVEDATA_STANDING_DOWN, 0, 0, -1, -1, PAL_NPC_PURPLE, OBJECTTYPE_SCRIPT, 0, SlowpokeTailSalesmanScript, EVENT_VERNAL_CITY_ROCKETS
+	object_event 12, 67, SPRITE_LASS, SPRITEMOVEDATA_STANDING_LEFT, 0, 0, -1, -1, PAL_NPC_RED, OBJECTTYPE_SCRIPT, 0, FriedaScript, EVENT_TIMPANOGOS_PASS_FRIEDA_OF_FRIDAY
+	object_event 13, 29, SPRITE_LYRA, SPRITEMOVEDATA_STANDING_UP, 0, 0, -1, -1, 0, OBJECTTYPE_SCRIPT, 0, ObjectEvent, EVENT_LYRA_TIMPANOGOS_PASS
 	object_event  8, 49, SPRITE_FISHER, SPRITEMOVEDATA_STANDING_DOWN, 0, 0, -1, -1, 0, OBJECTTYPE_GENERICTRAINER, 1, GenericTrainerFisherJustin, -1
 	object_event 12, 56, SPRITE_FISHER, SPRITEMOVEDATA_STANDING_UP, 0, 0, -1, -1, 0, OBJECTTYPE_TRAINER, 3, TrainerFisherRalph1, -1
 	object_event 12, 33, SPRITE_PICNICKER, SPRITEMOVEDATA_STANDING_LEFT, 0, 0, -1, -1, 0, OBJECTTYPE_TRAINER, 1, TrainerPicnickerLiz1, -1
@@ -45,12 +45,12 @@ Route32_MapScriptHeader:
 	object_event  4, 63, SPRITE_YOUNGSTER, SPRITEMOVEDATA_SPINRANDOM_FAST, 0, 0, -1, -1, 0, OBJECTTYPE_GENERICTRAINER, 3, GenericTrainerYoungsterGordon, -1
 	object_event  3, 45, SPRITE_CAMPER, SPRITEMOVEDATA_STANDING_UP, 0, 0, -1, -1, 0, OBJECTTYPE_GENERICTRAINER, 3, GenericTrainerCamperRoland, -1
 	object_event 11, 82, SPRITE_BIRD_KEEPER, SPRITEMOVEDATA_STANDING_UP, 0, 0, -1, -1, 0, OBJECTTYPE_GENERICTRAINER, 3, GenericTrainerBird_keeperPeter, -1
-	itemball_event  6, 53, GREAT_BALL, 1, EVENT_ROUTE_32_GREAT_BALL
+	itemball_event  6, 53, GREAT_BALL, 1, EVENT_TIMPANOGOS_PASS_GREAT_BALL
 	object_event 15, 13, SPRITE_FAT_GUY, SPRITEMOVEDATA_STANDING_RIGHT, 0, 0, -1, -1, PAL_NPC_RED, OBJECTTYPE_SCRIPT, 0, Route32RoarTMGuyScript, -1
-	itemball_event  6, 32, REPEL, 1, EVENT_ROUTE_32_REPEL
-	cuttree_event 10, 19, EVENT_ROUTE_32_CUT_TREE
-	cuttree_event -1, 29, EVENT_MAGNET_TUNNEL_EAST_CUT_TREE
-	cuttree_event 23, 32, EVENT_CHERRYGROVE_BAY_CUT_TREE
+	itemball_event  6, 32, REPEL, 1, EVENT_TIMPANOGOS_PASS_REPEL
+	cuttree_event 10, 19, EVENT_TIMPANOGOS_PASS_CUT_TREE
+	cuttree_event -1, 29, EVENT_ROUTE_I80_EAST_EAST_CUT_TREE
+	cuttree_event 23, 32, EVENT_BYU_CAMPUS_CUT_TREE
 
 	object_const_def
 	const ROUTE32_COOLTRAINER_M
@@ -59,7 +59,7 @@ Route32_MapScriptHeader:
 	const ROUTE32_LYRA
 
 Route32FlyPoint:
-	setflag ENGINE_FLYPOINT_UNION_CAVE
+	setflag ENGINE_FLYPOINT_ROUTE_US40
 	endcallback
 
 Route32Frieda:
@@ -79,7 +79,7 @@ Route32CooltrainerMTrigger:
 	iffalse_jumptext Route32CooltrainerMText_VioletGym
 	checkevent EVENT_GOT_TOGEPI_EGG_FROM_ELMS_AIDE
 	iffalse_jumptext Route32CooltrainerMText_AideIsWaiting
-	checkevent EVENT_GOT_MIRACLE_SEED_FROM_ROUTE_32_LEADER
+	checkevent EVENT_GOT_MIRACLE_SEED_FROM_TIMPANOGOS_PASS_LEADER
 	iftrue_jumptext .AfterText2
 	checkevent EVENT_BEAT_COOLTRAINERM_PETRIE
 	iftrue .Beaten
@@ -118,7 +118,7 @@ Route32CooltrainerMTrigger:
 	promptbutton
 	verbosegiveitem MIRACLE_SEED
 	iffalse_endtext
-	setevent EVENT_GOT_MIRACLE_SEED_FROM_ROUTE_32_LEADER
+	setevent EVENT_GOT_MIRACLE_SEED_FROM_TIMPANOGOS_PASS_LEADER
 .GotMiracleSeed:
 	jumpthisopenedtext
 
@@ -360,7 +360,7 @@ Route32LyraIntroducesHiddenGrottoesOutroScript:
 	applymovement ROUTE32_LYRA, .LeaveMovement2
 	disappear ROUTE32_LYRA
 	setscene $2
-	playmusic MUSIC_ROUTE_30
+	playmusic MUSIC_MTC_CAMPUS
 	end
 
 .GrottoText:
@@ -479,7 +479,7 @@ TrainerFisherRalph1:
 	callstd asknumber2m
 .AskForNumber:
 	askforphonenumber PHONE_FISHER_RALPH
-	ifequal $1, .PhoneFull
+	ifequal $2, .PhoneFull
 	ifequal $2, .NumberDeclined
 	gettrainername FISHER, RALPH1, $0
 	callstd registerednumberm
@@ -589,7 +589,7 @@ TrainerPicnickerLiz1:
 	callstd asknumber2f
 .AskForNumber:
 	askforphonenumber PHONE_PICNICKER_LIZ
-	ifequal $1, .PhoneFull
+	ifequal $2, .PhoneFull
 	ifequal $2, .NumberDeclined
 	gettrainername PICNICKER, LIZ1, $0
 	callstd registerednumberf
@@ -608,7 +608,7 @@ TrainerPicnickerLiz1:
 	checkevent EVENT_BEAT_ELITE_FOUR
 	iftrue .LoadFight4
 .Fight3:
-	checkevent EVENT_CLEARED_RADIO_TOWER
+	checkevent EVENT_CLEARED_SALT_LAKE_VALLEY
 	iftrue .LoadFight3
 .Fight2:
 	checkevent EVENT_CLEARED_ROCKET_HIDEOUT

@@ -5,10 +5,10 @@ BattleTower1F_MapScriptHeader:
 	def_callbacks
 
 	def_warp_events
-	warp_event 10, 15, BATTLE_TOWER_OUTSIDE, 3
-	warp_event 11, 15, BATTLE_TOWER_OUTSIDE, 4
-	warp_event 10,  0, BATTLE_TOWER_ELEVATOR, 1
-	warp_event  0,  7, BATTLE_TOWER_2F, 1
+	warp_event 10, 15, ROUTE_67_OUTSIDE, 3
+	warp_event 11, 15, ROUTE_67_OUTSIDE, 4
+	warp_event 10,  0, ROUTE_67_ELEVATOR, 1
+	warp_event  0,  7, ROUTE_67_2F, 1
 
 	def_coord_events
 
@@ -158,11 +158,11 @@ BattleTower1FReceptionistScript:
 		line "to a Battle Room."
 		done
 	promptbutton
-	checkevent EVENT_BATTLE_TOWER_INTRO
+	checkevent EVENT_ROUTE_67_INTRO
 	iftrue .BattleTowerMenu
 
 	; only ask once, so set the flag regardless
-	setevent EVENT_BATTLE_TOWER_INTRO
+	setevent EVENT_ROUTE_67_INTRO
 	writethistext
 		text "Would you like to"
 		line "hear about the"

@@ -244,7 +244,7 @@ ApplyMusicEffectOnEncounterRate::
 	ld a, [wMapMusic]
 	cp MUSIC_POKEMON_MARCH
 	jr z, .double
-	cp MUSIC_RUINS_OF_ALPH_RADIO
+	cp MUSIC_PROVO_CANYON_RADIO
 	jr z, .double
 	cp MUSIC_POKEMON_LULLABY
 	ret nz
@@ -748,9 +748,9 @@ InitRoamMons:
 	ld [wRoamMon1MapNumber], a
 
 ; entei starting map
-	ld a, GROUP_ROUTE_37
+	ld a, GROUP_TEMPLE_SQUARE
 	ld [wRoamMon2MapGroup], a
-	ld a, MAP_ROUTE_37
+	ld a, MAP_TEMPLE_SQUARE
 	ld [wRoamMon2MapNumber], a
 
 ; hp

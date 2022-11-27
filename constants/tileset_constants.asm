@@ -2,7 +2,7 @@
 	const_def 1
 	const TILESET_JOHTO_TRADITIONAL    ; 01
 	const TILESET_JOHTO_MODERN         ; 02
-	const TILESET_BATTLE_TOWER_OUTSIDE ; 03
+	const TILESET_ROUTE_67_OUTSIDE ; 03
 	const TILESET_JOHTO_OVERCAST       ; 04
 	const TILESET_KANTO                ; 05
 	const TILESET_INDIGO_PLATEAU       ; 06
@@ -27,10 +27,10 @@
 	const TILESET_HOME_DECOR_STORE     ; 19
 	const TILESET_MUSEUM               ; 1a
 	const TILESET_HOTEL                ; 1b
-	const TILESET_SPROUT_TOWER         ; 1c
-	const TILESET_BATTLE_TOWER_INSIDE  ; 1d
-	const TILESET_RADIO_TOWER          ; 1e
-	const TILESET_LIGHTHOUSE           ; 1f
+	const TILESET_OREM_CITY         ; 1c
+	const TILESET_ROUTE_67_INSIDE  ; 1d
+	const TILESET_SALT_LAKE_VALLEY          ; 1e
+	const TILESET_MOUNT_TIMPANOGOS           ; 1f
 	const TILESET_UNDERGROUND          ; 20
 	const TILESET_CAVE                 ; 21
 	const TILESET_QUIET_CAVE           ; 22
@@ -39,7 +39,7 @@
 	const TILESET_FOREST               ; 25
 	const TILESET_PARK                 ; 26
 	const TILESET_SAFARI_ZONE          ; 27
-	const TILESET_RUINS_OF_ALPH        ; 28
+	const TILESET_PROVO_CANYON        ; 28
 	const TILESET_ALPH_WORD_ROOM       ; 29
 	const TILESET_POKEMON_MANSION      ; 2a
 	const TILESET_BATTLE_FACTORY       ; 2b

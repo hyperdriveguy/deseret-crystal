@@ -5,12 +5,12 @@ BattleTowerHallway_MapScriptHeader:
 	def_callbacks
 
 	def_warp_events
-	warp_event 11,  1, BATTLE_TOWER_ELEVATOR, 1
-	warp_event  5,  0, BATTLE_TOWER_BATTLE_ROOM, 1
-	warp_event  7,  0, BATTLE_TOWER_BATTLE_ROOM, 1
-	warp_event  9,  0, BATTLE_TOWER_BATTLE_ROOM, 1
-	warp_event 13,  0, BATTLE_TOWER_BATTLE_ROOM, 1
-	warp_event 15,  0, BATTLE_TOWER_BATTLE_ROOM, 1
+	warp_event 11,  1, ROUTE_67_ELEVATOR, 1
+	warp_event  5,  0, ROUTE_67_BATTLE_ROOM, 1
+	warp_event  7,  0, ROUTE_67_BATTLE_ROOM, 1
+	warp_event  9,  0, ROUTE_67_BATTLE_ROOM, 1
+	warp_event 13,  0, ROUTE_67_BATTLE_ROOM, 1
+	warp_event 15,  0, ROUTE_67_BATTLE_ROOM, 1
 
 	def_coord_events
 

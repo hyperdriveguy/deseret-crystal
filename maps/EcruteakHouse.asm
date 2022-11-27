@@ -5,8 +5,8 @@ EcruteakHouse_MapScriptHeader:
 	callback MAPCALLBACK_OBJECTS, EcruteakHouseInitializeSages
 
 	def_warp_events
-	warp_event  4, 17, ECRUTEAK_CITY, 3
-	warp_event  5, 17, ECRUTEAK_CITY, 3
+	warp_event  4, 17, ANTELOPE_ISLAND, 3
+	warp_event  5, 17, ANTELOPE_ISLAND, 3
 	warp_event  5,  3, ECRUTEAK_HOUSE, 4
 	warp_event 17, 15, ECRUTEAK_HOUSE, 3
 	warp_event 17,  3, WISE_TRIOS_ROOM, 3
@@ -30,9 +30,9 @@ EcruteakHouse_MapScriptHeader:
 EcruteakHouseInitializeSages:
 	checkevent EVENT_FOUGHT_SUICUNE
 	iftrue .DontBlockTower
-	checkevent EVENT_KOJI_ALLOWS_YOU_PASSAGE_TO_TIN_TOWER
+	checkevent EVENT_KOJI_ALLOWS_YOU_PASSAGE_TO_ROUTE_I80_WEST
 	iftrue .DontBlockTower
-	checkevent EVENT_CLEARED_RADIO_TOWER
+	checkevent EVENT_CLEARED_SALT_LAKE_VALLEY
 	iftrue .BlockTower
 	endcallback
 
@@ -76,14 +76,14 @@ EcruteakHouse_XYTrigger_DontMove:
 EcruteakTinTowerEntranceSageScript:
 	faceplayer
 	opentext
-	checkevent EVENT_CLEARED_RADIO_TOWER
+	checkevent EVENT_CLEARED_SALT_LAKE_VALLEY
 	iftrue .CheckForClearBell
 	checkflag ENGINE_FOGBADGE
 	iftrue_jumpopenedtext EcruteakTinTowerEntranceSageText_GotFogBadge
 	jumpopenedtext EcruteakTinTowerEntranceSageText
 
 .CheckForClearBell:
-	checkevent EVENT_KOJI_ALLOWS_YOU_PASSAGE_TO_TIN_TOWER
+	checkevent EVENT_KOJI_ALLOWS_YOU_PASSAGE_TO_ROUTE_I80_WEST
 	iftrue_jumpopenedtext EcruteakTinTowerEntranceSageText_PleaseDoGoOn
 	checkevent EVENT_TEMPORARY_UNTIL_MAP_RELOAD_1
 	iftrue_jumpopenedtext EcruteakTinTowerEntranceSageText_HeardClearBell

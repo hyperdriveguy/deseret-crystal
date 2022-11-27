@@ -16,7 +16,7 @@ MahoganyRedGyaradosSpeechHouse_MapScriptHeader:
 	object_event  6,  5, SPRITE_POKEFAN_F, SPRITEMOVEDATA_WALK_UP_DOWN, 1, 0, -1, -1, PAL_NPC_BLUE, OBJECTTYPE_SCRIPT, 0, MahoganyRedGyaradosSpeechHouseTeacherScript, -1
 
 MahoganyRedGyaradosSpeechHouseTeacherScript:
-	checkflag ENGINE_ROCKETS_IN_RADIO_TOWER
+	checkflag ENGINE_ROCKETS_IN_SALT_LAKE_VALLEY
 	iftrue_jumptextfaceplayer MahoganyRedGyaradosSpeechHouseTeacherText_RocketsInRadioTower
 	jumpthistextfaceplayer
 

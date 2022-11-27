@@ -400,7 +400,7 @@ UnknownScript_0x19d1c1:
 	checkevent EVENT_BEAT_ELITE_FOUR
 	iftrue .LoadFight2
 .Fight1:
-	checkevent EVENT_CLEARED_RADIO_TOWER
+	checkevent EVENT_CLEARED_SALT_LAKE_VALLEY
 	iftrue .LoadFight1
 .LoadFight0:
 	loadtrainer PICNICKER, TIFFANY1

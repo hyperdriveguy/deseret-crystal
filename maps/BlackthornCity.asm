@@ -156,7 +156,7 @@ SantosScript:
 BlackthornDragonTamer1Script:
 	checkevent EVENT_BEAT_CLAIR
 	iftrue_jumptextfaceplayer .ClairIsBeatenText
-	checkevent EVENT_CLEARED_RADIO_TOWER
+	checkevent EVENT_CLEARED_SALT_LAKE_VALLEY
 	iftrue_jumptextfaceplayer .ClairIsInText
 	jumpthistextfaceplayer
 
@@ -199,7 +199,7 @@ BlackthornDragonTamer1Script:
 	done
 
 BlackthornBlackbeltScript:
-	checkevent EVENT_CLEARED_RADIO_TOWER
+	checkevent EVENT_CLEARED_SALT_LAKE_VALLEY
 	iftrue_jumptextfaceplayer .Text2
 	jumpthistextfaceplayer
 

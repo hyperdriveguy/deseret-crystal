@@ -4,8 +4,8 @@ PlayersNeighborsHouse_MapScriptHeader:
 	def_callbacks
 
 	def_warp_events
-	warp_event  2,  7, NEW_BARK_TOWN, 3
-	warp_event  3,  7, NEW_BARK_TOWN, 3
+	warp_event  2,  7, NEPHI_CITY, 3
+	warp_event  3,  7, NEPHI_CITY, 3
 
 	def_coord_events
 
@@ -30,7 +30,7 @@ PlayersNeighborsHouseRadio:
 	pause 45
 	writetext PlayerNeighborRadioText3
 	pause 45
-	musicfadeout MUSIC_NEW_BARK_TOWN, $10
+	musicfadeout MUSIC_NEPHI_CITY, $10
 	writetext PlayerNeighborRadioText4
 	pause 45
 	closetext

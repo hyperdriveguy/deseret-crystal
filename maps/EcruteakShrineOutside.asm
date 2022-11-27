@@ -5,10 +5,10 @@ EcruteakShrineOutside_MapScriptHeader:
 
 	def_warp_events
 	warp_event  5,  3, ECRUTEAK_SHRINE_INSIDE, 1
-	warp_event  4, 12, ECRUTEAK_CITY, 4
-	warp_event  5, 12, ECRUTEAK_CITY, 4
-	warp_event  6, 12, ECRUTEAK_CITY, 5
-	warp_event  7, 12, ECRUTEAK_CITY, 5
+	warp_event  4, 12, ANTELOPE_ISLAND, 4
+	warp_event  5, 12, ANTELOPE_ISLAND, 4
+	warp_event  6, 12, ANTELOPE_ISLAND, 5
+	warp_event  7, 12, ANTELOPE_ISLAND, 5
 
 	def_coord_events
 

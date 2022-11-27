@@ -12,7 +12,7 @@ Route41_MapScriptHeader:
 	def_coord_events
 
 	def_bg_events
-	bg_event  9, 35, BGEVENT_ITEM + MAX_ETHER, EVENT_ROUTE_41_HIDDEN_MAX_ETHER
+	bg_event  9, 35, BGEVENT_ITEM + MAX_ETHER, EVENT_UNION_STATION_HIDDEN_MAX_ETHER
 
 	def_object_events
 	object_event 32,  6, SPRITE_SWIMMER_GUY, SPRITEMOVEDATA_SPINRANDOM_FAST, 0, 0, -1, -1, 0, OBJECTTYPE_GENERICTRAINER, 3, GenericTrainerSwimmermCharlie, -1

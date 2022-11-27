@@ -1,6 +1,6 @@
 ; Johto Pokémon in grass
 
-	def_grass_wildmons SPROUT_TOWER_2F
+	def_grass_wildmons OREM_CITY_2F
 	db 2 percent, 2 percent, 2 percent ; encounter rates: morn/day/nite
 	; morn
 	wildmon 3, RATTATA
@@ -28,7 +28,7 @@
 	wildmon 6, BELLSPROUT
 	end_grass_wildmons
 
-	def_grass_wildmons SPROUT_TOWER_3F
+	def_grass_wildmons OREM_CITY_3F
 	db 2 percent, 2 percent, 2 percent ; encounter rates: morn/day/nite
 	; morn
 	wildmon 3, RATTATA
@@ -56,7 +56,7 @@
 	wildmon 6, BELLSPROUT
 	end_grass_wildmons
 
-	def_grass_wildmons TIN_TOWER_2F
+	def_grass_wildmons ROUTE_I80_WEST_2F
 	db 2 percent, 2 percent, 2 percent ; encounter rates: morn/day/nite
 	; morn
 	wildmon 20, RATTATA
@@ -84,7 +84,7 @@
 	wildmon 24, RATICATE
 	end_grass_wildmons
 
-	def_grass_wildmons TIN_TOWER_3F
+	def_grass_wildmons ROUTE_I80_WEST_3F
 	db 2 percent, 2 percent, 2 percent ; encounter rates: morn/day/nite
 	; morn
 	wildmon 20, RATTATA
@@ -112,7 +112,7 @@
 	wildmon 24, RATICATE
 	end_grass_wildmons
 
-	def_grass_wildmons TIN_TOWER_4F
+	def_grass_wildmons ROUTE_I80_WEST_4F
 	db 2 percent, 2 percent, 2 percent ; encounter rates: morn/day/nite
 	; morn
 	wildmon 20, RATTATA
@@ -140,7 +140,7 @@
 	wildmon 24, RATICATE
 	end_grass_wildmons
 
-	def_grass_wildmons TIN_TOWER_5F
+	def_grass_wildmons ROUTE_I80_WEST_5F
 	db 2 percent, 2 percent, 2 percent ; encounter rates: morn/day/nite
 	; morn
 	wildmon 20, RATTATA
@@ -168,7 +168,7 @@
 	wildmon 24, RATICATE
 	end_grass_wildmons
 
-	def_grass_wildmons TIN_TOWER_6F
+	def_grass_wildmons ROUTE_I80_WEST_6F
 	db 2 percent, 2 percent, 2 percent ; encounter rates: morn/day/nite
 	; morn
 	wildmon 20, RATTATA
@@ -196,7 +196,7 @@
 	wildmon 24, RATICATE
 	end_grass_wildmons
 
-	def_grass_wildmons TIN_TOWER_7F
+	def_grass_wildmons ROUTE_I80_WEST_7F
 	db 2 percent, 2 percent, 2 percent ; encounter rates: morn/day/nite
 	; morn
 	wildmon 20, RATTATA
@@ -224,7 +224,7 @@
 	wildmon 24, MURKROW
 	end_grass_wildmons
 
-	def_grass_wildmons TIN_TOWER_8F
+	def_grass_wildmons ROUTE_I80_WEST_8F
 	db 2 percent, 2 percent, 2 percent ; encounter rates: morn/day/nite
 	; morn
 	wildmon 20, RATTATA
@@ -252,7 +252,7 @@
 	wildmon 24, MURKROW
 	end_grass_wildmons
 
-	def_grass_wildmons TIN_TOWER_9F
+	def_grass_wildmons ROUTE_I80_WEST_9F
 	db 2 percent, 2 percent, 2 percent ; encounter rates: morn/day/nite
 	; morn
 	wildmon 20, RATTATA
@@ -280,7 +280,7 @@
 	wildmon 24, MURKROW
 	end_grass_wildmons
 
-	def_grass_wildmons TIN_TOWER_10F
+	def_grass_wildmons ROUTE_I80_WEST_10F
 	db 2 percent, 2 percent, 2 percent ; encounter rates: morn/day/nite
 	; morn
 	wildmon 20, RATTATA
@@ -308,7 +308,7 @@
 	wildmon 24, MURKROW
 	end_grass_wildmons
 
-	def_grass_wildmons BURNED_TOWER_1F
+	def_grass_wildmons PARK_CITY_1F
 	db 4 percent, 4 percent, 4 percent ; encounter rates: morn/day/nite
 	; morn
 	wildmon 13, RATTATA
@@ -336,7 +336,7 @@
 	wildmon 15, RATICATE
 	end_grass_wildmons
 
-	def_grass_wildmons BURNED_TOWER_B1F
+	def_grass_wildmons PARK_CITY_B1F
 	db 4 percent, 4 percent, 4 percent ; encounter rates: morn/day/nite
 	; morn
 	wildmon 14, KOFFING
@@ -364,7 +364,7 @@
 	wildmon 15, MAGBY
 	end_grass_wildmons
 
-	def_grass_wildmons NATIONAL_PARK
+	def_grass_wildmons WENDOVER_CITY
 	db 10 percent, 10 percent, 10 percent ; encounter rates: morn/day/nite
 	; morn
 	wildmon 12, NIDORAN_M
@@ -392,7 +392,7 @@
 	wildmon 12, VENONAT
 	end_grass_wildmons
 
-	def_grass_wildmons RUINS_OF_ALPH_OUTSIDE
+	def_grass_wildmons PROVO_CANYON_OUTSIDE
 	db 4 percent, 4 percent, 4 percent ; encounter rates: morn/day/nite
 	; morn
 	wildmon 20, NATU
@@ -420,7 +420,7 @@
 	wildmon 25, XATU
 	end_grass_wildmons
 
-	def_grass_wildmons RUINS_OF_ALPH_ENTRANCE_CHAMBER
+	def_grass_wildmons PROVO_CANYON_ENTRANCE_CHAMBER
 	db 6 percent, 6 percent, 6 percent ; encounter rates: morn/day/nite
 	; morn
 	wildmon 10, UNOWN
@@ -448,7 +448,7 @@
 	wildmon 15, UNOWN
 	end_grass_wildmons
 
-	def_grass_wildmons RUINS_OF_ALPH_INNER_CHAMBER
+	def_grass_wildmons PROVO_CANYON_INNER_CHAMBER
 	db 6 percent, 6 percent, 6 percent ; encounter rates: morn/day/nite
 	; morn
 	wildmon 10, UNOWN
@@ -476,7 +476,7 @@
 	wildmon 15, UNOWN
 	end_grass_wildmons
 
-	def_grass_wildmons UNION_CAVE_1F
+	def_grass_wildmons ROUTE_US40_1F
 	db 4 percent, 4 percent, 4 percent ; encounter rates: morn/day/nite
 	; morn
 	wildmon 6, GEODUDE
@@ -504,7 +504,7 @@
 	wildmon 6, ONIX
 	end_grass_wildmons
 
-	def_grass_wildmons UNION_CAVE_B1F_NORTH
+	def_grass_wildmons ROUTE_US40_B1F_NORTH
 	db 4 percent, 4 percent, 4 percent ; encounter rates: morn/day/nite
 	; morn
 	wildmon 8, GEODUDE
@@ -532,7 +532,7 @@
 	wildmon 8, RATTATA
 	end_grass_wildmons
 
-	def_grass_wildmons UNION_CAVE_B1F_SOUTH
+	def_grass_wildmons ROUTE_US40_B1F_SOUTH
 	db 4 percent, 4 percent, 4 percent ; encounter rates: morn/day/nite
 	; morn
 	wildmon 21, ZUBAT
@@ -560,7 +560,7 @@
 	wildmon 22, ONIX
 	end_grass_wildmons
 
-	def_grass_wildmons UNION_CAVE_B2F
+	def_grass_wildmons ROUTE_US40_B2F
 	db 4 percent, 4 percent, 4 percent ; encounter rates: morn/day/nite
 	; morn
 	wildmon 22, ZUBAT
@@ -588,7 +588,7 @@
 	wildmon 23, ONIX
 	end_grass_wildmons
 
-	def_grass_wildmons SLOWPOKE_WELL_ENTRANCE
+	def_grass_wildmons VERNAL_CITY_ENTRANCE
 	db 2 percent, 2 percent, 2 percent ; encounter rates: morn/day/nite
 	; morn
 	wildmon 5, ZUBAT
@@ -616,7 +616,7 @@
 	wildmon 8, SLOWPOKE
 	end_grass_wildmons
 
-	def_grass_wildmons SLOWPOKE_WELL_B1F
+	def_grass_wildmons VERNAL_CITY_B1F
 	db 2 percent, 2 percent, 2 percent ; encounter rates: morn/day/nite
 	; morn
 	wildmon 5, ZUBAT
@@ -644,7 +644,7 @@
 	wildmon 8, SLOWPOKE
 	end_grass_wildmons
 
-	def_grass_wildmons SLOWPOKE_WELL_B2F
+	def_grass_wildmons VERNAL_CITY_B2F
 	db 2 percent, 2 percent, 2 percent ; encounter rates: morn/day/nite
 	; morn
 	wildmon 21, ZUBAT
@@ -672,7 +672,7 @@
 	wildmon 23, SLOWPOKE
 	end_grass_wildmons
 
-	def_grass_wildmons ILEX_FOREST
+	def_grass_wildmons EXCAVATION_SITE
 	db 4 percent, 4 percent, 4 percent ; encounter rates: morn/day/nite
 	; morn
 	wildmon 7, CATERPIE
@@ -1344,7 +1344,7 @@
 	wildmon 23, DUNSPARCE
 	end_grass_wildmons
 
-	def_grass_wildmons ROUTE_29
+	def_grass_wildmons ROUTE_I15
 	db 10 percent, 10 percent, 10 percent ; encounter rates: morn/day/nite
 	; morn
 	wildmon 2, PIDGEY
@@ -1372,7 +1372,7 @@
 	wildmon 3, HOOTHOOT
 	end_grass_wildmons
 
-	def_grass_wildmons ROUTE_30
+	def_grass_wildmons MTC_CAMPUS
 	db 10 percent, 10 percent, 10 percent ; encounter rates: morn/day/nite
 	; morn
 	wildmon 3, LEDYBA
@@ -1400,7 +1400,7 @@
 	wildmon 4, HOOTHOOT
 	end_grass_wildmons
 
-	def_grass_wildmons ROUTE_31
+	def_grass_wildmons BYU_UNDERGROUND
 	db 10 percent, 10 percent, 10 percent ; encounter rates: morn/day/nite
 	; morn
 	wildmon 4, LEDYBA
@@ -1428,7 +1428,7 @@
 	wildmon 5, GASTLY
 	end_grass_wildmons
 
-	def_grass_wildmons ROUTE_32
+	def_grass_wildmons TIMPANOGOS_PASS
 	db 10 percent, 10 percent, 10 percent ; encounter rates: morn/day/nite
 	; morn
 	wildmon 4, EKANS, ARBOK_JOHTO_FORM
@@ -1456,7 +1456,7 @@
 	wildmon 7, GASTLY
 	end_grass_wildmons
 
-	def_grass_wildmons ROUTE_33
+	def_grass_wildmons DUCHESNE_CITY
 	db 10 percent, 10 percent, 10 percent ; encounter rates: morn/day/nite
 	; morn
 	wildmon 6, RATTATA
@@ -1484,7 +1484,7 @@
 	wildmon 7, ODDISH
 	end_grass_wildmons
 
-	def_grass_wildmons ROUTE_34
+	def_grass_wildmons ROUTE_191
 	db 10 percent, 10 percent, 10 percent ; encounter rates: morn/day/nite
 	; morn
 	wildmon 10, SNUBBULL
@@ -1512,7 +1512,7 @@
 	wildmon 10, DITTO
 	end_grass_wildmons
 
-	def_grass_wildmons ROUTE_35
+	def_grass_wildmons TOOLE_CITY
 	db 10 percent, 10 percent, 10 percent ; encounter rates: morn/day/nite
 	; morn
 	wildmon 12, SNUBBULL
@@ -1540,7 +1540,7 @@
 	wildmon 12, YANMA
 	end_grass_wildmons
 
-	def_grass_wildmons ROUTE_36
+	def_grass_wildmons SALT_LAKE_CITY
 	db 10 percent, 10 percent, 10 percent ; encounter rates: morn/day/nite
 	; morn
 	wildmon 4, LEDYBA
@@ -1568,7 +1568,7 @@
 	wildmon 5, GASTLY
 	end_grass_wildmons
 
-	def_grass_wildmons ROUTE_37
+	def_grass_wildmons TEMPLE_SQUARE
 	db 10 percent, 10 percent, 10 percent ; encounter rates: morn/day/nite
 	; morn
 	wildmon 13, LEDYBA
@@ -1596,7 +1596,7 @@
 	wildmon 16, ARIADOS
 	end_grass_wildmons
 
-	def_grass_wildmons ROUTE_38
+	def_grass_wildmons PARK_CITY_SLOPES
 	db 10 percent, 10 percent, 10 percent ; encounter rates: morn/day/nite
 	; morn
 	wildmon 16, RATTATA
@@ -1624,7 +1624,7 @@
 	wildmon 16, MURKROW
 	end_grass_wildmons
 
-	def_grass_wildmons ROUTE_39
+	def_grass_wildmons JORDANELLE_PASS
 	db 2 percent, 2 percent, 2 percent ; encounter rates: morn/day/nite
 	; morn
 	wildmon 16, RATTATA
@@ -1792,7 +1792,7 @@
 	wildmon 3, RATTATA
 	end_grass_wildmons
 
-	def_grass_wildmons ROUTE_47
+	def_grass_wildmons BEAR_LAKE_PASS
 	db 10 percent, 10 percent, 10 percent ; encounter rates: morn/day/nite
 	; morn
 	wildmon 25, DITTO
@@ -1848,7 +1848,7 @@
 	wildmon 20, GIRAFARIG
 	end_grass_wildmons
 
-	def_grass_wildmons CLIFF_CAVE
+	def_grass_wildmons BEAR_LAKE
 	db 4 percent, 4 percent, 4 percent ; encounter rates: morn/day/nite
 	; morn
 	wildmon 22, GOLBAT
@@ -2044,7 +2044,7 @@
 	wildmon 33, STEELIX
 	end_grass_wildmons
 
-	def_grass_wildmons MURKY_SWAMP
+	def_grass_wildmons PRICE_CITY
 	db 2 percent, 2 percent, 2 percent ; encounter rates: morn/day/nite
 	; morn
 	wildmon 22, WOOPER

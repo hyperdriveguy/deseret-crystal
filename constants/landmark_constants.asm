@@ -2,52 +2,53 @@
 	const_def
 	const SPECIAL_MAP        ; 00
 ; Johto landmarks
-	const NEW_BARK_TOWN      ; 01
-	const ROUTE_29           ; 02
-	const CHERRYGROVE_CITY   ; 03
-	const CHERRYGROVE_BAY    ; 04
-	const ROUTE_30           ; 05
-	const ROUTE_31           ; 06
-	const VIOLET_CITY        ; 07
-	const SPROUT_TOWER       ; 08
-	const VIOLET_OUTSKIRTS   ; 09
-	const RUINS_OF_ALPH      ; 0a
-	const ROUTE_32           ; 0b
-	const ROUTE_32_COAST     ; 0c
-	const UNION_CAVE         ; 0d
-	const ROUTE_33           ; 0e
-	const AZALEA_TOWN        ; 0f
-	const SLOWPOKE_WELL      ; 10
-	const ILEX_FOREST        ; 11
-	const ROUTE_34           ; 12
-	const ROUTE_34_COAST     ; 13
-	const STORMY_BEACH       ; 14
-	const MURKY_SWAMP        ; 15
-	const GOLDENROD_CITY     ; 16
-	const RADIO_TOWER        ; 17
-	const GOLDENROD_HARBOR   ; 18
-	const MAGNET_TUNNEL      ; 19
-	const ROUTE_35           ; 1a
-	const ROUTE_35_COAST     ; 1b
-	const NATIONAL_PARK      ; 1c
-	const ROUTE_36           ; 1d
-	const ROUTE_37           ; 1e
-	const ECRUTEAK_CITY      ; 1f
-	const BELLCHIME_TRAIL    ; 20
-	const TIN_TOWER          ; 21
-	const BURNED_TOWER       ; 22
-	const ROUTE_38           ; 23
-	const ROUTE_39           ; 24
-	const OLIVINE_CITY       ; 25
-	const LIGHTHOUSE         ; 26
-	const ROUTE_40           ; 27
-	const BATTLE_TOWER       ; 28
-	const WHIRL_ISLANDS      ; 29
-	const ROUTE_41           ; 2a
-	const CIANWOOD_CITY      ; 2b
-	const CLIFF_EDGE_GATE    ; 2c
-	const ROUTE_47           ; 2d
-	const CLIFF_CAVE         ; 2e
+	const NEPHI_CITY         ; 01
+	const ROUTE_I15           ; 02
+	const PROVO_CITY   ; 03
+	const BYU_CAMPUS    ; 04
+	const MTC_CAMPUS           ; 05
+	const BYU_UNDERGROUND           ; 06
+	const UTAH_LAKE        ; 07
+	const OREM_CITY       ; 08
+	const GENEVA_STEEL_PLANT   ; 09
+	const PROVO_CANYON      ; 0a
+	const TIMPANOGOS_PASS           ; 0b
+	const HEBER_CITY     ; 0c
+	const ROUTE_US40         ; 0d
+	const DUCHESNE_CITY           ; 0e
+	const ROUTE_87        ; 0f
+	const VERNAL_CITY      ; 10
+	const EXCAVATION_SITE        ; 11
+	const ROUTE_191           ; 12
+	const CARBON_POWER_PLANT     ; 13
+	const CARBON_ROAD       ; 14
+	const PRICE_CITY        ; 15
+	const ROUTE_55     ; 16
+	const SALT_LAKE_VALLEY        ; 17
+	const MILLCREEK_CANYON   ; 18
+	const ROUTE_I80_EAST      ; 19
+	const TOOLE_CITY           ; 1a
+	const SALT_FLATS     ; 1b
+	const WENDOVER_CITY      ; 1c
+	const SALT_LAKE_CITY           ; 1d
+	const TEMPLE_SQUARE           ; 1e
+	const ANTELOPE_ISLAND      ; 1f
+	const GREAT_SALT_LAKE    ; 20
+	const ROUTE_I80_WEST          ; 21
+	const PARK_CITY       ; 22
+	const PARK_CITY_SLOPES           ; 23
+	const JORDANELLE_PASS           ; 24
+	const UTAH_POINT       ; 25
+	const MOUNT_TIMPANOGOS         ; 26
+	const TIMPANOGOS_CAVE           ; 27
+	const ROUTE_67       ; 28
+	const OGDEN_CITY      ; 29
+	const UNION_STATION           ; 2a
+	const ROUTE_US89      ; 2b
+	const LOGAN_CITY    ; 2c
+	const BEAR_LAKE_PASS           ; 2d
+	const BEAR_LAKE         ; 2e
+KANTO_LANDMARK EQU const_value
 	const ROUTE_48           ; 2f
 	const YELLOW_FOREST      ; 30
 	const QUIET_CAVE         ; 31
@@ -67,7 +68,6 @@
 	const FAST_SHIP          ; 3f
 	const SINJOH_RUINS       ; 40
 	const MYSTRI_STAGE       ; 41
-KANTO_LANDMARK EQU const_value
 	const PALLET_TOWN        ; 42
 	const ROUTE_1            ; 43
 	const VIRIDIAN_CITY      ; 44
@@ -95,7 +95,7 @@ KANTO_LANDMARK EQU const_value
 	const POWER_PLANT        ; 5a
 	const DIM_CAVE           ; 5b
 	const LAVENDER_TOWN      ; 5c
-	const LAV_RADIO_TOWER    ; 5d
+	const LAV_SALT_LAKE_VALLEY    ; 5d
 	const SOUL_HOUSE         ; 5e
 	const CELADON_CITY       ; 5f
 	const CELADON_UNIVERSITY ; 60

@@ -4,10 +4,10 @@ NationalPark_MapScriptHeader:
 	def_callbacks
 
 	def_warp_events
-	warp_event 35, 18, ROUTE_36_NATIONAL_PARK_GATE, 1
-	warp_event 35, 19, ROUTE_36_NATIONAL_PARK_GATE, 2
-	warp_event 12, 47, ROUTE_35_NATIONAL_PARK_GATE, 1
-	warp_event 13, 47, ROUTE_35_NATIONAL_PARK_GATE, 2
+	warp_event 35, 18, SALT_LAKE_CITY_WENDOVER_CITY_GATE, 1
+	warp_event 35, 19, SALT_LAKE_CITY_WENDOVER_CITY_GATE, 2
+	warp_event 12, 47, TOOLE_CITY_WENDOVER_CITY_GATE, 1
+	warp_event 13, 47, TOOLE_CITY_WENDOVER_CITY_GATE, 2
 
 	def_coord_events
 
@@ -15,7 +15,7 @@ NationalPark_MapScriptHeader:
 	bg_event 16, 44, BGEVENT_JUMPTEXT, NationalParkRelaxationSquareText
 	bg_event 29, 31, BGEVENT_JUMPTEXT, NationalParkBattleNoticeText
 	bg_event 14,  4, BGEVENT_JUMPTEXT, NationalParkTrainerTipsText
-	bg_event  8, 47, BGEVENT_ITEM + FULL_HEAL, EVENT_NATIONAL_PARK_HIDDEN_FULL_HEAL
+	bg_event  8, 47, BGEVENT_ITEM + FULL_HEAL, EVENT_WENDOVER_CITY_HIDDEN_FULL_HEAL
 
 	def_object_events
 	object_event 17, 24, SPRITE_PICNICKER, SPRITEMOVEDATA_WALK_LEFT_RIGHT, 0, 1, -1, -1, 0, OBJECTTYPE_COMMAND, jumptextfaceplayer, NationalParkLassText, -1
@@ -32,8 +32,8 @@ NationalPark_MapScriptHeader:
 	object_event 10, 14, SPRITE_LASS, SPRITEMOVEDATA_SPINRANDOM_FAST, 0, 0, -1, -1, 0, OBJECTTYPE_GENERICTRAINER, 3, GenericTrainerLassKrise, -1
 	object_event 28, 13, SPRITE_BUG_MANIAC, SPRITEMOVEDATA_SPINRANDOM_FAST, 0, 0, -1, -1, 0, OBJECTTYPE_GENERICTRAINER, 3, GenericTrainerBugManiacLou, -1
 	object_event  4, 19, SPRITE_OFFICER, SPRITEMOVEDATA_STANDING_RIGHT, 0, 0, -1, -1, 0, OBJECTTYPE_SCRIPT, 0, OfficermKeithScript, -1
-	itemball_event 37, 12, SHINY_STONE, 1, EVENT_NATIONAL_PARK_SHINY_STONE
-	tmhmball_event  3, 43, TM_DIG, EVENT_NATIONAL_PARK_TM_DIG
+	itemball_event 37, 12, SHINY_STONE, 1, EVENT_WENDOVER_CITY_SHINY_STONE
+	tmhmball_event  3, 43, TM_DIG, EVENT_WENDOVER_CITY_TM_DIG
 
 NationalParkTeacher1Script:
 	faceplayer
@@ -145,7 +145,7 @@ UnknownScript_0x5c088:
 	checkevent EVENT_BEAT_ELITE_FOUR
 	iftrue .LoadFight3
 .Fight2:
-	checkevent EVENT_CLEARED_RADIO_TOWER
+	checkevent EVENT_CLEARED_SALT_LAKE_VALLEY
 	iftrue .LoadFight2
 .Fight1:
 	checkflag ENGINE_FLYPOINT_OLIVINE

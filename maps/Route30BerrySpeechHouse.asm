@@ -4,8 +4,8 @@ Route30BerrySpeechHouse_MapScriptHeader:
 	def_callbacks
 
 	def_warp_events
-	warp_event  2,  7, ROUTE_30, 1
-	warp_event  3,  7, ROUTE_30, 1
+	warp_event  2,  7, MTC_CAMPUS, 1
+	warp_event  3,  7, MTC_CAMPUS, 1
 
 	def_coord_events
 
@@ -17,13 +17,13 @@ Route30BerrySpeechHouse_MapScriptHeader:
 Route30BerryHousePokefanMScript:
 	faceplayer
 	opentext
-	checkevent EVENT_GOT_MULCH_FROM_ROUTE_30_HOUSE
+	checkevent EVENT_GOT_MULCH_FROM_MTC_CAMPUS_HOUSE
 	iftrue .GotMulch
 	writetext Route30BerrySpeechHouseMonEatBerriesText
 	promptbutton
 	verbosegiveitem MULCH
 	iffalse_endtext
-	setevent EVENT_GOT_MULCH_FROM_ROUTE_30_HOUSE
+	setevent EVENT_GOT_MULCH_FROM_MTC_CAMPUS_HOUSE
 .GotMulch:
 	jumpthisopenedtext
 

@@ -80,7 +80,7 @@ DimCave5FRileyScript:
 	disappear DIMCAVE5F_RILEY
 	pause 15
 	special Special_FadeInQuickly
-	clearevent EVENT_BATTLE_TOWER_RILEY
+	clearevent EVENT_ROUTE_67_RILEY
 	end
 
 .ChallengeText:

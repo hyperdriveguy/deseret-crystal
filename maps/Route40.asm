@@ -5,16 +5,16 @@ Route40_MapScriptHeader:
 	callback MAPCALLBACK_OBJECTS, MonicaCallback
 
 	def_warp_events
-	warp_event  9,  5, ROUTE_40_BATTLE_TOWER_GATE, 1
+	warp_event  9,  5, TIMPANOGOS_CAVE_ROUTE_67_GATE, 1
 
 	def_coord_events
 
 	def_bg_events
 	bg_event 14, 10, BGEVENT_JUMPTEXT, Route40SignText
-	bg_event  7,  8, BGEVENT_ITEM + HYPER_POTION, EVENT_ROUTE_40_HIDDEN_HYPER_POTION
+	bg_event  7,  8, BGEVENT_ITEM + HYPER_POTION, EVENT_TIMPANOGOS_CAVE_HIDDEN_HYPER_POTION
 
 	def_object_events
-	object_event  8, 10, SPRITE_BEAUTY, SPRITEMOVEDATA_SPINRANDOM_SLOW, 0, 0, -1, -1, 0, OBJECTTYPE_SCRIPT, 0, MonicaScript, EVENT_ROUTE_40_MONICA_OF_MONDAY
+	object_event  8, 10, SPRITE_BEAUTY, SPRITEMOVEDATA_SPINRANDOM_SLOW, 0, 0, -1, -1, 0, OBJECTTYPE_SCRIPT, 0, MonicaScript, EVENT_TIMPANOGOS_CAVE_MONICA_OF_MONDAY
 	object_event 13, 16, SPRITE_SWIMMER_GUY, SPRITEMOVEDATA_STANDING_RIGHT, 0, 0, -1, -1, 0, OBJECTTYPE_GENERICTRAINER, 4, GenericTrainerSwimmermSimon, -1
 	object_event 18, 33, SPRITE_SWIMMER_GUY, SPRITEMOVEDATA_STANDING_LEFT, 0, 0, -1, -1, 0, OBJECTTYPE_GENERICTRAINER, 5, GenericTrainerSwimmermRandall, -1
 	object_event  3, 19, SPRITE_SWIMMER_GIRL, SPRITEMOVEDATA_STANDING_RIGHT, 0, 0, -1, -1, 0, OBJECTTYPE_GENERICTRAINER, 4, GenericTrainerSwimmerfElaine, -1
@@ -74,12 +74,12 @@ GenericTrainerSwimmermRandall:
 	done
 
 Route40PokefanMScript:
-	checkevent EVENT_BATTLE_TOWER_OPEN
+	checkevent EVENT_ROUTE_67_OPEN
 	iftrue_jumptextfaceplayer Route40PokefanMText2
 	jumptextfaceplayer Route40PokefanMText
 
 Route40YoungsterScript:
-	checkevent EVENT_BATTLE_TOWER_OPEN
+	checkevent EVENT_ROUTE_67_OPEN
 	iftrue_jumptextfaceplayer Route40StandingYoungsterText
 	jumptextfaceplayer Route40YoungsterText
 

@@ -4,7 +4,7 @@ SproutTower3F_MapScriptHeader:
 	def_callbacks
 
 	def_warp_events
-	warp_event  8, 14, SPROUT_TOWER_2F, 4
+	warp_event  8, 14, OREM_CITY_2F, 4
 
 	def_coord_events
 	coord_event  9,  9, 0, SproutTower3FRivalScene
@@ -18,13 +18,13 @@ SproutTower3F_MapScriptHeader:
 	bg_event 12, 15, BGEVENT_JUMPTEXT, SproutTower3FStatueText
 
 	def_object_events
-	object_event  8,  4, SPRITE_SILVER, SPRITEMOVEDATA_STANDING_UP, 0, 0, -1, -1, 0, OBJECTTYPE_SCRIPT, 0, ObjectEvent, EVENT_RIVAL_SPROUT_TOWER
+	object_event  8,  4, SPRITE_SILVER, SPRITEMOVEDATA_STANDING_UP, 0, 0, -1, -1, 0, OBJECTTYPE_SCRIPT, 0, ObjectEvent, EVENT_RIVAL_OREM_CITY
 	object_event  6, 13, SPRITE_SAGE, SPRITEMOVEDATA_STANDING_RIGHT, 0, 0, -1, -1, 0, OBJECTTYPE_GENERICTRAINER, 3, GenericTrainerSageJin, -1
 	object_event  6,  8, SPRITE_SAGE, SPRITEMOVEDATA_STANDING_DOWN, 0, 0, -1, -1, 0, OBJECTTYPE_GENERICTRAINER, 2, GenericTrainerSageTroy, -1
 	object_event  9, 11, SPRITE_SAGE, SPRITEMOVEDATA_STANDING_LEFT, 0, 0, -1, -1, 0, OBJECTTYPE_GENERICTRAINER, 3, GenericTrainerSageNeal, -1
 	object_event  8,  2, SPRITE_ELDER, SPRITEMOVEDATA_STANDING_DOWN, 0, 0, -1, -1, 0, OBJECTTYPE_SCRIPT, 0, ElderLiScript, -1
-	itemball_event  4, 14, POTION, 1, EVENT_SPROUT_TOWER_3F_POTION
-	itemball_event 12,  1, ESCAPE_ROPE, 1, EVENT_SPROUT_TOWER_3F_ESCAPE_ROPE
+	itemball_event  4, 14, POTION, 1, EVENT_OREM_CITY_3F_POTION
+	itemball_event 12,  1, ESCAPE_ROPE, 1, EVENT_OREM_CITY_3F_ESCAPE_ROPE
 
 	object_const_def
 	const SPROUTTOWER3F_SILVER

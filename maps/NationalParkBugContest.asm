@@ -4,10 +4,10 @@ NationalParkBugContest_MapScriptHeader:
 	def_callbacks
 
 	def_warp_events
-	warp_event 35, 18, ROUTE_36_NATIONAL_PARK_GATE, 1
-	warp_event 35, 19, ROUTE_36_NATIONAL_PARK_GATE, 1
-	warp_event 12, 47, ROUTE_35_NATIONAL_PARK_GATE, 1
-	warp_event 13, 47, ROUTE_35_NATIONAL_PARK_GATE, 1
+	warp_event 35, 18, SALT_LAKE_CITY_WENDOVER_CITY_GATE, 1
+	warp_event 35, 19, SALT_LAKE_CITY_WENDOVER_CITY_GATE, 1
+	warp_event 12, 47, TOOLE_CITY_WENDOVER_CITY_GATE, 1
+	warp_event 13, 47, TOOLE_CITY_WENDOVER_CITY_GATE, 1
 
 	def_coord_events
 
@@ -15,7 +15,7 @@ NationalParkBugContest_MapScriptHeader:
 	bg_event 16, 44, BGEVENT_JUMPTEXT, NationalParkRelaxationSquareText
 	bg_event 29, 31, BGEVENT_JUMPTEXT, NationalParkBattleNoticeText
 	bg_event 14,  4, BGEVENT_JUMPTEXT, NationalParkTrainerTipsText
-	bg_event  8, 47, BGEVENT_ITEM + FULL_HEAL, EVENT_NATIONAL_PARK_HIDDEN_FULL_HEAL
+	bg_event  8, 47, BGEVENT_ITEM + FULL_HEAL, EVENT_WENDOVER_CITY_HIDDEN_FULL_HEAL
 
 	def_object_events
 	object_event 21, 29, SPRITE_BUG_CATCHER, SPRITEMOVEDATA_WANDER, 2, 2, -1, -1, 0, OBJECTTYPE_SCRIPT, 0, BugCatchingContestant1AScript, EVENT_BUG_CATCHING_CONTESTANT_1A
@@ -28,8 +28,8 @@ NationalParkBugContest_MapScriptHeader:
 	object_event 13, 27, SPRITE_BUG_CATCHER, SPRITEMOVEDATA_WANDER, 1, 1, -1, -1, 0, OBJECTTYPE_SCRIPT, 0, BugCatchingContestant8AScript, EVENT_BUG_CATCHING_CONTESTANT_8A
 	object_event 18,  8, SPRITE_SCHOOLBOY, SPRITEMOVEDATA_WANDER, 1, 1, -1, -1, 0, OBJECTTYPE_SCRIPT, 0, BugCatchingContestant9AScript, EVENT_BUG_CATCHING_CONTESTANT_9A
 	object_event 19, 34, SPRITE_YOUNGSTER, SPRITEMOVEDATA_WANDER, 3, 3, -1, -1, 0, OBJECTTYPE_SCRIPT, 0, BugCatchingContestant10AScript, EVENT_BUG_CATCHING_CONTESTANT_10A
-	itemball_event 37, 12, SHINY_STONE, 1, EVENT_NATIONAL_PARK_SHINY_STONE
-	tmhmball_event  3, 43, TM_DIG, EVENT_NATIONAL_PARK_TM_DIG
+	itemball_event 37, 12, SHINY_STONE, 1, EVENT_WENDOVER_CITY_SHINY_STONE
+	tmhmball_event  3, 43, TM_DIG, EVENT_WENDOVER_CITY_TM_DIG
 
 BugCatchingContestant1AScript:
 	faceplayer

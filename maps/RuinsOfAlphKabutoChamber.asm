@@ -6,11 +6,11 @@ RuinsOfAlphKabutoChamber_MapScriptHeader:
 	callback MAPCALLBACK_TILES, RuinsofAlphKabutoChamberHiddenDoorsCallback
 
 	def_warp_events
-	warp_event  3,  9, RUINS_OF_ALPH_OUTSIDE, 2
-	warp_event  4,  9, RUINS_OF_ALPH_OUTSIDE, 2
-	warp_event  3,  3, RUINS_OF_ALPH_INNER_CHAMBER, 4
-	warp_event  4,  3, RUINS_OF_ALPH_INNER_CHAMBER, 5
-	warp_event  4,  0, RUINS_OF_ALPH_KABUTO_ITEM_ROOM, 1
+	warp_event  3,  9, PROVO_CANYON_OUTSIDE, 2
+	warp_event  4,  9, PROVO_CANYON_OUTSIDE, 2
+	warp_event  3,  3, PROVO_CANYON_INNER_CHAMBER, 4
+	warp_event  4,  3, PROVO_CANYON_INNER_CHAMBER, 5
+	warp_event  4,  0, PROVO_CANYON_KABUTO_ITEM_ROOM, 1
 
 	def_coord_events
 
@@ -23,7 +23,7 @@ RuinsOfAlphKabutoChamber_MapScriptHeader:
 	bg_event  4,  0, BGEVENT_UP, MapRuinsofAlphKabutoChamberSignpost5Script
 
 	def_object_events
-	object_event  5,  5, SPRITE_RECEPTIONIST, SPRITEMOVEDATA_STANDING_DOWN, 0, 0, -1, -1, PAL_NPC_BLUE, OBJECTTYPE_COMMAND, jumptextfaceplayer, RuinsOfAlphKabutoChamberReceptionistText, EVENT_RUINS_OF_ALPH_KABUTO_CHAMBER_RECEPTIONIST
+	object_event  5,  5, SPRITE_RECEPTIONIST, SPRITEMOVEDATA_STANDING_DOWN, 0, 0, -1, -1, PAL_NPC_BLUE, OBJECTTYPE_COMMAND, jumptextfaceplayer, RuinsOfAlphKabutoChamberReceptionistText, EVENT_PROVO_CANYON_KABUTO_CHAMBER_RECEPTIONIST
 	object_event  3,  1, SPRITE_SCIENTIST, SPRITEMOVEDATA_STANDING_UP, 0, 0, -1, -1, PAL_NPC_BROWN, OBJECTTYPE_SCRIPT, 0, RuinsOfAlphKabutoChamberScientistScript, -1
 
 RuinsofAlphKabutoChamberTrigger0:
@@ -68,11 +68,11 @@ MapRuinsofAlphKabutoChamberSignpost2Script:
 	end
 
 .PuzzleComplete:
-	setevent EVENT_RUINS_OF_ALPH_INNER_CHAMBER_TOURISTS
+	setevent EVENT_PROVO_CANYON_INNER_CHAMBER_TOURISTS
 	setevent EVENT_SOLVED_KABUTO_PUZZLE
 	setflag ENGINE_UNLOCKED_UNOWNS_A_TO_J
-	setevent EVENT_RUINS_OF_ALPH_KABUTO_CHAMBER_RECEPTIONIST
-	setmapscene RUINS_OF_ALPH_INNER_CHAMBER, $1
+	setevent EVENT_PROVO_CANYON_KABUTO_CHAMBER_RECEPTIONIST
+	setmapscene PROVO_CANYON_INNER_CHAMBER, $1
 	earthquake 30
 	showemote EMOTE_SHOCK, PLAYER, 15
 	changeblock 2, 2, $14
@@ -120,7 +120,7 @@ MapRuinsofAlphKabutoChamberSignpost5Script:
 	iftrue_jumptext RuinsOfAlphAerodactylChamberWallHoleText
 MapRuinsofAlphKabutoChamberSignpost4Script:
 	opentext
-	checkevent EVENT_RUINS_OF_ALPH_OUTSIDE_TOURIST_YOUNGSTERS
+	checkevent EVENT_PROVO_CANYON_OUTSIDE_TOURIST_YOUNGSTERS
 	iftrue .unsolved
 	writetext RuinsOfAlphChambersItsUnownText
 	sjump .unownwords

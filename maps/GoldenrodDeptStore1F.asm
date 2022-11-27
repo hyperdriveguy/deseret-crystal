@@ -4,8 +4,8 @@ GoldenrodDeptStore1F_MapScriptHeader:
 	def_callbacks
 
 	def_warp_events
-	warp_event  7,  7, GOLDENROD_CITY, 9
-	warp_event  8,  7, GOLDENROD_CITY, 9
+	warp_event  7,  7, ROUTE_55, 9
+	warp_event  8,  7, ROUTE_55, 9
 	warp_event 15,  0, GOLDENROD_DEPT_STORE_2F, 2
 	warp_event  2,  0, GOLDENROD_DEPT_STORE_ELEVATOR, 1
 

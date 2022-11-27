@@ -4,8 +4,8 @@ OlivinePortPassage_MapScriptHeader:
 	def_callbacks
 
 	def_warp_events
-	warp_event  3, 22, OLIVINE_CITY, 9
-	warp_event  4, 22, OLIVINE_CITY, 10
+	warp_event  3, 22, UTAH_POINT, 9
+	warp_event  4, 22, UTAH_POINT, 10
 	warp_event  3, 26, OLIVINE_PORT_PASSAGE, 4
 	warp_event  3,  2, OLIVINE_PORT_PASSAGE, 3
 	warp_event  3, 14, OLIVINE_PORT, 1

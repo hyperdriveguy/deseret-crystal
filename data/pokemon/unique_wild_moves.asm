@@ -4,26 +4,26 @@ UniqueWildMoves:
 	db MAHOGANY_TOWN,    VOLTORB,    EXPLOSION    ; TeamRocketBaseB1F
 	db MAHOGANY_TOWN,    KOFFING,    EXPLOSION    ; TeamRocketBaseB1F
 	db MAHOGANY_TOWN,    GEODUDE,    EXPLOSION    ; TeamRocketBaseB1F
-	db UNION_CAVE,       LAPRAS,     SHELL_SMASH  ; UnionCaveB2F, Fridays
-	db CHERRYGROVE_BAY,  CORSOLA,    SUCKER_PUNCH ; HGSS tutor move
-	db SPROUT_TOWER,     BELLSPROUT, GROWTH       ; knows Growth early
-	db ROUTE_32_COAST,   FLAAFFY,    PURSUIT      ; Prism tutor move
-	db RUINS_OF_ALPH,    SHUCKLE,    ANCIENTPOWER ; Sw/Sh move
-	db RUINS_OF_ALPH,    SMEARGLE,   SKETCH       ; knows Sketch twice
-	db SLOWPOKE_WELL,    SLOWPOKE,   GROWTH       ; Prism tutor move
-	db ILEX_FOREST,      0,          0
-	db ROUTE_34_COAST,   STARYU,     DREAM_EATER  ; new move
-	db STORMY_BEACH,     VENOMOTH,   0
-	db MURKY_SWAMP,      KOFFING,    CRUNCH       ; Prism tutor move
-	db MURKY_SWAMP,      MISDREAVUS, HEAL_BELL    ; HGSS tutor move
-	db ROUTE_35_COAST,   0,          0
-	db NATIONAL_PARK,    0,          0
-	db TIN_TOWER,        0,          0
-	db BURNED_TOWER,     0,          0
-	db MURKY_SWAMP,      MISDREAVUS, SUCKER_PUNCH ; HGSS tutor move
-	db GOLDENROD_HARBOR, PSYDUCK,    ENCORE       ; Dream World move
-	db WHIRL_ISLANDS,    0,          0
-	db CLIFF_CAVE,       0,          0
+	db ROUTE_US40,       LAPRAS,     SHELL_SMASH  ; UnionCaveB2F, Fridays
+	db BYU_CAMPUS,  CORSOLA,    SUCKER_PUNCH ; HGSS tutor move
+	db OREM_CITY,     BELLSPROUT, GROWTH       ; knows Growth early
+	db HEBER_CITY,   FLAAFFY,    PURSUIT      ; Prism tutor move
+	db PROVO_CANYON,    SHUCKLE,    ANCIENTPOWER ; Sw/Sh move
+	db PROVO_CANYON,    SMEARGLE,   SKETCH       ; knows Sketch twice
+	db VERNAL_CITY,    SLOWPOKE,   GROWTH       ; Prism tutor move
+	db EXCAVATION_SITE,      0,          0
+	db CARBON_POWER_PLANT,   STARYU,     DREAM_EATER  ; new move
+	db CARBON_ROAD,     VENOMOTH,   0
+	db PRICE_CITY,      KOFFING,    CRUNCH       ; Prism tutor move
+	db PRICE_CITY,      MISDREAVUS, HEAL_BELL    ; HGSS tutor move
+	db SALT_FLATS,   0,          0
+	db WENDOVER_CITY,    0,          0
+	db ROUTE_I80_WEST,        0,          0
+	db PARK_CITY,     0,          0
+	db PRICE_CITY,      MISDREAVUS, SUCKER_PUNCH ; HGSS tutor move
+	db MILLCREEK_CANYON, PSYDUCK,    ENCORE       ; Dream World move
+	db OGDEN_CITY,    0,          0
+	db BEAR_LAKE,       0,          0
 	db YELLOW_FOREST,    PIKACHU,    FLY          ; replaced with Surf if Surfing
 	db QUIET_CAVE,       MUNCHLAX,   GIGA_IMPACT  ; Snorlax move
 	db MT_MORTAR,        0,          0
@@ -44,7 +44,7 @@ UniqueWildMoves:
 	db DIM_CAVE,         GRAVELER,   SUCKER_PUNCH ; HGSS tutor move
 	db DIM_CAVE,         RHYDON,     CRUNCH       ; Prism tutor move
 	db SOUL_HOUSE,       HAUNTER,    MOONBLAST    ; Prism tutor move
-	db LAV_RADIO_TOWER,  MAROWAK,    PERISH_SONG  ; Dream World move
+	db LAV_SALT_LAKE_VALLEY,  MAROWAK,    PERISH_SONG  ; Dream World move
 	db LUCKY_ISLAND,     CHANSEY,    TRI_ATTACK   ; RBY TM move
 	db LUCKY_ISLAND,     TOGETIC,    0
 	db SAFARI_ZONE,      TANGELA,    LEECH_SEED   ; Dream World move (hub)

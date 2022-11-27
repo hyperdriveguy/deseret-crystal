@@ -4,8 +4,8 @@ CianwoodGym_MapScriptHeader:
 	def_callbacks
 
 	def_warp_events
-	warp_event  4, 17, CIANWOOD_CITY, 2
-	warp_event  5, 17, CIANWOOD_CITY, 2
+	warp_event  4, 17, ROUTE_US89, 2
+	warp_event  5, 17, ROUTE_US89, 2
 
 	def_coord_events
 

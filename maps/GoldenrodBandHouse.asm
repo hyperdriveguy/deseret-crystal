@@ -4,8 +4,8 @@ GoldenrodBandHouse_MapScriptHeader:
 	def_callbacks
 
 	def_warp_events
-	warp_event  2,  7, GOLDENROD_CITY, 20
-	warp_event  3,  7, GOLDENROD_CITY, 20
+	warp_event  2,  7, ROUTE_55, 20
+	warp_event  3,  7, ROUTE_55, 20
 
 	def_coord_events
 

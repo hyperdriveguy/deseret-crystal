@@ -6,24 +6,24 @@ scene_var: MACRO
 ENDM
 
 MapScenes::
-	scene_var AZALEA_TOWN,                            wAzaleaTownSceneID
-	scene_var BATTLE_TOWER_1F,                        wBattleFacilitySceneID
-	scene_var BATTLE_TOWER_BATTLE_ROOM,               wAlways0SceneID
-	scene_var BATTLE_TOWER_ELEVATOR,                  wAlways0SceneID
-	scene_var BATTLE_TOWER_HALLWAY,                   wAlways0SceneID
-	scene_var BATTLE_TOWER_OUTSIDE,                   wBattleTowerOutsideSceneID
+	scene_var ROUTE_87,                            wAzaleaTownSceneID
+	scene_var ROUTE_67_1F,                        wBattleFacilitySceneID
+	scene_var ROUTE_67_BATTLE_ROOM,               wAlways0SceneID
+	scene_var ROUTE_67_ELEVATOR,                  wAlways0SceneID
+	scene_var ROUTE_67_HALLWAY,                   wAlways0SceneID
+	scene_var ROUTE_67_OUTSIDE,                   wBattleTowerOutsideSceneID
 	scene_var BATTLE_FACTORY_1F,                      wBattleFacilitySceneID
 	scene_var BATTLE_FACTORY_BATTLE_ROOM,             wAlways0SceneID
 	scene_var BATTLE_FACTORY_HALLWAY,                 wAlways0SceneID
-	scene_var BELLCHIME_TRAIL,                        wBellchimeTrailSceneID
+	scene_var GREAT_SALT_LAKE,                        wBellchimeTrailSceneID
 	scene_var BRUNOS_ROOM,                            wBrunosRoomSceneID
-	scene_var BURNED_TOWER_1F,                        wBurnedTower1FSceneID
-	scene_var BURNED_TOWER_B1F,                       wBurnedTowerB1FSceneID
+	scene_var PARK_CITY_1F,                        wBurnedTower1FSceneID
+	scene_var PARK_CITY_B1F,                       wBurnedTowerB1FSceneID
 	scene_var CERULEAN_CAPE,                          wCeruleanCapeSceneID
 	scene_var CERULEAN_CAVE_1F,                       wCeruleanCave1FSceneID
 	scene_var CERULEAN_GYM,                           wCeruleanGymSceneID
-	scene_var CHERRYGROVE_CITY,                       wCherrygroveCitySceneID
-	scene_var CIANWOOD_CITY,                          wCianwoodCitySceneID
+	scene_var PROVO_CITY,                       wCherrygroveCitySceneID
+	scene_var ROUTE_US89,                          wCianwoodCitySceneID
 	scene_var CINNABAR_LAB,                           wCinnabarLabSceneID
 	scene_var COLOSSEUM,                              wColosseumSceneID
 	scene_var DARK_CAVE_VIOLET_ENTRANCE,              wDarkCaveVioletEntranceSceneID
@@ -38,11 +38,11 @@ MapScenes::
 	scene_var FAST_SHIP_1F,                           wFastShip1FSceneID
 	scene_var FAST_SHIP_B1F,                          wFastShipB1FSceneID
 	scene_var GIOVANNIS_CAVE,                         wGiovannisCaveSceneID
-	scene_var GOLDENROD_CITY,                         wGoldenrodCitySceneID
+	scene_var ROUTE_55,                         wGoldenrodCitySceneID
 	scene_var GOLDENROD_GYM,                          wGoldenrodGymSceneID
 	scene_var GOLDENROD_MAGNET_TRAIN_STATION,         wAlways0SceneID
 	scene_var HALL_OF_FAME,                           wHallOfFameSceneID
-	scene_var ILEX_FOREST,                            wIlexForestSceneID
+	scene_var EXCAVATION_SITE,                            wIlexForestSceneID
 	scene_var INDIGO_PLATEAU_POKECENTER_1F,           wAlways0SceneID
 	scene_var KARENS_ROOM,                            wKarensRoomSceneID
 	scene_var KOGAS_ROOM,                             wKogasRoomSceneID
@@ -55,13 +55,13 @@ MapScenes::
 	scene_var MOUNT_MOON_SQUARE,                      wAlways0SceneID
 	scene_var MR_POKEMONS_HOUSE,                      wMrPokemonsHouseSceneID
 	scene_var MYSTRI_STAGE,                           wMystriStageSceneID
-	scene_var NEW_BARK_TOWN,                          wNewBarkTownSceneID
-	scene_var OLIVINE_CITY,                           wOlivineCitySceneID
+	scene_var NEPHI_CITY,                          wNewBarkTownSceneID
+	scene_var UTAH_POINT,                           wOlivineCitySceneID
 	scene_var OLIVINE_PORT,                           wOlivinePortSceneID
 	scene_var POKECENTER_2F,                          wPokecenter2FSceneID
 	scene_var POKEMON_LEAGUE_GATE,                    wPokemonLeagueGateSceneID
 	scene_var POWER_PLANT,                            wPowerPlantSceneID
-	scene_var RADIO_TOWER_5F,                         wRadioTower5FSceneID
+	scene_var SALT_LAKE_VALLEY_5F,                         wRadioTower5FSceneID
 	scene_var ROUTE_10_NORTH,                         wRoute10NorthSceneID
 	scene_var ROUTE_16_17_GATE,                       wAlways0SceneID
 	scene_var ROUTE_18_GATE,                          wAlways0SceneID
@@ -70,34 +70,34 @@ MapScenes::
 	scene_var ROUTE_23,                               wRoute23SceneID
 	scene_var ROUTE_24,                               wRoute24SceneID
 	scene_var ROUTE_27,                               wRoute27SceneID
-	scene_var ROUTE_29,                               wRoute29SceneID
-	scene_var ROUTE_32,                               wRoute32SceneID
-	scene_var ROUTE_34,                               wRoute34SceneID
-	scene_var ROUTE_34_ILEX_FOREST_GATE,              wAlways0SceneID
-	scene_var ROUTE_35_NATIONAL_PARK_GATE,            wRoute35NationalParkGateSceneID
-	scene_var ROUTE_36,                               wRoute36SceneID
-	scene_var ROUTE_36_NATIONAL_PARK_GATE,            wRoute36NationalParkGateSceneID
+	scene_var ROUTE_I15,                               wRoute29SceneID
+	scene_var TIMPANOGOS_PASS,                               wRoute32SceneID
+	scene_var ROUTE_191,                               wRoute34SceneID
+	scene_var ROUTE_191_EXCAVATION_SITE_GATE,              wAlways0SceneID
+	scene_var TOOLE_CITY_WENDOVER_CITY_GATE,            wRoute35NationalParkGateSceneID
+	scene_var SALT_LAKE_CITY,                               wRoute36SceneID
+	scene_var SALT_LAKE_CITY_WENDOVER_CITY_GATE,            wRoute36NationalParkGateSceneID
 	scene_var ROUTE_42,                               wRoute42SceneID
 	scene_var ROUTE_43_GATE,                          wRoute43GateSceneID
-	scene_var ROUTE_47,                               wRoute47SceneID
+	scene_var BEAR_LAKE_PASS,                               wRoute47SceneID
 	scene_var ROUTE_48,                               wRoute48SceneID
-	scene_var RUINS_OF_ALPH_AERODACTYL_CHAMBER,       wRuinsOfAlphAerodactylChamberSceneID
-	scene_var RUINS_OF_ALPH_HO_OH_CHAMBER,            wRuinsOfAlphHoOhChamberSceneID
-	scene_var RUINS_OF_ALPH_INNER_CHAMBER,            wRuinsOfAlphInnerChamberSceneID
-	scene_var RUINS_OF_ALPH_KABUTO_CHAMBER,           wRuinsOfAlphKabutoChamberSceneID
-	scene_var RUINS_OF_ALPH_OMANYTE_CHAMBER,          wRuinsOfAlphOmanyteChamberSceneID
-	scene_var RUINS_OF_ALPH_OUTSIDE,                  wRuinsOfAlphOutsideSceneID
-	scene_var RUINS_OF_ALPH_RESEARCH_CENTER,          wRuinsOfAlphResearchCenterSceneID
+	scene_var PROVO_CANYON_AERODACTYL_CHAMBER,       wRuinsOfAlphAerodactylChamberSceneID
+	scene_var PROVO_CANYON_HO_OH_CHAMBER,            wRuinsOfAlphHoOhChamberSceneID
+	scene_var PROVO_CANYON_INNER_CHAMBER,            wRuinsOfAlphInnerChamberSceneID
+	scene_var PROVO_CANYON_KABUTO_CHAMBER,           wRuinsOfAlphKabutoChamberSceneID
+	scene_var PROVO_CANYON_OMANYTE_CHAMBER,          wRuinsOfAlphOmanyteChamberSceneID
+	scene_var PROVO_CANYON_OUTSIDE,                  wRuinsOfAlphOutsideSceneID
+	scene_var PROVO_CANYON_RESEARCH_CENTER,          wRuinsOfAlphResearchCenterSceneID
 	scene_var SAFFRON_TRAIN_STATION,                  wAlways0SceneID
 	scene_var SEAGALLOP_FERRY_NAVEL_GATE,             wSeagallopFerryNavelGateSceneID
 	scene_var SEAGALLOP_FERRY_SHAMOUTI_GATE,          wSeagallopFerryShamoutiGateSceneID
 	scene_var SEAGALLOP_FERRY_VERMILION_GATE,         wSeagallopFerryVermilionGateSceneID
 	scene_var SHAMOUTI_HOTEL_RESTAURANT,              wShamoutiHotelRestaurantSceneID
-	scene_var SPROUT_TOWER_3F,                        wSproutTower3FSceneID
+	scene_var OREM_CITY_3F,                        wSproutTower3FSceneID
 	scene_var TEAM_ROCKET_BASE_B1F,                   wAlways0SceneID
 	scene_var TEAM_ROCKET_BASE_B2F,                   wTeamRocketBaseB2FSceneID
 	scene_var TEAM_ROCKET_BASE_B3F,                   wTeamRocketBaseB3FSceneID
-	scene_var TIN_TOWER_1F,                           wTinTower1FSceneID
+	scene_var ROUTE_I80_WEST_1F,                           wTinTower1FSceneID
 	scene_var TRADE_CENTER,                           wTradeCenterSceneID
 	scene_var TRAINER_HOUSE_B1F,                      wAlways0SceneID
 	scene_var UNDERGROUND_PATH_SWITCH_ROOM_ENTRANCES, wUndergroundPathSwitchRoomEntrancesSceneID

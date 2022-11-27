@@ -148,8 +148,8 @@ Route42SuicuneScript:
 	disappear ROUTE42_SUICUNE
 	pause 10
 	setscene $0
-	clearevent EVENT_SAW_SUICUNE_ON_ROUTE_36
-	setmapscene ROUTE_36, $1
+	clearevent EVENT_SAW_SUICUNE_ON_SALT_LAKE_CITY
+	setmapscene SALT_LAKE_CITY, $1
 	end
 
 TrainerFisherTully1:

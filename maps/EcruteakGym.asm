@@ -5,8 +5,8 @@ EcruteakGym_MapScriptHeader:
 	def_callbacks
 
 	def_warp_events
-	warp_event  4, 17, ECRUTEAK_CITY, 10
-	warp_event  5, 17, ECRUTEAK_CITY, 10
+	warp_event  4, 17, ANTELOPE_ISLAND, 10
+	warp_event  5, 17, ANTELOPE_ISLAND, 10
 	warp_event  4, 14, ECRUTEAK_GYM, 4
 	warp_event  2,  4, ECRUTEAK_GYM, 3
 	warp_event  3,  4, ECRUTEAK_GYM, 3
@@ -105,7 +105,7 @@ EcruteakGymClosed:
 	special FadeOutPalettes
 	playsound SFX_ENTER_DOOR
 	waitsfx
-	warp ECRUTEAK_CITY, 6, 27
+	warp ANTELOPE_ISLAND, 6, 27
 	end
 
 GenericTrainerSageJeffrey:

@@ -9,12 +9,12 @@ Route35NationalParkGate_MapScriptHeader:
 	callback MAPCALLBACK_OBJECTS, Route35NationalParkGate_CheckIfContestDay
 
 	def_warp_events
-	warp_event 15,  0, NATIONAL_PARK, 3
-	warp_event 16,  0, NATIONAL_PARK, 4
-	warp_event 15,  7, ROUTE_35, 3
-	warp_event 16,  7, ROUTE_35, 3
-	warp_event  0,  4, OLIVINE_CITY, 11
-	warp_event  0,  5, OLIVINE_CITY, 12
+	warp_event 15,  0, WENDOVER_CITY, 3
+	warp_event 16,  0, WENDOVER_CITY, 4
+	warp_event 15,  7, TOOLE_CITY, 3
+	warp_event 16,  7, TOOLE_CITY, 3
+	warp_event  0,  4, UTAH_POINT, 11
+	warp_event  0,  5, UTAH_POINT, 12
 
 	def_coord_events
 
@@ -22,9 +22,9 @@ Route35NationalParkGate_MapScriptHeader:
 	bg_event 17,  0, BGEVENT_JUMPTEXT, BugCatchingContestExplanationText
 
 	def_object_events
-	object_event 14,  1, SPRITE_OFFICER, SPRITEMOVEDATA_STANDING_DOWN, 0, 0, -1, -1, PAL_NPC_GREEN, OBJECTTYPE_SCRIPT, 0, Route35OfficerScriptContest, EVENT_ROUTE_35_NATIONAL_PARK_GATE_OFFICER_CONTEST_DAY
-	object_event 18,  5, SPRITE_BUG_MANIAC, SPRITEMOVEDATA_WANDER, 1, 1, -1, -1, 0, OBJECTTYPE_COMMAND, jumptextfaceplayer, Route35NationalParkGateYoungsterText, EVENT_ROUTE_35_NATIONAL_PARK_GATE_BUG_MANIAC
-	object_event 12,  3, SPRITE_OFFICER, SPRITEMOVEDATA_STANDING_RIGHT, 0, 0, -1, -1, PAL_NPC_GREEN, OBJECTTYPE_SCRIPT, 0, Route35NationalParkGateOfficerScript, EVENT_ROUTE_35_NATIONAL_PARK_GATE_OFFICER_NOT_CONTEST_DAY
+	object_event 14,  1, SPRITE_OFFICER, SPRITEMOVEDATA_STANDING_DOWN, 0, 0, -1, -1, PAL_NPC_GREEN, OBJECTTYPE_SCRIPT, 0, Route35OfficerScriptContest, EVENT_TOOLE_CITY_WENDOVER_CITY_GATE_OFFICER_CONTEST_DAY
+	object_event 18,  5, SPRITE_BUG_MANIAC, SPRITEMOVEDATA_WANDER, 1, 1, -1, -1, 0, OBJECTTYPE_COMMAND, jumptextfaceplayer, Route35NationalParkGateYoungsterText, EVENT_TOOLE_CITY_WENDOVER_CITY_GATE_BUG_MANIAC
+	object_event 12,  3, SPRITE_OFFICER, SPRITEMOVEDATA_STANDING_RIGHT, 0, 0, -1, -1, PAL_NPC_GREEN, OBJECTTYPE_SCRIPT, 0, Route35NationalParkGateOfficerScript, EVENT_TOOLE_CITY_WENDOVER_CITY_GATE_OFFICER_NOT_CONTEST_DAY
 
 	object_const_def
 	const ROUTE35NATIONALPARKGATE_OFFICER1
@@ -88,7 +88,7 @@ Route35NationalParkGate_GoBackIn:
 	playsound SFX_ENTER_DOOR
 	special FadeOutPalettes
 	waitsfx
-	warpfacing UP, NATIONAL_PARK_BUG_CONTEST, 12, 47
+	warpfacing UP, WENDOVER_CITY_BUG_CONTEST, 12, 47
 	end
 
 Route35OfficerScriptContest:
@@ -126,7 +126,7 @@ Route35NationalParkGate_OkayToProceed:
 	special FadeOutPalettes
 	waitsfx
 	special Special_SelectRandomBugContestContestants
-	warpfacing UP, NATIONAL_PARK_BUG_CONTEST, 12, 47
+	warpfacing UP, WENDOVER_CITY_BUG_CONTEST, 12, 47
 	end
 
 Route35NationalParkGate_EnterContest:

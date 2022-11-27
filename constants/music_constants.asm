@@ -5,17 +5,17 @@
 	const MUSIC_CRYSTAL_OPENING                ; 01
 	const MUSIC_TITLE                          ; 02
 	const MUSIC_MAIN_MENU                      ; 03
-	const MUSIC_NEW_BARK_TOWN                  ; 04
+	const MUSIC_NEPHI_CITY                  ; 04
 	const MUSIC_MOM                            ; 05
 	const MUSIC_PROF_ELM                       ; 06
 	const MUSIC_LYRA_ENCOUNTER_HGSS            ; 07
 	const MUSIC_RIVAL_BATTLE_XY                ; 08
 	const MUSIC_LYRA_DEPARTURE_HGSS            ; 09
-	const MUSIC_ROUTE_29                       ; 0a
+	const MUSIC_ROUTE_I15                       ; 0a
 	const MUSIC_JOHTO_WILD_BATTLE              ; 0b
 	const MUSIC_JOHTO_WILD_BATTLE_NIGHT        ; 0c
 	const MUSIC_WILD_VICTORY                   ; 0d
-	const MUSIC_CHERRYGROVE_CITY               ; 0e
+	const MUSIC_PROVO_CITY               ; 0e
 	const MUSIC_SHOW_ME_AROUND                 ; 0f
 	const MUSIC_POKEMON_CENTER                 ; 10
 	const MUSIC_HEAL                           ; 11
@@ -23,24 +23,24 @@
 	const MUSIC_YOUNGSTER_ENCOUNTER            ; 13
 	const MUSIC_JOHTO_TRAINER_BATTLE           ; 14
 	const MUSIC_TRAINER_VICTORY                ; 15
-	const MUSIC_ROUTE_30                       ; 16
-	const MUSIC_VIOLET_CITY                    ; 17
-	const MUSIC_SPROUT_TOWER                   ; 18
+	const MUSIC_MTC_CAMPUS                       ; 16
+	const MUSIC_UTAH_LAKE                    ; 17
+	const MUSIC_OREM_CITY                   ; 18
 	const MUSIC_SAGE_ENCOUNTER                 ; 19
 	const MUSIC_MART_HGSS                      ; 1a
 	const MUSIC_HIDDEN_GROTTO_B2W2             ; 1b
-	const MUSIC_UNION_CAVE                     ; 1c
-	const MUSIC_RUINS_OF_ALPH_INTERIOR         ; 1d
-	const MUSIC_RUINS_OF_ALPH_RADIO            ; 1e
-	const MUSIC_AZALEA_TOWN                    ; 1f
+	const MUSIC_ROUTE_US40                     ; 1c
+	const MUSIC_PROVO_CANYON_INTERIOR         ; 1d
+	const MUSIC_PROVO_CANYON_RADIO            ; 1e
+	const MUSIC_ROUTE_87                    ; 1f
 	const MUSIC_ROCKET_ENCOUNTER               ; 20
 	const MUSIC_ROCKET_BATTLE                  ; 21
-	const MUSIC_ROUTE_36                       ; 22
+	const MUSIC_SALT_LAKE_CITY                       ; 22
 	const MUSIC_RIVAL_ENCOUNTER                ; 23
 	const MUSIC_RIVAL_BATTLE                   ; 24
 	const MUSIC_RIVAL_AFTER                    ; 25
 	const MUSIC_EVOLUTION                      ; 26
-	const MUSIC_GOLDENROD_CITY                 ; 27
+	const MUSIC_ROUTE_55                 ; 27
 	const MUSIC_POKECOM_CENTER                 ; 28
 	const MUSIC_GYM                            ; 29
 	const MUSIC_JOHTO_GYM_LEADER_BATTLE        ; 2a
@@ -51,21 +51,21 @@
 	const MUSIC_GAME_CORNER                    ; 2f
 	const MUSIC_BICYCLE                        ; 30
 	const MUSIC_LASS_ENCOUNTER                 ; 31
-	const MUSIC_NATIONAL_PARK                  ; 32
+	const MUSIC_WENDOVER_CITY                  ; 32
 	const MUSIC_BUG_CATCHING_CONTEST           ; 33
 	const MUSIC_BUG_CATCHING_CONTEST_RANKING   ; 34
-	const MUSIC_ECRUTEAK_CITY                  ; 35
+	const MUSIC_ANTELOPE_ISLAND                  ; 35
 	const MUSIC_DANCING_HALL                   ; 36
 	const MUSIC_KIMONO_ENCOUNTER               ; 37
-	const MUSIC_BURNED_TOWER                   ; 38
+	const MUSIC_PARK_CITY                   ; 38
 	const MUSIC_MYSTICALMAN_ENCOUNTER          ; 39
 	const MUSIC_POKEMON_TALK                   ; 3a
-	const MUSIC_ROUTE_37                       ; 3b
+	const MUSIC_TEMPLE_SQUARE                       ; 3b
 	const MUSIC_POKEMON_MARCH                  ; 3c
-	const MUSIC_LIGHTHOUSE                     ; 3d
+	const MUSIC_MOUNT_TIMPANOGOS                     ; 3d
 	const MUSIC_SURF                           ; 3e
-	const MUSIC_CIANWOOD_CITY_HGSS             ; 3f
-	const MUSIC_ROUTE_47_HGSS                  ; 40
+	const MUSIC_ROUTE_US89_HGSS             ; 3f
+	const MUSIC_BEAR_LAKE_PASS_HGSS                  ; 40
 	const MUSIC_JESSIE_JAMES_ENCOUNTER         ; 41
 	const MUSIC_SAFARI_ZONE_GATE_HGSS          ; 42
 	const MUSIC_SURFING_PIKACHU                ; 43
@@ -79,7 +79,7 @@
 	const MUSIC_DRAGONS_DEN                    ; 4b
 	const MUSIC_CLAIR                          ; 4c
 	const MUSIC_ROUTE_4_BW                     ; 4d
-	const MUSIC_TIN_TOWER                      ; 4e
+	const MUSIC_ROUTE_I80_WEST                      ; 4e
 	const MUSIC_SUICUNE_BATTLE                 ; 4f
 	const MUSIC_ROUTE_26                       ; 50
 	const MUSIC_INDIGO_PLATEAU_RBY             ; 51
@@ -133,8 +133,8 @@
 	const MUSIC_ETERNA_FOREST_DPPT             ; 81
 	const MUSIC_MOUNT_CHIMNEY_RSE              ; 82
 	const MUSIC_MOUNT_PYRE_RSE                 ; 83
-	const MUSIC_BATTLE_TOWER_THEME             ; 84
-	const MUSIC_BATTLE_TOWER_LOBBY             ; 85
+	const MUSIC_ROUTE_67_THEME             ; 84
+	const MUSIC_ROUTE_67_LOBBY             ; 85
 	const MUSIC_BATTLE_FACTORY_RSE             ; 86
 	const MUSIC_TRAINER_BATTLE_BW              ; 87
 	const MUSIC_FRONTIER_BRAIN_BATTLE_RSE      ; 88
@@ -197,7 +197,7 @@ NUM_MUSIC_SONGS EQU const_value
 
 ; GetMapMusic picks music for these values (see data/maps/special_map_music.asm)
 	const_def $ff, -1
-	const MUSIC_RADIO_TOWER   ; ff
+	const MUSIC_SALT_LAKE_VALLEY   ; ff
 	const MUSIC_MAHOGANY_MART ; fe
 	const MUSIC_LAVENDER      ; fd
 FIRST_ALT_MUSIC EQU const_value + 1

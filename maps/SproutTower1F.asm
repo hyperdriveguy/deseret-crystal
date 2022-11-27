@@ -4,11 +4,11 @@ SproutTower1F_MapScriptHeader:
 	def_callbacks
 
 	def_warp_events
-	warp_event  7, 15, VIOLET_CITY, 7
-	warp_event  8, 15, VIOLET_CITY, 7
-	warp_event  4,  4, SPROUT_TOWER_2F, 1
-	warp_event  0,  6, SPROUT_TOWER_2F, 2
-	warp_event 15,  3, SPROUT_TOWER_2F, 3
+	warp_event  7, 15, UTAH_LAKE, 7
+	warp_event  8, 15, UTAH_LAKE, 7
+	warp_event  4,  4, OREM_CITY_2F, 1
+	warp_event  0,  6, OREM_CITY_2F, 2
+	warp_event 15,  3, OREM_CITY_2F, 3
 
 	def_coord_events
 
@@ -22,7 +22,7 @@ SproutTower1F_MapScriptHeader:
 	object_event  9, 12, SPRITE_GRANNY, SPRITEMOVEDATA_STANDING_LEFT, 0, 0, -1, -1, 0, OBJECTTYPE_SCRIPT, 0, SproutTower1FGrannyScript, -1
 	object_event  7,  9, SPRITE_TEACHER, SPRITEMOVEDATA_STANDING_UP, 0, 0, -1, -1, 0, OBJECTTYPE_COMMAND, jumptextfaceplayer, SproutTower1FTeacherText, -1
 	object_event  1,  5, SPRITE_SAGE, SPRITEMOVEDATA_STANDING_UP, 0, 0, -1, -1, 0, OBJECTTYPE_GENERICTRAINER, 4, GenericTrainerSageChow, -1
-	itemball_event 14,  7, PARALYZEHEAL, 1, EVENT_SPROUT_TOWER1F_PARALYZEHEAL
+	itemball_event 14,  7, PARALYZEHEAL, 1, EVENT_OREM_CITY1F_PARALYZEHEAL
 
 SproutTower1FGrannyScript:
 	checkunits

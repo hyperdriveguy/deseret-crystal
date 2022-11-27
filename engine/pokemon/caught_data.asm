@@ -78,7 +78,7 @@ CheckPartyFullAfterContest:
 	dec a
 	ld hl, wPartyMon1CaughtLocation
 	call GetPartyLocation
-	ld [hl], NATIONAL_PARK
+	ld [hl], WENDOVER_CITY
 	xor a
 	ld [wContestMon], a
 	ldh [hScriptVar], a
@@ -129,7 +129,7 @@ CheckPartyFullAfterContest:
 	ld [wCurItem], a
 	call SetBoxMonCaughtData
 	ld hl, wTempMonCaughtLocation
-	ld [hl], NATIONAL_PARK
+	ld [hl], WENDOVER_CITY
 	farcall UpdateStorageBoxMonFromTemp
 	xor a
 	ld [wContestMon], a

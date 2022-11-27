@@ -9,10 +9,10 @@ Route36NationalParkGate_MapScriptHeader:
 	callback MAPCALLBACK_OBJECTS, Route36NationalParkGateCheckIfContestAvailable
 
 	def_warp_events
-	warp_event  0,  4, NATIONAL_PARK, 1
-	warp_event  0,  5, NATIONAL_PARK, 2
-	warp_event  9,  4, ROUTE_36, 1
-	warp_event  9,  5, ROUTE_36, 2
+	warp_event  0,  4, WENDOVER_CITY, 1
+	warp_event  0,  5, WENDOVER_CITY, 2
+	warp_event  9,  4, SALT_LAKE_CITY, 1
+	warp_event  9,  5, SALT_LAKE_CITY, 2
 
 	def_coord_events
 
@@ -20,7 +20,7 @@ Route36NationalParkGate_MapScriptHeader:
 	bg_event  6,  0, BGEVENT_JUMPTEXT, BugCatchingContestExplanationText
 
 	def_object_events
-	object_event  0,  3, SPRITE_OFFICER, SPRITEMOVEDATA_STANDING_DOWN, 0, 0, -1, -1, PAL_NPC_GREEN, OBJECTTYPE_SCRIPT, 0, Route36OfficerScriptContest, EVENT_ROUTE_36_NATIONAL_PARK_GATE_OFFICER_CONTEST_DAY
+	object_event  0,  3, SPRITE_OFFICER, SPRITEMOVEDATA_STANDING_DOWN, 0, 0, -1, -1, PAL_NPC_GREEN, OBJECTTYPE_SCRIPT, 0, Route36OfficerScriptContest, EVENT_SALT_LAKE_CITY_WENDOVER_CITY_GATE_OFFICER_CONTEST_DAY
 	object_event  2,  5, SPRITE_BUG_CATCHER, SPRITEMOVEDATA_STANDING_UP, 0, 0, -1, -1, 0, OBJECTTYPE_SCRIPT, 0, BugCatchingContestant1BScript, EVENT_BUG_CATCHING_CONTESTANT_1B
 	object_event  4,  5, SPRITE_BUG_MANIAC, SPRITEMOVEDATA_STANDING_UP, 0, 0, -1, -1, 0, OBJECTTYPE_SCRIPT, 0, BugCatchingContestant2BScript, EVENT_BUG_CATCHING_CONTESTANT_2B
 	object_event  2,  6, SPRITE_ACE_TRAINER_M, SPRITEMOVEDATA_STANDING_UP, 0, 0, -1, -1, 0, OBJECTTYPE_SCRIPT, 0, BugCatchingContestant3BScript, EVENT_BUG_CATCHING_CONTESTANT_3B
@@ -31,7 +31,7 @@ Route36NationalParkGate_MapScriptHeader:
 	object_event  4,  7, SPRITE_BUG_CATCHER, SPRITEMOVEDATA_STANDING_UP, 0, 0, -1, -1, 0, OBJECTTYPE_SCRIPT, 0, BugCatchingContestant8BScript, EVENT_BUG_CATCHING_CONTESTANT_8B
 	object_event  6,  7, SPRITE_SCHOOLBOY, SPRITEMOVEDATA_STANDING_UP, 0, 0, -1, -1, 0, OBJECTTYPE_SCRIPT, 0, BugCatchingContestant9BScript, EVENT_BUG_CATCHING_CONTESTANT_9B
 	object_event  6,  6, SPRITE_YOUNGSTER, SPRITEMOVEDATA_STANDING_UP, 0, 0, -1, -1, 0, OBJECTTYPE_SCRIPT, 0, BugCatchingContestant10BScript, EVENT_BUG_CATCHING_CONTESTANT_10B
-	object_event  3,  2, SPRITE_OFFICER, SPRITEMOVEDATA_STANDING_DOWN, 0, 0, -1, -1, PAL_NPC_GREEN, OBJECTTYPE_SCRIPT, 0, Route36NationalParkGateOfficerScript, EVENT_ROUTE_36_NATIONAL_PARK_GATE_OFFICER_NOT_CONTEST_DAY
+	object_event  3,  2, SPRITE_OFFICER, SPRITEMOVEDATA_STANDING_DOWN, 0, 0, -1, -1, PAL_NPC_GREEN, OBJECTTYPE_SCRIPT, 0, Route36NationalParkGateOfficerScript, EVENT_SALT_LAKE_CITY_WENDOVER_CITY_GATE_OFFICER_NOT_CONTEST_DAY
 
 	object_const_def
 	const ROUTE36NATIONALPARKGATE_OFFICER1
@@ -64,7 +64,7 @@ Route36NationalParkGateCheckIfContestRunning:
 	endcallback
 
 Route36NationalParkGateCheckIfContestAvailable:
-	checkevent EVENT_WARPED_FROM_ROUTE_35_NATIONAL_PARK_GATE
+	checkevent EVENT_WARPED_FROM_TOOLE_CITY_WENDOVER_CITY_GATE
 	iftrue .Return
 	readvar VAR_WEEKDAY
 	ifequal TUESDAY, .SetContestOfficer
@@ -112,7 +112,7 @@ Route36NationalParkGateLeftTheContestEarly:
 	playsound SFX_EXIT_BUILDING
 	special FadeOutPalettes
 	waitsfx
-	warpfacing LEFT, NATIONAL_PARK_BUG_CONTEST, 35, 18
+	warpfacing LEFT, WENDOVER_CITY_BUG_CONTEST, 35, 18
 	end
 
 .CopyContestants:
@@ -196,7 +196,7 @@ Route36OfficerScriptContest:
 	special FadeOutPalettes
 	waitsfx
 	special Special_SelectRandomBugContestContestants
-	warpfacing LEFT, NATIONAL_PARK_BUG_CONTEST, 35, 18
+	warpfacing LEFT, WENDOVER_CITY_BUG_CONTEST, 35, 18
 	end
 
 .ContestNotOn:

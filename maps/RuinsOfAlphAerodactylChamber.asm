@@ -6,11 +6,11 @@ RuinsOfAlphAerodactylChamber_MapScriptHeader:
 	callback MAPCALLBACK_TILES, RuinsOfAlphAerodactylChamberHiddenDoorsCallback
 
 	def_warp_events
-	warp_event  3,  9, RUINS_OF_ALPH_OUTSIDE, 4
-	warp_event  4,  9, RUINS_OF_ALPH_OUTSIDE, 4
-	warp_event  3,  3, RUINS_OF_ALPH_INNER_CHAMBER, 8
-	warp_event  4,  3, RUINS_OF_ALPH_INNER_CHAMBER, 9
-	warp_event  4,  0, RUINS_OF_ALPH_AERODACTYL_ITEM_ROOM, 1
+	warp_event  3,  9, PROVO_CANYON_OUTSIDE, 4
+	warp_event  4,  9, PROVO_CANYON_OUTSIDE, 4
+	warp_event  3,  3, PROVO_CANYON_INNER_CHAMBER, 8
+	warp_event  4,  3, PROVO_CANYON_INNER_CHAMBER, 9
+	warp_event  4,  0, PROVO_CANYON_AERODACTYL_ITEM_ROOM, 1
 
 	def_coord_events
 
@@ -66,10 +66,10 @@ MapRuinsofAlphAerodactylChamberSignpost2Script:
 	end
 
 .PuzzleComplete:
-	setevent EVENT_RUINS_OF_ALPH_INNER_CHAMBER_TOURISTS
+	setevent EVENT_PROVO_CANYON_INNER_CHAMBER_TOURISTS
 	setevent EVENT_SOLVED_AERODACTYL_PUZZLE
 	setflag ENGINE_UNLOCKED_UNOWNS_R_TO_W
-	setmapscene RUINS_OF_ALPH_INNER_CHAMBER, $1
+	setmapscene PROVO_CANYON_INNER_CHAMBER, $1
 	earthquake 30
 	showemote EMOTE_SHOCK, PLAYER, 15
 	changeblock 2, 2, $14
@@ -96,7 +96,7 @@ MapRuinsofAlphAerodactylChamberSignpost5Script:
 	iftrue_jumptext RuinsOfAlphAerodactylChamberWallHoleText
 MapRuinsofAlphAerodactylChamberSignpost4Script:
 	opentext
-	checkevent EVENT_RUINS_OF_ALPH_OUTSIDE_TOURIST_YOUNGSTERS
+	checkevent EVENT_PROVO_CANYON_OUTSIDE_TOURIST_YOUNGSTERS
 	iftrue .unsolved
 	writetext RuinsOfAlphChambersItsUnownText
 	sjump .unownwords

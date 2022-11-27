@@ -1,55 +1,55 @@
 ; Johto Pokémon in water
 
-	def_water_wildmons RUINS_OF_ALPH_OUTSIDE
+	def_water_wildmons PROVO_CANYON_OUTSIDE
 	db 2 percent ; encounter rate
 	wildmon 15, WOOPER
 	wildmon 20, QUAGSIRE
 	wildmon 15, QUAGSIRE
 	end_water_wildmons
 
-	def_water_wildmons UNION_CAVE_1F
+	def_water_wildmons ROUTE_US40_1F
 	db 2 percent ; encounter rate
 	wildmon 15, WOOPER
 	wildmon 20, QUAGSIRE
 	wildmon 15, QUAGSIRE
 	end_water_wildmons
 
-	def_water_wildmons UNION_CAVE_B1F_NORTH
+	def_water_wildmons ROUTE_US40_B1F_NORTH
 	db 2 percent ; encounter rate
 	wildmon 15, WOOPER
 	wildmon 20, QUAGSIRE
 	wildmon 15, QUAGSIRE
 	end_water_wildmons
 
-	def_water_wildmons UNION_CAVE_B1F_SOUTH
+	def_water_wildmons ROUTE_US40_B1F_SOUTH
 	db 2 percent ; encounter rate
 	wildmon 15, WOOPER
 	wildmon 20, QUAGSIRE
 	wildmon 15, QUAGSIRE
 	end_water_wildmons
 
-	def_water_wildmons UNION_CAVE_B2F
+	def_water_wildmons ROUTE_US40_B2F
 	db 4 percent ; encounter rate
 	wildmon 15, TENTACOOL
 	wildmon 20, QUAGSIRE
 	wildmon 20, TENTACRUEL
 	end_water_wildmons
 
-	def_water_wildmons SLOWPOKE_WELL_B1F
+	def_water_wildmons VERNAL_CITY_B1F
 	db 2 percent ; encounter rate
 	wildmon 15, SLOWPOKE
 	wildmon 20, SLOWPOKE
 	wildmon 10, SLOWPOKE
 	end_water_wildmons
 
-	def_water_wildmons SLOWPOKE_WELL_B2F
+	def_water_wildmons VERNAL_CITY_B2F
 	db 2 percent ; encounter rate
 	wildmon 15, SLOWPOKE
 	wildmon 20, SLOWPOKE
 	wildmon 20, SLOWBRO
 	end_water_wildmons
 
-	def_water_wildmons ILEX_FOREST
+	def_water_wildmons EXCAVATION_SITE
 	db 2 percent ; encounter rate
 	wildmon 15, PSYDUCK
 	wildmon 10, PSYDUCK
@@ -119,7 +119,7 @@
 	wildmon 5, MAGIKARP
 	end_water_wildmons
 
-	def_water_wildmons GOLDENROD_HARBOR
+	def_water_wildmons MILLCREEK_CANYON
 	db 3 percent ; encounter rate
 	wildmon 20, PSYDUCK
 	wildmon 15, PSYDUCK
@@ -140,49 +140,49 @@
 	wildmon 20, TENTACRUEL
 	end_water_wildmons
 
-	def_water_wildmons ROUTE_30
+	def_water_wildmons MTC_CAMPUS
 	db 2 percent ; encounter rate
 	wildmon 20, POLIWAG
 	wildmon 15, POLIWAG
 	wildmon 20, POLIWHIRL
 	end_water_wildmons
 
-	def_water_wildmons ROUTE_31
+	def_water_wildmons BYU_UNDERGROUND
 	db 2 percent ; encounter rate
 	wildmon 20, POLIWAG
 	wildmon 15, POLIWAG
 	wildmon 20, POLIWHIRL
 	end_water_wildmons
 
-	def_water_wildmons ROUTE_32
+	def_water_wildmons TIMPANOGOS_PASS
 	db 4 percent ; encounter rate
 	wildmon 15, TENTACOOL
 	wildmon 20, QUAGSIRE
 	wildmon 20, TENTACRUEL
 	end_water_wildmons
 
-	def_water_wildmons ROUTE_34
+	def_water_wildmons ROUTE_191
 	db 4 percent ; encounter rate
 	wildmon 20, TENTACOOL
 	wildmon 15, TENTACOOL
 	wildmon 20, TENTACRUEL
 	end_water_wildmons
 
-	def_water_wildmons ROUTE_35
+	def_water_wildmons TOOLE_CITY
 	db 4 percent ; encounter rate
 	wildmon 20, PSYDUCK
 	wildmon 15, PSYDUCK
 	wildmon 20, GOLDUCK
 	end_water_wildmons
 
-	def_water_wildmons ROUTE_40
+	def_water_wildmons TIMPANOGOS_CAVE
 	db 3 percent ; encounter rate
 	wildmon 20, TENTACOOL
 	wildmon 20, STARYU
 	wildmon 20, TENTACRUEL
 	end_water_wildmons
 
-	def_water_wildmons ROUTE_41
+	def_water_wildmons UNION_STATION
 	db 3 percent ; encounter rate
 	wildmon 20, TENTACOOL
 	wildmon 20, MANTINE
@@ -217,63 +217,63 @@
 	wildmon 5, MAGIKARP
 	end_water_wildmons
 
-	def_water_wildmons ROUTE_47
+	def_water_wildmons BEAR_LAKE_PASS
 	db 3 percent ; encounter rate
 	wildmon 20, TENTACOOL
 	wildmon 20, SEEL
 	wildmon 25, STARYU
 	end_water_wildmons
 
-	def_water_wildmons CLIFF_EDGE_GATE
+	def_water_wildmons LOGAN_CITY
 	db 2 percent ; encounter rate
 	wildmon 20, WOOPER
 	wildmon 20, WOOPER
 	wildmon 25, QUAGSIRE
 	end_water_wildmons
 
-	def_water_wildmons NEW_BARK_TOWN
+	def_water_wildmons NEPHI_CITY
 	db 6 percent ; encounter rate
 	wildmon 20, TENTACOOL
 	wildmon 15, TENTACOOL
 	wildmon 20, TENTACRUEL
 	end_water_wildmons
 
-	def_water_wildmons CHERRYGROVE_CITY
+	def_water_wildmons PROVO_CITY
 	db 6 percent ; encounter rate
 	wildmon 20, TENTACOOL
 	wildmon 15, TENTACOOL
 	wildmon 20, TENTACRUEL
 	end_water_wildmons
 
-	def_water_wildmons VIOLET_CITY
+	def_water_wildmons UTAH_LAKE
 	db 2 percent ; encounter rate
 	wildmon 20, POLIWAG
 	wildmon 15, POLIWAG
 	wildmon 20, POLIWHIRL
 	end_water_wildmons
 
-	def_water_wildmons CIANWOOD_CITY
+	def_water_wildmons ROUTE_US89
 	db 6 percent ; encounter rate
 	wildmon 20, TENTACOOL
 	wildmon 20, MANTINE
 	wildmon 20, REMORAID
 	end_water_wildmons
 
-	def_water_wildmons GOLDENROD_CITY
+	def_water_wildmons ROUTE_55
 	db 4 percent ; encounter rate
 	wildmon 20, PSYDUCK
 	wildmon 15, PSYDUCK
 	wildmon 20, GOLDUCK
 	end_water_wildmons
 
-	def_water_wildmons OLIVINE_CITY
+	def_water_wildmons UTAH_POINT
 	db 6 percent ; encounter rate
 	wildmon 20, TENTACOOL
 	wildmon 15, TENTACOOL
 	wildmon 20, TENTACRUEL
 	end_water_wildmons
 
-	def_water_wildmons ECRUTEAK_CITY
+	def_water_wildmons ANTELOPE_ISLAND
 	db 2 percent ; encounter rate
 	wildmon 20, POLIWAG
 	wildmon 15, POLIWAG
@@ -308,35 +308,35 @@
 	wildmon 70, POLIWHIRL
 	end_water_wildmons
 
-	def_water_wildmons CHERRYGROVE_BAY
+	def_water_wildmons BYU_CAMPUS
 	db 6 percent ; encounter rate
 	wildmon 20, TENTACOOL
 	wildmon 15, TENTACOOL
 	wildmon 20, CORSOLA
 	end_water_wildmons
 
-	def_water_wildmons ROUTE_32_COAST
+	def_water_wildmons HEBER_CITY
 	db 3 percent ; encounter rate
 	wildmon 20, TENTACOOL
 	wildmon 15, TENTACOOL
 	wildmon 20, CORSOLA
 	end_water_wildmons
 
-	def_water_wildmons ROUTE_34_COAST
+	def_water_wildmons CARBON_POWER_PLANT
 	db 3 percent ; encounter rate
 	wildmon 20, TENTACOOL
 	wildmon 15, STARYU
 	wildmon 20, TENTACRUEL
 	end_water_wildmons
 
-	def_water_wildmons STORMY_BEACH
+	def_water_wildmons CARBON_ROAD
 	db 6 percent ; encounter rate
 	wildmon 20, TENTACOOL
 	wildmon 15, STARYU
 	wildmon 20, TENTACRUEL
 	end_water_wildmons
 
-	def_water_wildmons ROUTE_35_COAST
+	def_water_wildmons SALT_FLATS
 	db 3 percent ; encounter rate
 	wildmon 20, TENTACOOL
 	wildmon 20, TENTACRUEL
@@ -371,7 +371,7 @@
 	wildmon 30, CHINCHOU
 	end_water_wildmons
 
-	def_water_wildmons MURKY_SWAMP
+	def_water_wildmons PRICE_CITY
 	db 6 percent ; encounter rate
 	wildmon 20, WOOPER
 	wildmon 25, QUAGSIRE

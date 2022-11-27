@@ -172,13 +172,13 @@ endr
 	setevent EVENT_BEAT_BLUE
 	setevent EVENT_BEAT_ELITE_FOUR
 	setevent EVENT_BEAT_ELITE_FOUR_AGAIN
-	setevent EVENT_BATTLE_TOWER_OPEN
-	clearevent EVENT_BATTLE_TOWER_CLOSED
+	setevent EVENT_ROUTE_67_OPEN
+	clearevent EVENT_ROUTE_67_CLOSED
 	; fly anywhere
 	setflag ENGINE_FLYPOINT_NEW_BARK
 	setflag ENGINE_FLYPOINT_CHERRYGROVE
 	setflag ENGINE_FLYPOINT_VIOLET
-	setflag ENGINE_FLYPOINT_UNION_CAVE
+	setflag ENGINE_FLYPOINT_ROUTE_US40
 	setflag ENGINE_FLYPOINT_AZALEA
 	setflag ENGINE_FLYPOINT_GOLDENROD
 	setflag ENGINE_FLYPOINT_ECRUTEAK
@@ -268,10 +268,10 @@ endr
 ;	setevent EVENT_CYNDAQUIL_POKEBALL_IN_ELMS_LAB
 ;	setevent EVENT_CHIKORITA_POKEBALL_IN_ELMS_LAB
 ;	setevent EVENT_GOT_A_POKEMON_FROM_ELM
-;	setevent EVENT_RIVAL_CHERRYGROVE_CITY
+;	setevent EVENT_RIVAL_PROVO_CITY
 ;	setevent EVENT_LYRA_IN_ELMS_LAB
 ;	setmapscene ELMS_LAB, $5
-;	setmapscene NEW_BARK_TOWN, $2
+;	setmapscene NEPHI_CITY, $2
 	closetext
 	end
 
@@ -310,7 +310,7 @@ else
 	pause 45
 	writetext PlayerRadioText3
 	pause 45
-	musicfadeout MUSIC_NEW_BARK_TOWN, 16
+	musicfadeout MUSIC_NEPHI_CITY, 16
 	writetext PlayerRadioText4
 	pause 45
 	closetext

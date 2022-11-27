@@ -4,8 +4,8 @@ CharcoalKiln_MapScriptHeader:
 	def_callbacks
 
 	def_warp_events
-	warp_event  3,  7, AZALEA_TOWN, 2
-	warp_event  4,  7, AZALEA_TOWN, 2
+	warp_event  3,  7, ROUTE_87, 2
+	warp_event  4,  7, ROUTE_87, 2
 
 	def_coord_events
 
@@ -19,7 +19,7 @@ CharcoalKiln_MapScriptHeader:
 CharcoalKilnBoss:
 	checkevent EVENT_GOT_HM01_CUT
 	iftrue_jumptextfaceplayer .Text3
-	checkevent EVENT_CLEARED_SLOWPOKE_WELL
+	checkevent EVENT_CLEARED_VERNAL_CITY
 	iftrue_jumptextfaceplayer .Text2
 	jumpthistextfaceplayer
 

@@ -4,8 +4,8 @@ Route32PokeCenter1F_MapScriptHeader:
 	def_callbacks
 
 	def_warp_events
-	warp_event  5,  7, ROUTE_32, 1
-	warp_event  6,  7, ROUTE_32, 1
+	warp_event  5,  7, TIMPANOGOS_PASS, 1
+	warp_event  6,  7, TIMPANOGOS_PASS, 1
 	warp_event  0,  7, POKECENTER_2F, 1
 
 	def_coord_events

@@ -7,7 +7,7 @@ LavRadioTower1F_MapScriptHeader:
 	def_warp_events
 	warp_event  2,  7, LAVENDER_TOWN, 7
 	warp_event  3,  7, LAVENDER_TOWN, 7
-	warp_event 15,  0, LAV_RADIO_TOWER_2F, 255
+	warp_event 15,  0, LAV_SALT_LAKE_VALLEY_2F, 255
 
 	def_coord_events
 
@@ -23,13 +23,13 @@ LavRadioTower1F_MapScriptHeader:
 	object_event 14,  6, SPRITE_POKEMANIAC, SPRITEMOVEDATA_STANDING_RIGHT, 0, 0, -1, -1, PAL_NPC_BLUE, OBJECTTYPE_SCRIPT, 0, LavRadioTower1FSuperNerd2Script, -1
 
 LavRadioTower1FUpstairsScript:
-	checkevent EVENT_EXORCISED_LAV_RADIO_TOWER
+	checkevent EVENT_EXORCISED_LAV_SALT_LAKE_VALLEY
 	iftrue .Exorcised
-	warpmod 1, HAUNTED_RADIO_TOWER_2F
+	warpmod 1, HAUNTED_SALT_LAKE_VALLEY_2F
 	endcallback
 
 .Exorcised:
-	warpmod 1, LAV_RADIO_TOWER_2F
+	warpmod 1, LAV_SALT_LAKE_VALLEY_2F
 	endcallback
 
 LavRadioTower1FGentlemanScript:

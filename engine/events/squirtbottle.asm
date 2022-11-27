@@ -17,11 +17,11 @@ _Squirtbottle:
 
 .CheckCanUseSquirtbottle:
 	ld a, [wMapGroup]
-	cp GROUP_ROUTE_36
+	cp GROUP_SALT_LAKE_CITY
 	jr nz, .nope
 
 	ld a, [wMapNumber]
-	cp MAP_ROUTE_36
+	cp MAP_SALT_LAKE_CITY
 	jr nz, .nope
 
 	farcall GetFacingObject

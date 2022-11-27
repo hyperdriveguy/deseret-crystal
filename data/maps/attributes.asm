@@ -85,41 +85,40 @@ endc
 	dw wOverworldMapBlocks + _win
 ENDM
 
-	map_attributes NewBarkTown, NEW_BARK_TOWN, $5, WEST | EAST
-	connection west, Route29, ROUTE_29, 0
-	connection east, Route27, ROUTE_27, 0
+	map_attributes NewBarkTown, NEPHI_CITY, $71, NORTH
+	connection north, Route29, ROUTE_I15, 0
 
-	map_attributes CherrygroveCity, CHERRYGROVE_CITY, $5, NORTH | WEST | EAST
-	connection north, Route30, ROUTE_30, 5
-	connection west, CherrygroveBay, CHERRYGROVE_BAY, -15
-	connection east, Route29, ROUTE_29, 0
+	map_attributes CherrygroveCity, PROVO_CITY, $5, NORTH | WEST | EAST
+	connection north, Route30, MTC_CAMPUS, 5
+	connection west, CherrygroveBay, BYU_CAMPUS, -15
+	connection east, Route29, ROUTE_I15, 0
 
-	map_attributes VioletCity, VIOLET_CITY, $5, NORTH | SOUTH | WEST | EAST
-	connection north, VioletOutskirts, VIOLET_OUTSKIRTS, 0
-	connection south, Route32, ROUTE_32, 0
-	connection west, Route36, ROUTE_36, 2
-	connection east, Route31, ROUTE_31, 11
+	map_attributes VioletCity, UTAH_LAKE, $5, NORTH | SOUTH | WEST | EAST
+	connection north, VioletOutskirts, GENEVA_STEEL_PLANT, 0
+	connection south, Route32, TIMPANOGOS_PASS, 0
+	connection west, Route36, SALT_LAKE_CITY, 2
+	connection east, Route31, BYU_UNDERGROUND, 11
 
-	map_attributes AzaleaTown, AZALEA_TOWN, $5, WEST | EAST
-	connection west, Route34, ROUTE_34, -18
-	connection east, Route33, ROUTE_33, 0
+	map_attributes AzaleaTown, ROUTE_87, $5, WEST | EAST
+	connection west, Route34, ROUTE_191, -18
+	connection east, Route33, DUCHESNE_CITY, 0
 
-	map_attributes CianwoodCity, CIANWOOD_CITY, $35, EAST
-	connection east, Route41, ROUTE_41, 0
+	map_attributes CianwoodCity, ROUTE_US89, $35, EAST
+	connection east, Route41, UNION_STATION, 0
 
-	map_attributes GoldenrodCity, GOLDENROD_CITY, $35, NORTH | SOUTH | EAST
-	connection north, Route35, ROUTE_35, 5
-	connection south, Route34, ROUTE_34, 7
-	connection east, MagnetTunnelWest, MAGNET_TUNNEL_WEST, 0
+	map_attributes GoldenrodCity, ROUTE_55, $35, NORTH | SOUTH | EAST
+	connection north, Route35, TOOLE_CITY, 5
+	connection south, Route34, ROUTE_191, 7
+	connection east, MagnetTunnelWest, ROUTE_I80_EAST_WEST, 0
 
-	map_attributes OlivineCity, OLIVINE_CITY, $35, NORTH | SOUTH | WEST
-	connection north, Route39, ROUTE_39, 5
-	connection south, Route35Coast, ROUTE_35_COAST, 7
-	connection west, Route40, ROUTE_40, 7
+	map_attributes OlivineCity, UTAH_POINT, $35, NORTH | SOUTH | WEST
+	connection north, Route39, JORDANELLE_PASS, 5
+	connection south, Route35Coast, SALT_FLATS, 7
+	connection west, Route40, TIMPANOGOS_CAVE, 7
 
-	map_attributes EcruteakCity, ECRUTEAK_CITY, $5, SOUTH | WEST | EAST
-	connection south, Route37, ROUTE_37, 5
-	connection west, Route38, ROUTE_38, 5
+	map_attributes EcruteakCity, ANTELOPE_ISLAND, $5, SOUTH | WEST | EAST
+	connection south, Route37, TEMPLE_SQUARE, 5
+	connection west, Route38, PARK_CITY_SLOPES, 5
 	connection east, Route42, ROUTE_42, 9
 
 	map_attributes MahoganyTown, MAHOGANY_TOWN, $71, NORTH | WEST | EAST
@@ -140,84 +139,84 @@ ENDM
 	connection west, Route27, ROUTE_27, 45
 
 	map_attributes Route27, ROUTE_27, $35, WEST | EAST
-	connection west, NewBarkTown, NEW_BARK_TOWN, 0
+	connection west, NewBarkTown, NEPHI_CITY, 0
 	connection east, Route26, ROUTE_26, -45
 
 	map_attributes Route28, ROUTE_28, $71, WEST
 	connection west, SilverCaveOutside, SILVER_CAVE_OUTSIDE, -6
 
-	map_attributes Route29, ROUTE_29, $5, NORTH | WEST | EAST
+	map_attributes Route29, ROUTE_I15, $5, NORTH | WEST | EAST
 	connection north, Route46, ROUTE_46, 10
-	connection west, CherrygroveCity, CHERRYGROVE_CITY, 0
-	connection east, NewBarkTown, NEW_BARK_TOWN, 0
+	connection west, CherrygroveCity, PROVO_CITY, 0
+	connection east, NewBarkTown, NEPHI_CITY, 0
 
-	map_attributes Route30, ROUTE_30, $5, NORTH | SOUTH
-	connection north, Route31, ROUTE_31, -10
-	connection south, CherrygroveCity, CHERRYGROVE_CITY, -5
+	map_attributes Route30, MTC_CAMPUS, $5, NORTH | SOUTH
+	connection north, Route31, BYU_UNDERGROUND, -10
+	connection south, CherrygroveCity, PROVO_CITY, -5
 
-	map_attributes Route31, ROUTE_31, $5, SOUTH | WEST
-	connection south, Route30, ROUTE_30, 10
-	connection west, VioletCity, VIOLET_CITY, -8
+	map_attributes Route31, BYU_UNDERGROUND, $5, SOUTH | WEST
+	connection south, Route30, MTC_CAMPUS, 10
+	connection west, VioletCity, UTAH_LAKE, -8
 
-	map_attributes Route32, ROUTE_32, $5, NORTH | SOUTH | WEST | EAST
-	connection north, VioletCity, VIOLET_CITY, 0
-	connection south, Route33, ROUTE_33, 0
-	connection west, MagnetTunnelEast, MAGNET_TUNNEL_EAST, 9
-	connection east, CherrygroveBay, CHERRYGROVE_BAY, 12
+	map_attributes Route32, TIMPANOGOS_PASS, $5, NORTH | SOUTH | WEST | EAST
+	connection north, VioletCity, UTAH_LAKE, 0
+	connection south, Route33, DUCHESNE_CITY, 0
+	connection west, MagnetTunnelEast, ROUTE_I80_EAST_EAST, 9
+	connection east, CherrygroveBay, BYU_CAMPUS, 12
 
-	map_attributes Route33, ROUTE_33, $5, NORTH | WEST
-	connection north, Route32, ROUTE_32, 0
-	connection west, AzaleaTown, AZALEA_TOWN, 0
+	map_attributes Route33, DUCHESNE_CITY, $5, NORTH | WEST
+	connection north, Route32, TIMPANOGOS_PASS, 0
+	connection west, AzaleaTown, ROUTE_87, 0
 
-	map_attributes Route34, ROUTE_34, $5, NORTH | WEST | EAST
-	connection north, GoldenrodCity, GOLDENROD_CITY, -7
-	connection west, Route34Coast, ROUTE_34_COAST, 0
-	connection east, AzaleaTown, AZALEA_TOWN, 18
+	map_attributes Route34, ROUTE_191, $5, NORTH | WEST | EAST
+	connection north, GoldenrodCity, ROUTE_55, -7
+	connection west, Route34Coast, CARBON_POWER_PLANT, 0
+	connection east, AzaleaTown, ROUTE_87, 18
 
-	map_attributes Route34Coast, ROUTE_34_COAST, $35, SOUTH | EAST
-	connection south, StormyBeach, STORMY_BEACH, 0
-	connection east, Route34, ROUTE_34, 0
+	map_attributes Route34Coast, CARBON_POWER_PLANT, $35, SOUTH | EAST
+	connection south, StormyBeach, CARBON_ROAD, 0
+	connection east, Route34, ROUTE_191, 0
 
-	map_attributes StormyBeach, STORMY_BEACH, $35, NORTH
-	connection north, Route34Coast, ROUTE_34_COAST, 0
+	map_attributes StormyBeach, CARBON_ROAD, $35, NORTH
+	connection north, Route34Coast, CARBON_POWER_PLANT, 0
 
-	map_attributes Route35, ROUTE_35, $5, NORTH | SOUTH
-	connection north, Route36, ROUTE_36, 0
-	connection south, GoldenrodCity, GOLDENROD_CITY, -5
+	map_attributes Route35, TOOLE_CITY, $5, NORTH | SOUTH
+	connection north, Route36, SALT_LAKE_CITY, 0
+	connection south, GoldenrodCity, ROUTE_55, -5
 
-	map_attributes Route35Coast, ROUTE_35_COAST, $35, NORTH | SOUTH
-	connection north, OlivineCity, OLIVINE_CITY, -7
-	connection south, GoldenrodHarbor, GOLDENROD_HARBOR, 0
+	map_attributes Route35Coast, SALT_FLATS, $35, NORTH | SOUTH
+	connection north, OlivineCity, UTAH_POINT, -7
+	connection south, GoldenrodHarbor, MILLCREEK_CANYON, 0
 
-	map_attributes Route36, ROUTE_36, $5, NORTH | SOUTH | EAST
-	connection north, Route37, ROUTE_37, 12
-	connection south, Route35, ROUTE_35, 0
-	connection east, VioletCity, VIOLET_CITY, -2
+	map_attributes Route36, SALT_LAKE_CITY, $5, NORTH | SOUTH | EAST
+	connection north, Route37, TEMPLE_SQUARE, 12
+	connection south, Route35, TOOLE_CITY, 0
+	connection east, VioletCity, UTAH_LAKE, -2
 
-	map_attributes Route37, ROUTE_37, $5, NORTH | SOUTH
-	connection north, EcruteakCity, ECRUTEAK_CITY, -5
-	connection south, Route36, ROUTE_36, -12
+	map_attributes Route37, TEMPLE_SQUARE, $5, NORTH | SOUTH
+	connection north, EcruteakCity, ANTELOPE_ISLAND, -5
+	connection south, Route36, SALT_LAKE_CITY, -12
 
-	map_attributes Route38, ROUTE_38, $5, WEST | EAST
-	connection west, Route39, ROUTE_39, 0
-	connection east, EcruteakCity, ECRUTEAK_CITY, -5
+	map_attributes Route38, PARK_CITY_SLOPES, $5, WEST | EAST
+	connection west, Route39, JORDANELLE_PASS, 0
+	connection east, EcruteakCity, ANTELOPE_ISLAND, -5
 
-	map_attributes Route39, ROUTE_39, $5, SOUTH | EAST
-	connection south, OlivineCity, OLIVINE_CITY, -5
-	connection east, Route38, ROUTE_38, 0
+	map_attributes Route39, JORDANELLE_PASS, $5, SOUTH | EAST
+	connection south, OlivineCity, UTAH_POINT, -5
+	connection east, Route38, PARK_CITY_SLOPES, 0
 
-	map_attributes Route40, ROUTE_40, $35, SOUTH | EAST
-	connection south, Route41, ROUTE_41, -15
-	connection east, OlivineCity, OLIVINE_CITY, -7
+	map_attributes Route40, TIMPANOGOS_CAVE, $35, SOUTH | EAST
+	connection south, Route41, UNION_STATION, -15
+	connection east, OlivineCity, UTAH_POINT, -7
 
-	map_attributes Route41, ROUTE_41, $35, NORTH | WEST | EAST
-	connection north, Route40, ROUTE_40, 15
-	connection west, CianwoodCity, CIANWOOD_CITY, 0
-	connection east, GoldenrodHarbor, GOLDENROD_HARBOR, 3
+	map_attributes Route41, UNION_STATION, $35, NORTH | WEST | EAST
+	connection north, Route40, TIMPANOGOS_CAVE, 15
+	connection west, CianwoodCity, ROUTE_US89, 0
+	connection east, GoldenrodHarbor, MILLCREEK_CANYON, 3
 
 	map_attributes Route42, ROUTE_42, $5, SOUTH | WEST | EAST
-	connection south, VioletOutskirts, VIOLET_OUTSKIRTS, 5
-	connection west, EcruteakCity, ECRUTEAK_CITY, -9
+	connection south, VioletOutskirts, GENEVA_STEEL_PLANT, 5
+	connection west, EcruteakCity, ANTELOPE_ISLAND, -9
 	connection east, MahoganyTown, MAHOGANY_TOWN, 0
 
 	map_attributes Route43, ROUTE_43, $5, NORTH | SOUTH
@@ -232,7 +231,7 @@ ENDM
 	connection west, Route46, ROUTE_46, 37
 
 	map_attributes Route46, ROUTE_46, $5, SOUTH | EAST
-	connection south, Route29, ROUTE_29, -10
+	connection south, Route29, ROUTE_I15, -10
 	connection east, Route45, ROUTE_45, -37
 
 	map_attributes PewterCity, PEWTER_CITY, $f, SOUTH | EAST
@@ -428,37 +427,37 @@ ENDM
 	connection north, Route10North, ROUTE_10_NORTH, 0
 	connection south, LavenderTown, LAVENDER_TOWN, 0
 
-	map_attributes Route47, ROUTE_47, $35, NORTH
+	map_attributes Route47, BEAR_LAKE_PASS, $35, NORTH
 	connection north, Route48, ROUTE_48, 0
 
 	map_attributes Route48, ROUTE_48, $35, SOUTH
-	connection south, Route47, ROUTE_47, 0
+	connection south, Route47, BEAR_LAKE_PASS, 0
 
-	map_attributes CherrygroveBay, CHERRYGROVE_BAY, $35, SOUTH | WEST | EAST
-	connection south, Route32Coast, ROUTE_32_COAST, 0
-	connection west, Route32, ROUTE_32, -12
-	connection east, CherrygroveCity, CHERRYGROVE_CITY, 15
+	map_attributes CherrygroveBay, BYU_CAMPUS, $35, SOUTH | WEST | EAST
+	connection south, Route32Coast, HEBER_CITY, 0
+	connection west, Route32, TIMPANOGOS_PASS, -12
+	connection east, CherrygroveCity, PROVO_CITY, 15
 
-	map_attributes Route32Coast, ROUTE_32_COAST, $35, NORTH
-	connection north, CherrygroveBay, CHERRYGROVE_BAY, 0
+	map_attributes Route32Coast, HEBER_CITY, $35, NORTH
+	connection north, CherrygroveBay, BYU_CAMPUS, 0
 
-	map_attributes VioletOutskirts, VIOLET_OUTSKIRTS, $5, NORTH | SOUTH
+	map_attributes VioletOutskirts, GENEVA_STEEL_PLANT, $5, NORTH | SOUTH
 	connection north, Route42, ROUTE_42, -5
-	connection south, VioletCity, VIOLET_CITY, 0
+	connection south, VioletCity, UTAH_LAKE, 0
 
-	map_attributes RuinsOfAlphOutside, RUINS_OF_ALPH_OUTSIDE, $5, SOUTH
-	connection south, MagnetTunnelEast, MAGNET_TUNNEL_EAST, -2
+	map_attributes RuinsOfAlphOutside, PROVO_CANYON_OUTSIDE, $5, SOUTH
+	connection south, MagnetTunnelEast, ROUTE_I80_EAST_EAST, -2
 
-	map_attributes GoldenrodHarbor, GOLDENROD_HARBOR, $35, NORTH | WEST
-	connection north, Route35Coast, ROUTE_35_COAST, 0
-	connection west, Route41, ROUTE_41, -3
+	map_attributes GoldenrodHarbor, MILLCREEK_CANYON, $35, NORTH | WEST
+	connection north, Route35Coast, SALT_FLATS, 0
+	connection west, Route41, UNION_STATION, -3
 
-	map_attributes MagnetTunnelEast, MAGNET_TUNNEL_EAST, $5, NORTH | EAST
-	connection north, RuinsOfAlphOutside, RUINS_OF_ALPH_OUTSIDE, 2
-	connection east, Route32, ROUTE_32, -9
+	map_attributes MagnetTunnelEast, ROUTE_I80_EAST_EAST, $5, NORTH | EAST
+	connection north, RuinsOfAlphOutside, PROVO_CANYON_OUTSIDE, 2
+	connection east, Route32, TIMPANOGOS_PASS, -9
 
-	map_attributes MagnetTunnelWest, MAGNET_TUNNEL_WEST, $5, WEST
-	connection west, GoldenrodCity, GOLDENROD_CITY, 0
+	map_attributes MagnetTunnelWest, ROUTE_I80_EAST_WEST, $5, WEST
+	connection west, GoldenrodCity, ROUTE_55, 0
 
 	map_attributes CeladonOutskirts, CELADON_OUTSKIRTS, $f, SOUTH
 	connection south, Route7, ROUTE_7, 0
@@ -491,66 +490,66 @@ ENDM
 	map_attributes Route49, ROUTE_49, $0, EAST
 	connection east, ValenciaIsland, VALENCIA_ISLAND, 2
 
-	map_attributes SproutTower1F, SPROUT_TOWER_1F, $0, 0
-	map_attributes SproutTower2F, SPROUT_TOWER_2F, $0, 0
-	map_attributes SproutTower3F, SPROUT_TOWER_3F, $0, 0
-	map_attributes TinTower1F, TIN_TOWER_1F, $0, 0
-	map_attributes TinTower2F, TIN_TOWER_2F, $0, 0
-	map_attributes TinTower3F, TIN_TOWER_3F, $0, 0
-	map_attributes TinTower4F, TIN_TOWER_4F, $0, 0
-	map_attributes TinTower5F, TIN_TOWER_5F, $0, 0
-	map_attributes TinTower6F, TIN_TOWER_6F, $0, 0
-	map_attributes TinTower7F, TIN_TOWER_7F, $0, 0
-	map_attributes TinTower8F, TIN_TOWER_8F, $0, 0
-	map_attributes TinTower9F, TIN_TOWER_9F, $0, 0
-	map_attributes TinTower10F, TIN_TOWER_10F, $0, 0
-	map_attributes BurnedTower1F, BURNED_TOWER_1F, $0, 0
-	map_attributes BurnedTowerB1F, BURNED_TOWER_B1F, $9, 0
-	map_attributes NationalPark, NATIONAL_PARK, $0, 0
-	map_attributes NationalParkBugContest, NATIONAL_PARK_BUG_CONTEST, $0, 0
-	map_attributes RadioTower1F, RADIO_TOWER_1F, $0, 0
-	map_attributes RadioTower2F, RADIO_TOWER_2F, $0, 0
-	map_attributes RadioTower3F, RADIO_TOWER_3F, $0, 0
-	map_attributes RadioTower4F, RADIO_TOWER_4F, $0, 0
-	map_attributes RadioTower5F, RADIO_TOWER_5F, $0, 0
-	map_attributes RuinsOfAlphHoOhChamber, RUINS_OF_ALPH_HO_OH_CHAMBER, $0, 0
-	map_attributes RuinsOfAlphKabutoChamber, RUINS_OF_ALPH_KABUTO_CHAMBER, $0, 0
-	map_attributes RuinsOfAlphOmanyteChamber, RUINS_OF_ALPH_OMANYTE_CHAMBER, $0, 0
-	map_attributes RuinsOfAlphAerodactylChamber, RUINS_OF_ALPH_AERODACTYL_CHAMBER, $0, 0
-	map_attributes RuinsOfAlphEntranceChamber, RUINS_OF_ALPH_ENTRANCE_CHAMBER, $0, 0
-	map_attributes RuinsOfAlphInnerChamber, RUINS_OF_ALPH_INNER_CHAMBER, $0, 0
-	map_attributes RuinsOfAlphResearchCenter, RUINS_OF_ALPH_RESEARCH_CENTER, $0, 0
-	map_attributes RuinsOfAlphHoOhItemRoom, RUINS_OF_ALPH_HO_OH_ITEM_ROOM, $0, 0
-	map_attributes RuinsOfAlphKabutoItemRoom, RUINS_OF_ALPH_KABUTO_ITEM_ROOM, $0, 0
-	map_attributes RuinsOfAlphOmanyteItemRoom, RUINS_OF_ALPH_OMANYTE_ITEM_ROOM, $0, 0
-	map_attributes RuinsOfAlphAerodactylItemRoom, RUINS_OF_ALPH_AERODACTYL_ITEM_ROOM, $0, 0
-	map_attributes RuinsOfAlphHoOhWordRoom, RUINS_OF_ALPH_HO_OH_WORD_ROOM, $0, 0
-	map_attributes RuinsOfAlphKabutoWordRoom, RUINS_OF_ALPH_KABUTO_WORD_ROOM, $0, 0
-	map_attributes RuinsOfAlphOmanyteWordRoom, RUINS_OF_ALPH_OMANYTE_WORD_ROOM, $0, 0
-	map_attributes RuinsOfAlphAerodactylWordRoom, RUINS_OF_ALPH_AERODACTYL_WORD_ROOM, $0, 0
-	map_attributes RuinsOfAlphSinjohChamber, RUINS_OF_ALPH_SINJOH_CHAMBER, $0, 0
+	map_attributes SproutTower1F, OREM_CITY_1F, $0, 0
+	map_attributes SproutTower2F, OREM_CITY_2F, $0, 0
+	map_attributes SproutTower3F, OREM_CITY_3F, $0, 0
+	map_attributes TinTower1F, ROUTE_I80_WEST_1F, $0, 0
+	map_attributes TinTower2F, ROUTE_I80_WEST_2F, $0, 0
+	map_attributes TinTower3F, ROUTE_I80_WEST_3F, $0, 0
+	map_attributes TinTower4F, ROUTE_I80_WEST_4F, $0, 0
+	map_attributes TinTower5F, ROUTE_I80_WEST_5F, $0, 0
+	map_attributes TinTower6F, ROUTE_I80_WEST_6F, $0, 0
+	map_attributes TinTower7F, ROUTE_I80_WEST_7F, $0, 0
+	map_attributes TinTower8F, ROUTE_I80_WEST_8F, $0, 0
+	map_attributes TinTower9F, ROUTE_I80_WEST_9F, $0, 0
+	map_attributes TinTower10F, ROUTE_I80_WEST_10F, $0, 0
+	map_attributes BurnedTower1F, PARK_CITY_1F, $0, 0
+	map_attributes BurnedTowerB1F, PARK_CITY_B1F, $9, 0
+	map_attributes NationalPark, WENDOVER_CITY, $0, 0
+	map_attributes NationalParkBugContest, WENDOVER_CITY_BUG_CONTEST, $0, 0
+	map_attributes RadioTower1F, SALT_LAKE_VALLEY_1F, $0, 0
+	map_attributes RadioTower2F, SALT_LAKE_VALLEY_2F, $0, 0
+	map_attributes RadioTower3F, SALT_LAKE_VALLEY_3F, $0, 0
+	map_attributes RadioTower4F, SALT_LAKE_VALLEY_4F, $0, 0
+	map_attributes RadioTower5F, SALT_LAKE_VALLEY_5F, $0, 0
+	map_attributes RuinsOfAlphHoOhChamber, PROVO_CANYON_HO_OH_CHAMBER, $0, 0
+	map_attributes RuinsOfAlphKabutoChamber, PROVO_CANYON_KABUTO_CHAMBER, $0, 0
+	map_attributes RuinsOfAlphOmanyteChamber, PROVO_CANYON_OMANYTE_CHAMBER, $0, 0
+	map_attributes RuinsOfAlphAerodactylChamber, PROVO_CANYON_AERODACTYL_CHAMBER, $0, 0
+	map_attributes RuinsOfAlphEntranceChamber, PROVO_CANYON_ENTRANCE_CHAMBER, $0, 0
+	map_attributes RuinsOfAlphInnerChamber, PROVO_CANYON_INNER_CHAMBER, $0, 0
+	map_attributes RuinsOfAlphResearchCenter, PROVO_CANYON_RESEARCH_CENTER, $0, 0
+	map_attributes RuinsOfAlphHoOhItemRoom, PROVO_CANYON_HO_OH_ITEM_ROOM, $0, 0
+	map_attributes RuinsOfAlphKabutoItemRoom, PROVO_CANYON_KABUTO_ITEM_ROOM, $0, 0
+	map_attributes RuinsOfAlphOmanyteItemRoom, PROVO_CANYON_OMANYTE_ITEM_ROOM, $0, 0
+	map_attributes RuinsOfAlphAerodactylItemRoom, PROVO_CANYON_AERODACTYL_ITEM_ROOM, $0, 0
+	map_attributes RuinsOfAlphHoOhWordRoom, PROVO_CANYON_HO_OH_WORD_ROOM, $0, 0
+	map_attributes RuinsOfAlphKabutoWordRoom, PROVO_CANYON_KABUTO_WORD_ROOM, $0, 0
+	map_attributes RuinsOfAlphOmanyteWordRoom, PROVO_CANYON_OMANYTE_WORD_ROOM, $0, 0
+	map_attributes RuinsOfAlphAerodactylWordRoom, PROVO_CANYON_AERODACTYL_WORD_ROOM, $0, 0
+	map_attributes RuinsOfAlphSinjohChamber, PROVO_CANYON_SINJOH_CHAMBER, $0, 0
 	map_attributes Route22Past, ROUTE_22_PAST, $2c, 0
-	map_attributes UnionCave1F, UNION_CAVE_1F, $9, 0
-	map_attributes UnionCaveB1FNorth, UNION_CAVE_B1F_NORTH, $9, 0
-	map_attributes UnionCaveB1FSouth, UNION_CAVE_B1F_SOUTH, $9, 0
-	map_attributes UnionCaveB2F, UNION_CAVE_B2F, $9, 0
-	map_attributes SlowpokeWellEntrance, SLOWPOKE_WELL_ENTRANCE, $9, 0
-	map_attributes SlowpokeWellB1F, SLOWPOKE_WELL_B1F, $9, 0
-	map_attributes SlowpokeWellB2F, SLOWPOKE_WELL_B2F, $9, 0
-	map_attributes OlivineLighthouse1F, OLIVINE_LIGHTHOUSE_1F, $0, 0
-	map_attributes OlivineLighthouse2F, OLIVINE_LIGHTHOUSE_2F, $0, 0
-	map_attributes OlivineLighthouse3F, OLIVINE_LIGHTHOUSE_3F, $0, 0
-	map_attributes OlivineLighthouse4F, OLIVINE_LIGHTHOUSE_4F, $0, 0
-	map_attributes OlivineLighthouse5F, OLIVINE_LIGHTHOUSE_5F, $0, 0
-	map_attributes OlivineLighthouse6F, OLIVINE_LIGHTHOUSE_6F, $0, 0
-	map_attributes OlivineLighthouseRoof, OLIVINE_LIGHTHOUSE_ROOF, $c, 0
+	map_attributes UnionCave1F, ROUTE_US40_1F, $9, 0
+	map_attributes UnionCaveB1FNorth, ROUTE_US40_B1F_NORTH, $9, 0
+	map_attributes UnionCaveB1FSouth, ROUTE_US40_B1F_SOUTH, $9, 0
+	map_attributes UnionCaveB2F, ROUTE_US40_B2F, $9, 0
+	map_attributes SlowpokeWellEntrance, VERNAL_CITY_ENTRANCE, $9, 0
+	map_attributes SlowpokeWellB1F, VERNAL_CITY_B1F, $9, 0
+	map_attributes SlowpokeWellB2F, VERNAL_CITY_B2F, $9, 0
+	map_attributes OlivineLighthouse1F, OLIVINE_MOUNT_TIMPANOGOS_1F, $0, 0
+	map_attributes OlivineLighthouse2F, OLIVINE_MOUNT_TIMPANOGOS_2F, $0, 0
+	map_attributes OlivineLighthouse3F, OLIVINE_MOUNT_TIMPANOGOS_3F, $0, 0
+	map_attributes OlivineLighthouse4F, OLIVINE_MOUNT_TIMPANOGOS_4F, $0, 0
+	map_attributes OlivineLighthouse5F, OLIVINE_MOUNT_TIMPANOGOS_5F, $0, 0
+	map_attributes OlivineLighthouse6F, OLIVINE_MOUNT_TIMPANOGOS_6F, $0, 0
+	map_attributes OlivineLighthouseRoof, OLIVINE_MOUNT_TIMPANOGOS_ROOF, $c, 0
 	map_attributes MahoganyMart1F, MAHOGANY_MART_1F, $0, 0
 	map_attributes TeamRocketBaseB1F, TEAM_ROCKET_BASE_B1F, $0, 0
 	map_attributes TeamRocketBaseB2F, TEAM_ROCKET_BASE_B2F, $0, 0
 	map_attributes TeamRocketBaseB3F, TEAM_ROCKET_BASE_B3F, $0, 0
-	map_attributes IlexForest, ILEX_FOREST, $35, 0
-	map_attributes MurkySwamp, MURKY_SWAMP, $35, 0
-	map_attributes MagnetTunnelInside, MAGNET_TUNNEL_INSIDE, $9, 0
+	map_attributes IlexForest, EXCAVATION_SITE, $35, 0
+	map_attributes MurkySwamp, PRICE_CITY, $35, 0
+	map_attributes MagnetTunnelInside, ROUTE_I80_EAST_INSIDE, $9, 0
 	map_attributes WarehouseEntrance, WAREHOUSE_ENTRANCE, $0, 0
 	map_attributes UndergroundPathSwitchRoomEntrances, UNDERGROUND_PATH_SWITCH_ROOM_ENTRANCES, $0, 0
 	map_attributes GoldenrodDeptStoreB1F, GOLDENROD_DEPT_STORE_B1F, $0, 0
@@ -560,10 +559,10 @@ ENDM
 	map_attributes MountMortar2FInside, MOUNT_MORTAR_2F_INSIDE, $9, 0
 	map_attributes MountMortarB1F, MOUNT_MORTAR_B1F, $9, 0
 	map_attributes IcePath1F, ICE_PATH_1F, $9, 0
-	map_attributes IcePathB1F, ICE_PATH_B1F, $19, 0
-	map_attributes IcePathB2FMahoganySide, ICE_PATH_B2F_MAHOGANY_SIDE, $19, 0
-	map_attributes IcePathB2FBlackthornSide, ICE_PATH_B2F_BLACKTHORN_SIDE, $19, 0
-	map_attributes IcePathB3F, ICE_PATH_B3F, $19, 0
+	map_attributes IcePathB1F, ICE_PATH_B1F, $29, 0
+	map_attributes IcePathB2FMahoganySide, ICE_PATH_B2F_MAHOGANY_SIDE, $29, 0
+	map_attributes IcePathB2FBlackthornSide, ICE_PATH_B2F_BLACKTHORN_SIDE, $29, 0
+	map_attributes IcePathB3F, ICE_PATH_B3F, $29, 0
 	map_attributes WhirlIslandNW, WHIRL_ISLAND_NW, $9, 0
 	map_attributes WhirlIslandNE, WHIRL_ISLAND_NE, $9, 0
 	map_attributes WhirlIslandSW, WHIRL_ISLAND_SW, $9, 0
@@ -590,9 +589,9 @@ ENDM
 	map_attributes OlivineGoodRodHouse, OLIVINE_GOOD_ROD_HOUSE, $0, 0
 	map_attributes OlivineCafe, OLIVINE_CAFE, $0, 0
 	map_attributes OlivineMart, OLIVINE_MART, $0, 0
-	map_attributes Route38EcruteakGate, ROUTE_38_ECRUTEAK_GATE, $0, 0
-	map_attributes Route39Barn, ROUTE_39_BARN, $0, 0
-	map_attributes Route39Farmhouse, ROUTE_39_FARMHOUSE, $0, 0
+	map_attributes Route38EcruteakGate, PARK_CITY_SLOPES_ECRUTEAK_GATE, $0, 0
+	map_attributes Route39Barn, JORDANELLE_PASS_BARN, $0, 0
+	map_attributes Route39Farmhouse, JORDANELLE_PASS_FARMHOUSE, $0, 0
 	map_attributes MahoganyRedGyaradosSpeechHouse, MAHOGANY_RED_GYARADOS_SPEECH_HOUSE, $0, 0
 	map_attributes MahoganyGym, MAHOGANY_GYM, $0, 0
 	map_attributes MahoganyPokeCenter1F, MAHOGANY_POKECENTER_1F, $0, 0
@@ -669,14 +668,14 @@ ENDM
 	map_attributes VioletNicknameSpeechHouse, VIOLET_NICKNAME_SPEECH_HOUSE, $0, 0
 	map_attributes VioletPokeCenter1F, VIOLET_POKECENTER_1F, $0, 0
 	map_attributes VioletOnixTradeHouse, VIOLET_ONIX_TRADE_HOUSE, $0, 0
-	map_attributes Route32RuinsOfAlphGate, ROUTE_32_RUINS_OF_ALPH_GATE, $0, 0
-	map_attributes Route32PokeCenter1F, ROUTE_32_POKECENTER_1F, $0, 0
-	map_attributes Route32CoastHouse, ROUTE_32_COAST_HOUSE, $0, 0
-	map_attributes Route35GoldenrodGate, ROUTE_35_GOLDENROD_GATE, $0, 0
-	map_attributes Route35NationalParkGate, ROUTE_35_NATIONAL_PARK_GATE, $0, 0
-	map_attributes Route36RuinsOfAlphGate, ROUTE_36_RUINS_OF_ALPH_GATE, $0, 0
-	map_attributes Route36NationalParkGate, ROUTE_36_NATIONAL_PARK_GATE, $0, 0
-	map_attributes Route36VioletGate, ROUTE_36_VIOLET_GATE, $0, 0
+	map_attributes Route32RuinsOfAlphGate, TIMPANOGOS_PASS_PROVO_CANYON_GATE, $0, 0
+	map_attributes Route32PokeCenter1F, TIMPANOGOS_PASS_POKECENTER_1F, $0, 0
+	map_attributes Route32CoastHouse, HEBER_CITY_HOUSE, $0, 0
+	map_attributes Route35GoldenrodGate, TOOLE_CITY_GOLDENROD_GATE, $0, 0
+	map_attributes Route35NationalParkGate, TOOLE_CITY_WENDOVER_CITY_GATE, $0, 0
+	map_attributes Route36RuinsOfAlphGate, SALT_LAKE_CITY_PROVO_CANYON_GATE, $0, 0
+	map_attributes Route36NationalParkGate, SALT_LAKE_CITY_WENDOVER_CITY_GATE, $0, 0
+	map_attributes Route36VioletGate, SALT_LAKE_CITY_VIOLET_GATE, $0, 0
 	map_attributes GoldenrodGym, GOLDENROD_GYM, $0, 0
 	map_attributes GoldenrodBikeShop, GOLDENROD_BIKE_SHOP, $0, 0
 	map_attributes GoldenrodHappinessRater, GOLDENROD_HAPPINESS_RATER, $0, 0
@@ -696,9 +695,9 @@ ENDM
 	map_attributes GoldenrodGameCorner, GOLDENROD_GAME_CORNER, $0, 0
 	map_attributes GoldenrodPokecomCenter1F, GOLDENROD_POKECOM_CENTER_1F, $0, 0
 	map_attributes GoldenrodPokecomCenterOffice, GOLDENROD_POKECOM_CENTER_OFFICE, $0, 0
-	map_attributes GoldenrodHarborGate, GOLDENROD_HARBOR_GATE, $0, 0
-	map_attributes IlexForestAzaleaGate, ILEX_FOREST_AZALEA_GATE, $0, 0
-	map_attributes Route34IlexForestGate, ROUTE_34_ILEX_FOREST_GATE, $0, 0
+	map_attributes GoldenrodHarborGate, MILLCREEK_CANYON_GATE, $0, 0
+	map_attributes IlexForestAzaleaGate, EXCAVATION_SITE_AZALEA_GATE, $0, 0
+	map_attributes Route34IlexForestGate, ROUTE_191_EXCAVATION_SITE_GATE, $0, 0
 	map_attributes DayCare, DAYCARE, $0, 0
 	map_attributes GoldenrodHPUpHouse, GOLDENROD_HP_UP_HOUSE, $0, 0
 	map_attributes GoldenrodNetBallHouse, GOLDENROD_NET_BALL_HOUSE, $0, 0
@@ -741,7 +740,7 @@ ENDM
 	map_attributes OlivinePortPassage, OLIVINE_PORT_PASSAGE, $0, 0
 	map_attributes MountMoonSquare, MOUNT_MOON_SQUARE, $2d, 0
 	map_attributes MountMoonGiftShop, MOUNT_MOON_GIFT_SHOP, $0, 0
-	map_attributes TinTowerRoof, TIN_TOWER_ROOF, $1, 0
+	map_attributes TinTowerRoof, ROUTE_I80_WEST_ROOF, $2, 0
 	map_attributes IndigoPlateauPokecenter1F, INDIGO_PLATEAU_POKECENTER_1F, $0, 0
 	map_attributes WillsRoom, WILLS_ROOM, $0, 0
 	map_attributes KogasRoom, KOGAS_ROOM, $0, 0
@@ -768,16 +767,16 @@ ENDM
 	map_attributes SoulHouseB1F, SOUL_HOUSE_B1F, $6c, 0
 	map_attributes SoulHouseB2F, SOUL_HOUSE_B2F, $6c, 0
 	map_attributes SoulHouseB3F, SOUL_HOUSE_B3F, $6c, 0
-	map_attributes LavRadioTower1F, LAV_RADIO_TOWER_1F, $0, 0
-	map_attributes LavRadioTower2F, LAV_RADIO_TOWER_2F, $0, 0
-	map_attributes LavRadioTower3F, LAV_RADIO_TOWER_3F, $0, 0
-	map_attributes LavRadioTower4F, LAV_RADIO_TOWER_3F, $0, 0
-	map_attributes LavRadioTower5F, LAV_RADIO_TOWER_5F, $0, 0
-	map_attributes HauntedRadioTower2F, HAUNTED_RADIO_TOWER_2F, $0, 0
-	map_attributes HauntedRadioTower3F, HAUNTED_RADIO_TOWER_3F, $0, 0
-	map_attributes HauntedRadioTower4F, HAUNTED_RADIO_TOWER_4F, $0, 0
-	map_attributes HauntedRadioTower5F, HAUNTED_RADIO_TOWER_5F, $0, 0
-	map_attributes HauntedRadioTower6F, HAUNTED_RADIO_TOWER_6F, $0, 0
+	map_attributes LavRadioTower1F, LAV_SALT_LAKE_VALLEY_1F, $0, 0
+	map_attributes LavRadioTower2F, LAV_SALT_LAKE_VALLEY_2F, $0, 0
+	map_attributes LavRadioTower3F, LAV_SALT_LAKE_VALLEY_3F, $0, 0
+	map_attributes LavRadioTower4F, LAV_SALT_LAKE_VALLEY_3F, $0, 0
+	map_attributes LavRadioTower5F, LAV_SALT_LAKE_VALLEY_5F, $0, 0
+	map_attributes HauntedRadioTower2F, HAUNTED_SALT_LAKE_VALLEY_2F, $0, 0
+	map_attributes HauntedRadioTower3F, HAUNTED_SALT_LAKE_VALLEY_3F, $0, 0
+	map_attributes HauntedRadioTower4F, HAUNTED_SALT_LAKE_VALLEY_4F, $0, 0
+	map_attributes HauntedRadioTower5F, HAUNTED_SALT_LAKE_VALLEY_5F, $0, 0
+	map_attributes HauntedRadioTower6F, HAUNTED_SALT_LAKE_VALLEY_6F, $0, 0
 	map_attributes Route8SaffronGate, ROUTE_8_SAFFRON_GATE, $0, 0
 	map_attributes Route12SuperRodHouse, ROUTE_12_SUPER_ROD_HOUSE, $0, 0
 	map_attributes SilverCavePokeCenter1F, SILVER_CAVE_POKECENTER_1F, $0, 0
@@ -797,7 +796,7 @@ ENDM
 	map_attributes CeladonMansion1F, CELADON_MANSION_1F, $0, 0
 	map_attributes CeladonMansion2F, CELADON_MANSION_2F, $0, 0
 	map_attributes CeladonMansion3F, CELADON_MANSION_3F, $0, 0
-	map_attributes CeladonMansionRoof, CELADON_MANSION_ROOF, $1, 0
+	map_attributes CeladonMansionRoof, CELADON_MANSION_ROOF, $2, 0
 	map_attributes CeladonMansionRoofHouse, CELADON_MANSION_ROOF_HOUSE, $0, 0
 	map_attributes CeladonPokeCenter1F, CELADON_POKECENTER_1F, $0, 0
 	map_attributes CeladonGameCorner, CELADON_GAME_CORNER, $0, 0
@@ -845,18 +844,18 @@ ENDM
 	map_attributes CianwoodGym, CIANWOOD_GYM, $0, 0
 	map_attributes CianwoodPokeCenter1F, CIANWOOD_POKECENTER_1F, $0, 0
 	map_attributes CianwoodPharmacy, CIANWOOD_PHARMACY, $0, 0
-	map_attributes CianwoodCityPhotoStudio, CIANWOOD_CITY_PHOTO_STUDIO, $0, 0
+	map_attributes CianwoodCityPhotoStudio, ROUTE_US89_PHOTO_STUDIO, $0, 0
 	map_attributes CianwoodLugiaSpeechHouse, CIANWOOD_LUGIA_SPEECH_HOUSE, $0, 0
 	map_attributes MoveManiacsHouse, MOVE_MANIACS_HOUSE, $0, 0
-	map_attributes BattleTower1F, BATTLE_TOWER_1F, $0, 0
-	map_attributes BattleTower2F, BATTLE_TOWER_2F, $0, 0
-	map_attributes BattleTowerBattleRoom, BATTLE_TOWER_BATTLE_ROOM, $0, 0
-	map_attributes BattleTowerElevator, BATTLE_TOWER_ELEVATOR, $0, 0
-	map_attributes BattleTowerHallway, BATTLE_TOWER_HALLWAY, $0, 0
-	map_attributes Route40BattleTowerGate, ROUTE_40_BATTLE_TOWER_GATE, $0, 0
-	map_attributes BattleTowerOutside, BATTLE_TOWER_OUTSIDE, $5, 0
-	map_attributes CliffEdgeGate, CLIFF_EDGE_GATE, $9, 0
-	map_attributes CliffCave, CLIFF_CAVE, $9, 0
+	map_attributes BattleTower1F, ROUTE_67_1F, $0, 0
+	map_attributes BattleTower2F, ROUTE_67_2F, $0, 0
+	map_attributes BattleTowerBattleRoom, ROUTE_67_BATTLE_ROOM, $0, 0
+	map_attributes BattleTowerElevator, ROUTE_67_ELEVATOR, $0, 0
+	map_attributes BattleTowerHallway, ROUTE_67_HALLWAY, $0, 0
+	map_attributes Route40BattleTowerGate, TIMPANOGOS_CAVE_ROUTE_67_GATE, $0, 0
+	map_attributes BattleTowerOutside, ROUTE_67_OUTSIDE, $5, 0
+	map_attributes CliffEdgeGate, LOGAN_CITY, $9, 0
+	map_attributes CliffCave, BEAR_LAKE, $9, 0
 	map_attributes ViridianGym, VIRIDIAN_GYM, $0, 0
 	map_attributes ViridianNicknameSpeechHouse, VIRIDIAN_NICKNAME_SPEECH_HOUSE, $0, 0
 	map_attributes ViridianSchoolHouse, VIRIDIAN_SCHOOL_HOUSE, $0, 0
@@ -877,7 +876,7 @@ ENDM
 	map_attributes Route26HealSpeechHouse, ROUTE_26_HEAL_SPEECH_HOUSE, $0, 0
 	map_attributes Route26DayofWeekSiblingsHouse, ROUTE_26_DAY_OF_WEEK_SIBLINGS_HOUSE, $0, 0
 	map_attributes Route27RestHouse, ROUTE_27_REST_HOUSE, $0, 0
-	map_attributes Route2946Gate, ROUTE_29_46_GATE, $0, 0
+	map_attributes Route2946Gate, ROUTE_I15_46_GATE, $0, 0
 	map_attributes FightingDojo, FIGHTING_DOJO, $0, 0
 	map_attributes SaffronGym, SAFFRON_GYM, $0, 0
 	map_attributes SaffronMart, SAFFRON_MART, $0, 0
@@ -902,10 +901,10 @@ ENDM
 	map_attributes CherrygroveGymSpeechHouse, CHERRYGROVE_GYM_SPEECH_HOUSE, $0, 0
 	map_attributes GuideGentsHouse, GUIDE_GENTS_HOUSE, $0, 0
 	map_attributes CherrygroveEvolutionSpeechHouse, CHERRYGROVE_EVOLUTION_SPEECH_HOUSE, $0, 0
-	map_attributes Route30BerrySpeechHouse, ROUTE_30_BERRY_SPEECH_HOUSE, $0, 0
+	map_attributes Route30BerrySpeechHouse, MTC_CAMPUS_BERRY_SPEECH_HOUSE, $0, 0
 	map_attributes MrPokemonsHouse, MR_POKEMONS_HOUSE, $0, 0
-	map_attributes Route31VioletGate, ROUTE_31_VIOLET_GATE, $0, 0
-	map_attributes BellchimeTrail, BELLCHIME_TRAIL, $5, 0
+	map_attributes Route31VioletGate, BYU_UNDERGROUND_VIOLET_GATE, $0, 0
+	map_attributes BellchimeTrail, GREAT_SALT_LAKE, $5, 0
 	map_attributes PewterMuseumOfScience1F, PEWTER_MUSEUM_OF_SCIENCE_1F, $0, 0
 	map_attributes PewterMuseumOfScience2F, PEWTER_MUSEUM_OF_SCIENCE_2F, $0, 0
 	map_attributes ViridianForest, VIRIDIAN_FOREST, $45, 0
@@ -941,9 +940,9 @@ ENDM
 	map_attributes SafariZoneWestRestHouse2, SAFARI_ZONE_WEST_REST_HOUSE_2, $0, 0
 	map_attributes NavelRockOutside, NAVEL_ROCK_OUTSIDE, $35, 0
 	map_attributes NavelRockInside, NAVEL_ROCK_INSIDE, $9, 0
-	map_attributes NavelRockRoof, NAVEL_ROCK_ROOF, $1, 0
+	map_attributes NavelRockRoof, NAVEL_ROCK_ROOF, $2, 0
 	map_attributes FarawayIsland, FARAWAY_ISLAND, $6, 0
-	map_attributes FarawayJungle, FARAWAY_JUNGLE, $17, 0
+	map_attributes FarawayJungle, FARAWAY_JUNGLE, $27, 0
 	map_attributes SeagallopFerryVermilionGate, SEAGALLOP_FERRY_VERMILION_GATE, $0, 0
 	map_attributes SeagallopFerryNavelGate, SEAGALLOP_FERRY_NAVEL_GATE, $0, 0
 	map_attributes SeagallopFerryShamoutiGate, SEAGALLOP_FERRY_SHAMOUTI_GATE, $0, 0

@@ -31,7 +31,7 @@ tileset_names = [
 
 # {'TILESET_PC_JOHTO_1': 1, ...}
 tileset_ids = {}
-# {'NEW_BARK_TOWN': 10, ...}
+# {'NEPHI_CITY': 10, ...}
 map_widths = OrderedDict()
 # {'NewBarkTown': 'TILESET_PC_JOHTO_1', ...}
 map_tilesets = OrderedDict()

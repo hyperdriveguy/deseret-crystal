@@ -4,10 +4,10 @@ Route36RuinsOfAlphGate_MapScriptHeader:
 	def_callbacks
 
 	def_warp_events
-	warp_event  4,  0, ROUTE_36, 3
-	warp_event  5,  0, ROUTE_36, 4
-	warp_event  4,  7, RUINS_OF_ALPH_OUTSIDE, 9
-	warp_event  5,  7, RUINS_OF_ALPH_OUTSIDE, 9
+	warp_event  4,  0, SALT_LAKE_CITY, 3
+	warp_event  5,  0, SALT_LAKE_CITY, 4
+	warp_event  4,  7, PROVO_CANYON_OUTSIDE, 9
+	warp_event  5,  7, PROVO_CANYON_OUTSIDE, 9
 
 	def_coord_events
 

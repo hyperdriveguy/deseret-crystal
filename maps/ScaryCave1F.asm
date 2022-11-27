@@ -66,7 +66,7 @@ ScaryCave1FMiraScript:
 	disappear SCARYCAVE1F_MIRA
 	pause 15
 	special Special_FadeInQuickly
-	clearevent EVENT_BATTLE_TOWER_MIRA
+	clearevent EVENT_ROUTE_67_MIRA
 	end
 
 .ChallengeText:

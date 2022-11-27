@@ -4,12 +4,12 @@ OlivineLighthouse2F_MapScriptHeader:
 	def_callbacks
 
 	def_warp_events
-	warp_event  3, 11, OLIVINE_LIGHTHOUSE_1F, 3
-	warp_event  5,  3, OLIVINE_LIGHTHOUSE_3F, 2
-	warp_event 16, 13, OLIVINE_LIGHTHOUSE_1F, 4
-	warp_event 17, 13, OLIVINE_LIGHTHOUSE_1F, 5
-	warp_event 16, 11, OLIVINE_LIGHTHOUSE_3F, 4
-	warp_event 17, 11, OLIVINE_LIGHTHOUSE_3F, 5
+	warp_event  3, 11, OLIVINE_MOUNT_TIMPANOGOS_1F, 3
+	warp_event  5,  3, OLIVINE_MOUNT_TIMPANOGOS_3F, 2
+	warp_event 16, 13, OLIVINE_MOUNT_TIMPANOGOS_1F, 4
+	warp_event 17, 13, OLIVINE_MOUNT_TIMPANOGOS_1F, 5
+	warp_event 16, 11, OLIVINE_MOUNT_TIMPANOGOS_3F, 4
+	warp_event 17, 11, OLIVINE_MOUNT_TIMPANOGOS_3F, 5
 
 	def_coord_events
 
@@ -69,7 +69,7 @@ UnknownScript_0x5afc7:
 	checkevent EVENT_BEAT_ELITE_FOUR
 	iftrue .LoadFight2
 .Fight1:
-	checkevent EVENT_CLEARED_RADIO_TOWER
+	checkevent EVENT_CLEARED_SALT_LAKE_VALLEY
 	iftrue .LoadFight1
 .LoadFight0:
 	loadtrainer SAILOR, HUEY1

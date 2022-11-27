@@ -5,9 +5,9 @@ RadioTower3F_MapScriptHeader:
 	callback MAPCALLBACK_TILES, CardKeyShutterCallback
 
 	def_warp_events
-	warp_event  0,  0, RADIO_TOWER_2F, 1
-	warp_event  7,  0, RADIO_TOWER_4F, 2
-	warp_event 17,  0, RADIO_TOWER_4F, 4
+	warp_event  0,  0, SALT_LAKE_VALLEY_2F, 1
+	warp_event  7,  0, SALT_LAKE_VALLEY_4F, 2
+	warp_event 17,  0, SALT_LAKE_VALLEY_4F, 4
 
 	def_coord_events
 
@@ -17,16 +17,16 @@ RadioTower3F_MapScriptHeader:
 	bg_event 14,  2, BGEVENT_UP, CardKeySlotScript
 
 	def_object_events
-	object_event  7,  4, SPRITE_POKEMANIAC, SPRITEMOVEDATA_STANDING_UP, 0, 0, -1, -1, PAL_NPC_BLUE, OBJECTTYPE_COMMAND, jumptextfaceplayer, RadioTower3FSuperNerdText, EVENT_RADIO_TOWER_CIVILIANS_AFTER
+	object_event  7,  4, SPRITE_POKEMANIAC, SPRITEMOVEDATA_STANDING_UP, 0, 0, -1, -1, PAL_NPC_BLUE, OBJECTTYPE_COMMAND, jumptextfaceplayer, RadioTower3FSuperNerdText, EVENT_SALT_LAKE_VALLEY_CIVILIANS_AFTER
 	object_event  3,  4, SPRITE_SUPER_NERD, SPRITEMOVEDATA_SPINRANDOM_FAST, 0, 0, -1, -1, PAL_NPC_RED, OBJECTTYPE_SCRIPT, 0, RadioTower3FGymGuideScript, -1
 	object_event 11,  3, SPRITE_BATTLE_GIRL, SPRITEMOVEDATA_WANDER, 1, 1, -1, -1, PAL_NPC_GREEN, OBJECTTYPE_SCRIPT, 0, RadioTower3FCooltrainerFScript, -1
-	object_event  5,  1, SPRITE_ROCKET, SPRITEMOVEDATA_STANDING_RIGHT, 0, 0, -1, -1, 0, OBJECTTYPE_GENERICTRAINER, 2, GenericTrainerGruntM7, EVENT_RADIO_TOWER_ROCKET_TAKEOVER
-	object_event  6,  2, SPRITE_ROCKET, SPRITEMOVEDATA_STANDING_DOWN, 0, 0, -1, -1, 0, OBJECTTYPE_GENERICTRAINER, 3, GenericTrainerGruntM8, EVENT_RADIO_TOWER_ROCKET_TAKEOVER
-	object_event 16,  6, SPRITE_ROCKET, SPRITEMOVEDATA_STANDING_UP, 0, 0, -1, -1, 0, OBJECTTYPE_GENERICTRAINER, 3, GenericTrainerGruntM9, EVENT_RADIO_TOWER_ROCKET_TAKEOVER
-	object_event  9,  6, SPRITE_SCIENTIST, SPRITEMOVEDATA_STANDING_UP, 0, 0, -1, -1, 0, OBJECTTYPE_GENERICTRAINER, 5, GenericTrainerRocketScientistMarc, EVENT_RADIO_TOWER_ROCKET_TAKEOVER
+	object_event  5,  1, SPRITE_ROCKET, SPRITEMOVEDATA_STANDING_RIGHT, 0, 0, -1, -1, 0, OBJECTTYPE_GENERICTRAINER, 2, GenericTrainerGruntM7, EVENT_SALT_LAKE_VALLEY_ROCKET_TAKEOVER
+	object_event  6,  2, SPRITE_ROCKET, SPRITEMOVEDATA_STANDING_DOWN, 0, 0, -1, -1, 0, OBJECTTYPE_GENERICTRAINER, 3, GenericTrainerGruntM8, EVENT_SALT_LAKE_VALLEY_ROCKET_TAKEOVER
+	object_event 16,  6, SPRITE_ROCKET, SPRITEMOVEDATA_STANDING_UP, 0, 0, -1, -1, 0, OBJECTTYPE_GENERICTRAINER, 3, GenericTrainerGruntM9, EVENT_SALT_LAKE_VALLEY_ROCKET_TAKEOVER
+	object_event  9,  6, SPRITE_SCIENTIST, SPRITEMOVEDATA_STANDING_UP, 0, 0, -1, -1, 0, OBJECTTYPE_GENERICTRAINER, 5, GenericTrainerRocketScientistMarc, EVENT_SALT_LAKE_VALLEY_ROCKET_TAKEOVER
 
 CardKeyShutterCallback:
-	checkevent EVENT_USED_THE_CARD_KEY_IN_THE_RADIO_TOWER
+	checkevent EVENT_USED_THE_CARD_KEY_IN_THE_SALT_LAKE_VALLEY
 	iftrue .Change
 	endcallback
 
@@ -36,16 +36,16 @@ CardKeyShutterCallback:
 	endcallback
 
 RadioTower3FGymGuideScript:
-	checkevent EVENT_CLEARED_RADIO_TOWER
+	checkevent EVENT_CLEARED_SALT_LAKE_VALLEY
 	iftrue_jumptextfaceplayer RadioTower3FGymGuideText
 	jumptextfaceplayer RadioTower3FGymGuideText_Rockets
 
 RadioTower3FCooltrainerFScript:
-	checkevent EVENT_GOT_HEAT_ROCK_FROM_RADIO_TOWER
+	checkevent EVENT_GOT_HEAT_ROCK_FROM_SALT_LAKE_VALLEY
 	iftrue_jumptextfaceplayer RadioTower3FCooltrainerFYouWereMarvelousText
-	checkevent EVENT_CLEARED_RADIO_TOWER
+	checkevent EVENT_CLEARED_SALT_LAKE_VALLEY
 	iftrue .NoRockets
-	checkevent EVENT_USED_THE_CARD_KEY_IN_THE_RADIO_TOWER
+	checkevent EVENT_USED_THE_CARD_KEY_IN_THE_SALT_LAKE_VALLEY
 	iftrue_jumptextfaceplayer RadioTower3FCooltrainerFIsDirectorSafeText
 	jumpthistextfaceplayer
 
@@ -72,7 +72,7 @@ RadioTower3FCooltrainerFScript:
 	writetext RadioTower3FCooltrainerFItsAHeatRockText
 	waitbutton
 	closetext
-	setevent EVENT_GOT_HEAT_ROCK_FROM_RADIO_TOWER
+	setevent EVENT_GOT_HEAT_ROCK_FROM_SALT_LAKE_VALLEY
 	end
 
 GenericTrainerGruntM7:
@@ -119,7 +119,7 @@ CardKeySlotScript::
 	opentext
 	writetext RadioTower3FCardKeySlotText
 	waitbutton
-	checkevent EVENT_USED_THE_CARD_KEY_IN_THE_RADIO_TOWER
+	checkevent EVENT_USED_THE_CARD_KEY_IN_THE_SALT_LAKE_VALLEY
 	iftrue .UsedCardKey
 	checkkeyitem CARD_KEY
 	iftrue .HaveCardKey
@@ -129,7 +129,7 @@ CardKeySlotScript::
 .HaveCardKey:
 	writetext InsertedTheCardKeyText
 	waitbutton
-	setevent EVENT_USED_THE_CARD_KEY_IN_THE_RADIO_TOWER
+	setevent EVENT_USED_THE_CARD_KEY_IN_THE_SALT_LAKE_VALLEY
 	playsound SFX_ENTER_DOOR
 	changeblock 14, 2, $2a
 	changeblock 14, 4, $1

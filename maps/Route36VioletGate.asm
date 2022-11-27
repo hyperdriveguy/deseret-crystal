@@ -4,10 +4,10 @@ Route36VioletGate_MapScriptHeader:
 	def_callbacks
 
 	def_warp_events
-	warp_event  0,  4, ROUTE_36, 5
-	warp_event  0,  5, ROUTE_36, 6
-	warp_event  9,  4, VIOLET_CITY, 10
-	warp_event  9,  5, VIOLET_CITY, 11
+	warp_event  0,  4, SALT_LAKE_CITY, 5
+	warp_event  0,  5, SALT_LAKE_CITY, 6
+	warp_event  9,  4, UTAH_LAKE, 10
+	warp_event  9,  5, UTAH_LAKE, 11
 
 	def_coord_events
 

@@ -4,8 +4,8 @@ Route32CoastHouse_MapScriptHeader:
 	def_callbacks
 
 	def_warp_events
-	warp_event  2,  7, ROUTE_32_COAST, 2
-	warp_event  3,  7, ROUTE_32_COAST, 2
+	warp_event  2,  7, HEBER_CITY, 2
+	warp_event  3,  7, HEBER_CITY, 2
 
 	def_coord_events
 

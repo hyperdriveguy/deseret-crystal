@@ -5,7 +5,7 @@ Route33_MapScriptHeader:
 	callback MAPCALLBACK_TILES, Route33RainScript
 
 	def_warp_events
-	warp_event 11,  9, UNION_CAVE_1F, 3
+	warp_event 11,  9, ROUTE_US40_1F, 3
 
 	def_coord_events
 
@@ -15,7 +15,7 @@ Route33_MapScriptHeader:
 	def_object_events
 	object_event  6, 13, SPRITE_HIKER, SPRITEMOVEDATA_SPINRANDOM_FAST, 0, 0, -1, -1, 0, OBJECTTYPE_TRAINER, 2, TrainerHikerAnthony, -1
 	object_event 12, 17, SPRITE_SCHOOLGIRL, SPRITEMOVEDATA_STANDING_UP, 0, 0, -1, -1, 0, OBJECTTYPE_GENERICTRAINER, 3, GenericTrainerSchoolgirlImogen, -1
-	fruittree_event 14, 16, FRUITTREE_ROUTE_33, PECHA_BERRY, PAL_NPC_RED
+	fruittree_event 14, 16, FRUITTREE_DUCHESNE_CITY, PECHA_BERRY, PAL_NPC_RED
 
 Route33RainScript:
 	special Special_GetOvercastIndex
@@ -73,7 +73,7 @@ TrainerHikerAnthony:
 	checkevent EVENT_BEAT_ELITE_FOUR
 	iftrue .LoadFight3
 .Fight2:
-	checkevent EVENT_CLEARED_RADIO_TOWER
+	checkevent EVENT_CLEARED_SALT_LAKE_VALLEY
 	iftrue .LoadFight2
 .Fight1:
 	checkflag ENGINE_FLYPOINT_OLIVINE

@@ -28,7 +28,7 @@ CheckUniqueWildMove:
 	ld a, c
 	cp MAHOGANY_TOWN
 	jr z, .TeachMove ; assume this is for Explosion in TeamRocketBaseB1F
-	cp UNION_CAVE
+	cp ROUTE_US40
 	jr z, .TeachMove ; assume this is a Lapras in UnionCaveB2F
 	cp YELLOW_FOREST
 	jr nz, .ChanceToTeach

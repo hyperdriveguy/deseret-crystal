@@ -19,11 +19,11 @@ CherrygroveCity_MapScriptHeader:
 	def_bg_events
 	bg_event 30,  8, BGEVENT_JUMPTEXT, CherrygroveCitySignText
 	bg_event 23,  9, BGEVENT_JUMPTEXT, GuideGentsHouseSignText
-	bg_event 35,  2, BGEVENT_ITEM + NUGGET, EVENT_CHERRYGROVE_CITY_HIDDEN_NUGGET
+	bg_event 35,  2, BGEVENT_ITEM + NUGGET, EVENT_PROVO_CITY_HIDDEN_NUGGET
 
 	def_object_events
 	object_event 32,  6, SPRITE_GRAMPS, SPRITEMOVEDATA_STANDING_DOWN, 0, 0, -1, -1, 0, OBJECTTYPE_SCRIPT, 0, CherrygroveCityGuideGent, EVENT_GUIDE_GENT_IN_HIS_HOUSE
-	object_event 39,  6, SPRITE_SILVER, SPRITEMOVEDATA_STANDING_LEFT, 0, 0, -1, -1, 0, OBJECTTYPE_SCRIPT, 0, ObjectEvent, EVENT_RIVAL_CHERRYGROVE_CITY
+	object_event 39,  6, SPRITE_SILVER, SPRITEMOVEDATA_STANDING_LEFT, 0, 0, -1, -1, 0, OBJECTTYPE_SCRIPT, 0, ObjectEvent, EVENT_RIVAL_PROVO_CITY
 	object_event 25, 13, SPRITE_POKEFAN_F, SPRITEMOVEDATA_STANDING_DOWN, 0, 1, -1, -1, PAL_NPC_BLUE, OBJECTTYPE_COMMAND, jumptextfaceplayer, CherrygroveTeacherText_HaveMapCard, -1
 	object_event 23,  7, SPRITE_YOUNGSTER, SPRITEMOVEDATA_WALK_LEFT_RIGHT, 0, 1, -1, -1, PAL_NPC_RED, OBJECTTYPE_SCRIPT, 0, CherrygroveYoungsterScript, -1
 	object_event  7, 12, SPRITE_FISHER, SPRITEMOVEDATA_STANDING_RIGHT, 0, 0, -1, -1, 0, OBJECTTYPE_SCRIPT, 0, MysticWaterGuy, -1
@@ -72,7 +72,7 @@ CherrygroveCityGuideGent:
 	waitbutton
 	closetext
 	stopfollow
-	playmusic MUSIC_CHERRYGROVE_CITY
+	playmusic MUSIC_PROVO_CITY
 	turnobject PLAYER, UP
 	applymovement CHERRYGROVECITY_GRAMPS, GuideGentMovement6
 	playsound SFX_ENTER_DOOR
@@ -106,7 +106,7 @@ CherrygroveSilverTriggerNorth:
 	loadtrainer RIVAL0, 3
 	loadvar VAR_BATTLETYPE, BATTLETYPE_CANLOSE
 	startbattle
-	setevent EVENT_RIVAL_CHERRYGROVE_CITY
+	setevent EVENT_RIVAL_PROVO_CITY
 	reloadmap
 	sjump .FinishRival
 
@@ -117,7 +117,7 @@ CherrygroveSilverTriggerNorth:
 	loadvar VAR_BATTLETYPE, BATTLETYPE_CANLOSE
 	startbattle
 	dontrestartmapmusic
-	setevent EVENT_RIVAL_CHERRYGROVE_CITY
+	setevent EVENT_RIVAL_PROVO_CITY
 	reloadmap
 	sjump .FinishRival
 
@@ -128,7 +128,7 @@ CherrygroveSilverTriggerNorth:
 	loadvar VAR_BATTLETYPE, BATTLETYPE_CANLOSE
 	startbattle
 	dontrestartmapmusic
-	setevent EVENT_RIVAL_CHERRYGROVE_CITY
+	setevent EVENT_RIVAL_PROVO_CITY
 	reloadmap
 .FinishRival:
 	special DeleteSavedMusic
@@ -143,7 +143,7 @@ CherrygroveSilverTriggerNorth:
 	disappear CHERRYGROVECITY_SILVER
 	special HealPartyEvenForNuzlocke
 	setscene $2
-	playmusic MUSIC_CHERRYGROVE_CITY
+	playmusic MUSIC_PROVO_CITY
 	end
 
 CherrygroveYoungsterScript:

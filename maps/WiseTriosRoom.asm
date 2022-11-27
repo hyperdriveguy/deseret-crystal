@@ -5,8 +5,8 @@ WiseTriosRoom_MapScriptHeader:
 	callback MAPCALLBACK_OBJECTS, WiseTriosRoomCallback
 
 	def_warp_events
-	warp_event  7,  4, BELLCHIME_TRAIL, 1
-	warp_event  7,  5, BELLCHIME_TRAIL, 2
+	warp_event  7,  4, GREAT_SALT_LAKE, 1
+	warp_event  7,  5, GREAT_SALT_LAKE, 2
 	warp_event  1,  4, ECRUTEAK_HOUSE, 5
 
 	def_coord_events
@@ -33,7 +33,7 @@ WiseTriosRoom_MapScriptHeader:
 WiseTriosRoomCallback:
 	checkevent EVENT_FOUGHT_SUICUNE
 	iftrue .NoWiseTrio
-	checkevent EVENT_KOJI_ALLOWS_YOU_PASSAGE_TO_TIN_TOWER
+	checkevent EVENT_KOJI_ALLOWS_YOU_PASSAGE_TO_ROUTE_I80_WEST
 	iftrue .WiseTrio2
 	checkkeyitem CLEAR_BELL
 	iftrue .WiseTrio2
@@ -80,7 +80,7 @@ TrainerElderKoji:
 	trainer ELDER, KOJI, EVENT_BEAT_ELDER_KOJI, ElderKojiSeenText, ElderKojiBeatenText, 0, ElderKojiScript
 
 ElderKojiScript:
-	checkevent EVENT_KOJI_ALLOWS_YOU_PASSAGE_TO_TIN_TOWER
+	checkevent EVENT_KOJI_ALLOWS_YOU_PASSAGE_TO_ROUTE_I80_WEST
 	iftrue_jumptext SageKojiAfterBattleFinalText
 	pause 10
 	showemote EMOTE_SHOCK, WISETRIOSROOM_ELDER6, 20
@@ -92,7 +92,7 @@ ElderKojiScript:
 	closetext
 	applymovement WISETRIOSROOM_ELDER6, WiseTriosRoomSageAllowsPassageMovement
 	turnobject WISETRIOSROOM_ELDER6, UP
-	setevent EVENT_KOJI_ALLOWS_YOU_PASSAGE_TO_TIN_TOWER
+	setevent EVENT_KOJI_ALLOWS_YOU_PASSAGE_TO_ROUTE_I80_WEST
 	setscene $1
 	end
 

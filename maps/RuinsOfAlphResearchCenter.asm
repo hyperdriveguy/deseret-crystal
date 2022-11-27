@@ -7,8 +7,8 @@ RuinsOfAlphResearchCenter_MapScriptHeader:
 	callback MAPCALLBACK_OBJECTS, RuinsOfAlphResearchCenterScientistCallback
 
 	def_warp_events
-	warp_event  2,  7, RUINS_OF_ALPH_OUTSIDE, 6
-	warp_event  3,  7, RUINS_OF_ALPH_OUTSIDE, 6
+	warp_event  2,  7, PROVO_CANYON_OUTSIDE, 6
+	warp_event  3,  7, PROVO_CANYON_OUTSIDE, 6
 
 	def_coord_events
 
@@ -21,7 +21,7 @@ RuinsOfAlphResearchCenter_MapScriptHeader:
 	def_object_events
 	object_event  4,  5, SPRITE_SCIENTIST, SPRITEMOVEDATA_STANDING_UP, 0, 0, -1, -1, PAL_NPC_BROWN, OBJECTTYPE_SCRIPT, 0, RuinsOfAlphResearchCenterScientist1Script, -1
 	object_event  5,  2, SPRITE_SCIENTIST, SPRITEMOVEDATA_WANDER, 1, 2, -1, -1, PAL_NPC_BROWN, OBJECTTYPE_SCRIPT, 0, RuinsOfAlphResearchCenterScientist2Script, -1
-	object_event  2,  5, SPRITE_SCIENTIST, SPRITEMOVEDATA_STANDING_UP, 0, 0, -1, -1, PAL_NPC_BROWN, OBJECTTYPE_SCRIPT, 0, RuinsOfAlphResearchCenterScientist3Script, EVENT_RUINS_OF_ALPH_RESEARCH_CENTER_SCIENTIST
+	object_event  2,  5, SPRITE_SCIENTIST, SPRITEMOVEDATA_STANDING_UP, 0, 0, -1, -1, PAL_NPC_BROWN, OBJECTTYPE_SCRIPT, 0, RuinsOfAlphResearchCenterScientist3Script, EVENT_PROVO_CANYON_RESEARCH_CENTER_SCIENTIST
 
 	object_const_def
 	const RUINSOFALPHRESEARCHCENTER_SCIENTIST1
@@ -72,7 +72,7 @@ RuinsOfAlphResearchCenterGetUnownDexScript:
 RuinsOfAlphResearchCenterScientist3Script:
 	faceplayer
 	opentext
-	checkevent EVENT_RUINS_OF_ALPH_CLIMAX_DONE
+	checkevent EVENT_PROVO_CANYON_CLIMAX_DONE
 	iftrue .Conclusion
 	readvar VAR_UNOWNCOUNT
 	ifequal NUM_UNOWN, .PrinterAvailable
@@ -100,7 +100,7 @@ RuinsOfAlphResearchCenterScientist3Script:
 	playsound SFX_EMBER
 	earthquake 60
 	waitsfx
-	setevent EVENT_DOOR_OPENED_IN_RUINS_OF_ALPH
+	setevent EVENT_DOOR_OPENED_IN_PROVO_CANYON
 	showemote EMOTE_SHOCK, PLAYER, 15
 	showemote EMOTE_SHOCK, RUINSOFALPHRESEARCHCENTER_SCIENTIST3, 15
 	showemote EMOTE_SHOCK, RUINSOFALPHRESEARCHCENTER_SCIENTIST1, 15
@@ -124,12 +124,12 @@ RuinsOfAlphResearchCenterScientist3Script:
 	playsound SFX_EXIT_BUILDING
 	disappear PLAYER
 	special FadeOutPalettes
-	setevent EVENT_RUINS_OF_ALPH_OUTSIDE_TOURIST_YOUNGSTERS
-	clearevent EVENT_RUINS_OF_ALPH_RESEARCH_CENTER_SCIENTIST
-	clearevent EVENT_RUINS_OF_ALPH_OUTSIDE_SCIENTIST_CLIMAX
-	setevent EVENT_DO_RUINS_OF_ALPH_CLIMAX
+	setevent EVENT_PROVO_CANYON_OUTSIDE_TOURIST_YOUNGSTERS
+	clearevent EVENT_PROVO_CANYON_RESEARCH_CENTER_SCIENTIST
+	clearevent EVENT_PROVO_CANYON_OUTSIDE_SCIENTIST_CLIMAX
+	setevent EVENT_DO_PROVO_CANYON_CLIMAX
 	pause 15
-	warpfacing DOWN, RUINS_OF_ALPH_OUTSIDE, 19, 18
+	warpfacing DOWN, PROVO_CANYON_OUTSIDE, 19, 18
 	end
 
 RuinsofAlphResearchCenterScientistStepAsideMovementData:
@@ -163,7 +163,7 @@ RuinsOfAlphResearchCenterScientist1Script:
 	writetext RuinsOfAlphResearchCenterScientist1Text_GotAllUnown
 	waitbutton
 	closetext
-	clearevent EVENT_RUINS_OF_ALPH_OUTSIDE_TOURIST_YOUNGSTERS
+	clearevent EVENT_PROVO_CANYON_OUTSIDE_TOURIST_YOUNGSTERS
 	end
 
 RuinsOfAlphResearchCenterScientist2Script:
@@ -189,7 +189,7 @@ RuinsOfAlphResearchCenterScientist2Script:
 	writetext RuinsOfAlphResearchCenterScientist2Text_RadioWaves
 	waitbutton
 	closetext
-	clearevent EVENT_RUINS_OF_ALPH_OUTSIDE_TOURIST_YOUNGSTERS
+	clearevent EVENT_PROVO_CANYON_OUTSIDE_TOURIST_YOUNGSTERS
 	end
 
 .ResearchOngoing:
@@ -197,7 +197,7 @@ RuinsOfAlphResearchCenterScientist2Script:
 
 MapRuinsofAlphResearchCenterSignpost1Script:
 	opentext
-	checkevent EVENT_RUINS_OF_ALPH_RESEARCH_CENTER_SCIENTIST
+	checkevent EVENT_PROVO_CANYON_RESEARCH_CENTER_SCIENTIST
 	iffalse .SkipChecking
 	checkevent EVENT_DECO_UNOWN_DOLL
 	iftrue .SkipChecking

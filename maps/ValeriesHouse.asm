@@ -5,8 +5,8 @@ ValeriesHouse_MapScriptHeader:
 	callback MAPCALLBACK_OBJECTS, SetupValerieAfterMorningWalkScript
 
 	def_warp_events
-	warp_event  3,  7, ECRUTEAK_CITY, 12
-	warp_event  4,  7, ECRUTEAK_CITY, 12
+	warp_event  3,  7, ANTELOPE_ISLAND, 12
+	warp_event  4,  7, ANTELOPE_ISLAND, 12
 
 	def_coord_events
 
@@ -14,7 +14,7 @@ ValeriesHouse_MapScriptHeader:
 	bg_event  2,  1, BGEVENT_JUMPSTD, radio2
 
 	def_object_events
-	object_event  2,  3, SPRITE_VALERIE, SPRITEMOVEDATA_STANDING_DOWN, 0, 0, -1, -1, 0, OBJECTTYPE_COMMAND, jumptextfaceplayer, ValeriesHouseValerieText, EVENT_VALERIE_ECRUTEAK_CITY
+	object_event  2,  3, SPRITE_VALERIE, SPRITEMOVEDATA_STANDING_DOWN, 0, 0, -1, -1, 0, OBJECTTYPE_COMMAND, jumptextfaceplayer, ValeriesHouseValerieText, EVENT_VALERIE_ANTELOPE_ISLAND
 	object_event  3,  3, SPRITE_BOOK_PAPER_POKEDEX, SPRITEMOVEDATA_STANDING_DOWN, 0, 0, -1, -1, PAL_NPC_RED, OBJECTTYPE_COMMAND, jumptext, ValeriesHouseRedFairyBookText, EVENT_RED_FAIRY_BOOK
 	object_event  3,  3, SPRITE_BOOK_PAPER_POKEDEX, SPRITEMOVEDATA_STANDING_DOWN, 0, 0, -1, -1, PAL_NPC_BLUE, OBJECTTYPE_COMMAND, jumptext, ValeriesHouseBlueFairyBookText, EVENT_BLUE_FAIRY_BOOK
 	object_event  3,  3, SPRITE_BOOK_PAPER_POKEDEX, SPRITEMOVEDATA_STANDING_DOWN, 0, 0, -1, -1, PAL_NPC_GREEN, OBJECTTYPE_COMMAND, jumptext, ValeriesHouseGreenFairyBookText, EVENT_GREEN_FAIRY_BOOK

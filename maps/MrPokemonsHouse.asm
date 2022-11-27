@@ -5,8 +5,8 @@ MrPokemonsHouse_MapScriptHeader:
 	def_callbacks
 
 	def_warp_events
-	warp_event  2,  7, ROUTE_30, 2
-	warp_event  3,  7, ROUTE_30, 2
+	warp_event  2,  7, MTC_CAMPUS, 2
+	warp_event  3,  7, MTC_CAMPUS, 2
 
 	def_coord_events
 
@@ -43,7 +43,7 @@ MrPokemonsHouseTrigger0:
 	waitsfx
 	verbosegivekeyitem MYSTERY_EGG
 	setevent EVENT_GOT_MYSTERY_EGG_FROM_MR_POKEMON
-	blackoutmod CHERRYGROVE_CITY
+	blackoutmod PROVO_CITY
 if !DEF(DEBUG)
 	writetext MrPokemonIntroText3
 	promptbutton
@@ -126,11 +126,11 @@ MrPokemonsHouse_OakScript:
 	special Special_FadeInQuickly
 	special RestartMapMusic
 	showtext MrPokemonText_ImDependingOnYou
-	setevent EVENT_RIVAL_NEW_BARK_TOWN
+	setevent EVENT_RIVAL_NEPHI_CITY
 	setevent EVENT_PLAYERS_HOUSE_1F_NEIGHBOR
 	clearevent EVENT_PLAYERS_NEIGHBORS_HOUSE_NEIGHBOR
 	setscene $1
-	setmapscene CHERRYGROVE_CITY, $1
+	setmapscene PROVO_CITY, $1
 	setmapscene ELMS_LAB, $3
 	specialphonecall SPECIALCALL_ROBBED
 	clearevent EVENT_COP_IN_ELMS_LAB

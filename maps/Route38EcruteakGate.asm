@@ -4,10 +4,10 @@ Route38EcruteakGate_MapScriptHeader:
 	def_callbacks
 
 	def_warp_events
-	warp_event  0,  4, ROUTE_38, 1
-	warp_event  0,  5, ROUTE_38, 2
-	warp_event  9,  4, ECRUTEAK_CITY, 14
-	warp_event  9,  5, ECRUTEAK_CITY, 15
+	warp_event  0,  4, PARK_CITY_SLOPES, 1
+	warp_event  0,  5, PARK_CITY_SLOPES, 2
+	warp_event  9,  4, ANTELOPE_ISLAND, 14
+	warp_event  9,  5, ANTELOPE_ISLAND, 15
 
 	def_coord_events
 

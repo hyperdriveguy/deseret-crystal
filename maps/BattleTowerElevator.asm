@@ -5,8 +5,8 @@ BattleTowerElevator_MapScriptHeader:
 	def_callbacks
 
 	def_warp_events
-	warp_event  1,  3, BATTLE_TOWER_HALLWAY, 1
-	warp_event  2,  3, BATTLE_TOWER_HALLWAY, 1
+	warp_event  1,  3, ROUTE_67_HALLWAY, 1
+	warp_event  2,  3, ROUTE_67_HALLWAY, 1
 
 	def_coord_events
 

@@ -6,9 +6,9 @@ NewBarkTown_MapScriptHeader:
 
 	def_warp_events
 	warp_event  6,  3, ELMS_LAB, 1
-	warp_event 15,  5, PLAYERS_HOUSE_1F, 1
-	warp_event  3, 11, PLAYERS_NEIGHBORS_HOUSE, 1
-	warp_event 11, 13, LYRAS_HOUSE_1F, 1
+	warp_event 11, 15, PLAYERS_HOUSE_1F, 1
+	warp_event  5, 15, PLAYERS_NEIGHBORS_HOUSE, 1
+	warp_event  5, 10, LYRAS_HOUSE_1F, 1
 	warp_event 10,  2, ELMS_HOUSE, 2
 
 	def_coord_events
@@ -22,17 +22,17 @@ NewBarkTown_MapScriptHeader:
 
 	def_bg_events
 	bg_event  8,  8, BGEVENT_JUMPTEXT, NewBarkTownSignText
-	bg_event 13,  5, BGEVENT_JUMPTEXT, PlayersHouseSignText
+	bg_event  9, 15, BGEVENT_JUMPTEXT, PlayersHouseSignText
 	bg_event  3,  3, BGEVENT_JUMPTEXT, ElmsLabSignText
 	bg_event  9, 13, BGEVENT_JUMPTEXT, LyrasHouseSignText
-	bg_event  3,  2, BGEVENT_ITEM + POTION, EVENT_NEW_BARK_TOWN_HIDDEN_POTION
+	bg_event  3,  2, BGEVENT_ITEM + POTION, EVENT_NEPHI_CITY_HIDDEN_POTION
 
 	def_object_events
-	object_event  3,  2, SPRITE_SILVER, SPRITEMOVEDATA_STANDING_RIGHT, 0, 0, -1, -1, 0, OBJECTTYPE_SCRIPT, 0, NewBarkTownSilverScript, EVENT_RIVAL_NEW_BARK_TOWN
-	object_event  1,  6, SPRITE_LYRA, SPRITEMOVEDATA_STANDING_RIGHT, 0, 0, -1, -1, 0, OBJECTTYPE_SCRIPT, 0, ObjectEvent, EVENT_LYRA_NEW_BARK_TOWN
+	object_event  3,  2, SPRITE_SILVER, SPRITEMOVEDATA_STANDING_RIGHT, 0, 0, -1, -1, 0, OBJECTTYPE_SCRIPT, 0, NewBarkTownSilverScript, EVENT_RIVAL_NEPHI_CITY
+	object_event  1,  6, SPRITE_LYRA, SPRITEMOVEDATA_STANDING_RIGHT, 0, 0, -1, -1, 0, OBJECTTYPE_SCRIPT, 0, ObjectEvent, EVENT_LYRA_NEPHI_CITY
 	object_event  6,  8, SPRITE_POKEFAN_F, SPRITEMOVEDATA_SPINRANDOM_SLOW, 0, 0, -1, -1, PAL_NPC_RED, OBJECTTYPE_SCRIPT, 0, NewBarkTownTeacherScript, -1
 	object_event 13,  8, SPRITE_FAT_GUY, SPRITEMOVEDATA_WALK_UP_DOWN, 1, 0, -1, -1, PAL_NPC_GREEN, OBJECTTYPE_COMMAND, jumptextfaceplayer, Text_ElmDiscoveredNewMon, -1
-	object_event  7, 15, SPRITE_SCHOOLBOY, SPRITEMOVEDATA_WALK_LEFT_RIGHT, 0, 1, -1, (1 << MORN) | (1 << DAY), 0, OBJECTTYPE_COMMAND, jumptextfaceplayer, Text_GearIsImpressive, -1
+	object_event  8, 17, SPRITE_SCHOOLBOY, SPRITEMOVEDATA_WALK_LEFT_RIGHT, 0, 1, -1, (1 << MORN) | (1 << DAY), 0, OBJECTTYPE_COMMAND, jumptextfaceplayer, Text_GearIsImpressive, -1
 
 	object_const_def
 	const NEWBARKTOWN_SILVER
@@ -119,7 +119,7 @@ NewBarkTown_LyraFinalTrigger:
 	applymovement NEWBARKTOWN_LYRA, Movement_LyraSaysGoodbye2_NBT
 	turnobject PLAYER, LEFT
 	showtext Text_LyraGoodbye1
-	setevent EVENT_LYRA_NEW_BARK_TOWN
+	setevent EVENT_LYRA_NEPHI_CITY
 	winlosstext Text_LyraGoodbyeWin, Text_LyraGoodbyeLoss
 	setlasttalked NEWBARKTOWN_LYRA
 	checkevent EVENT_GOT_TOTODILE_FROM_ELM

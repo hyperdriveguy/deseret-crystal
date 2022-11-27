@@ -5,8 +5,8 @@ KurtsHouse_MapScriptHeader:
 	callback MAPCALLBACK_OBJECTS, KurtsHouseKurtCallback
 
 	def_warp_events
-	warp_event  3,  7, AZALEA_TOWN, 4
-	warp_event  4,  7, AZALEA_TOWN, 4
+	warp_event  3,  7, ROUTE_87, 4
+	warp_event  4,  7, ROUTE_87, 4
 
 	def_coord_events
 
@@ -33,7 +33,7 @@ KurtsHouse_MapScriptHeader:
 	const KURTSHOUSE_TWIN2
 
 KurtsHouseKurtCallback:
-	checkevent EVENT_CLEARED_SLOWPOKE_WELL
+	checkevent EVENT_CLEARED_VERNAL_CITY
 	iffalse .Done
 	checkevent EVENT_FOREST_IS_RESTLESS
 	iftrue .Done
@@ -58,13 +58,13 @@ Kurt1:
 	opentext
 	checkevent EVENT_KURT_GAVE_YOU_APRICORN_BOX
 	iftrue .GotApricornBox
-	checkevent EVENT_CLEARED_SLOWPOKE_WELL
+	checkevent EVENT_CLEARED_VERNAL_CITY
 	iftrue .ClearedSlowpokeWell
 	writetext KurtsHouseKurtMakingBallsMustWaitText
 	waitbutton
 	closetext
 	special Special_FadeOutMusic
-	setevent EVENT_AZALEA_TOWN_SLOWPOKETAIL_ROCKET
+	setevent EVENT_ROUTE_87_SLOWPOKETAIL_ROCKET
 	readvar VAR_FACING
 	ifequal UP, .RunAround
 	turnobject PLAYER, DOWN
@@ -311,10 +311,10 @@ endr
 .KurtHasLeftTheBuilding:
 	playsound SFX_EXIT_BUILDING
 	disappear KURTSHOUSE_KURT1
-	clearevent EVENT_AZALEA_TOWN_KURT
+	clearevent EVENT_ROUTE_87_KURT
 	waitsfx
 	special RestartMapMusic
-	setmapscene AZALEA_TOWN, $2
+	setmapscene ROUTE_87, $2
 	end
 
 Kurt2:
@@ -355,9 +355,9 @@ KurtsGranddaughter1:
 	iftrue_jumptext KurtsGranddaughterLonelyText
 	checkevent EVENT_FAST_SHIP_FIRST_TIME
 	iftrue_jumptext KurtsGranddaughterDadText
-	checkevent EVENT_CLEARED_SLOWPOKE_WELL
+	checkevent EVENT_CLEARED_VERNAL_CITY
 	iftrue_jumptext KurtsGranddaughterSlowpokeBackText
-	checkevent EVENT_AZALEA_TOWN_SLOWPOKETAIL_ROCKET
+	checkevent EVENT_ROUTE_87_SLOWPOKETAIL_ROCKET
 	iftrue_jumptext KurtsGranddaughterLonelyText
 	jumptext KurtsGranddaughterSlowpokeGoneText
 

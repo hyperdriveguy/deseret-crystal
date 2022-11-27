@@ -4,8 +4,8 @@ OlivineGym_MapScriptHeader:
 	def_callbacks
 
 	def_warp_events
-	warp_event  4, 15, OLIVINE_CITY, 2
-	warp_event  5, 15, OLIVINE_CITY, 2
+	warp_event  4, 15, UTAH_POINT, 2
+	warp_event  5, 15, UTAH_POINT, 2
 
 	def_coord_events
 
@@ -37,7 +37,7 @@ OlivineGymJasmineScript:
 	playsound SFX_GET_BADGE
 	waitsfx
 	setflag ENGINE_MINERALBADGE
-	clearevent EVENT_GOLDENROD_CITY_ROCKET_TAKEOVER
+	clearevent EVENT_ROUTE_55_ROCKET_TAKEOVER
 	setmapscene ROUTE_42, $1
 .FightDone:
 	checkevent EVENT_GOT_TM23_IRON_TAIL

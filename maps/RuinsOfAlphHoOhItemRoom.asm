@@ -4,10 +4,10 @@ RuinsOfAlphHoOhItemRoom_MapScriptHeader:
 	def_callbacks
 
 	def_warp_events
-	warp_event  3,  9, RUINS_OF_ALPH_HO_OH_CHAMBER, 5
-	warp_event  4,  9, RUINS_OF_ALPH_HO_OH_CHAMBER, 5
-	warp_event  3,  1, RUINS_OF_ALPH_HO_OH_WORD_ROOM, 1
-	warp_event  4,  1, RUINS_OF_ALPH_HO_OH_WORD_ROOM, 2
+	warp_event  3,  9, PROVO_CANYON_HO_OH_CHAMBER, 5
+	warp_event  4,  9, PROVO_CANYON_HO_OH_CHAMBER, 5
+	warp_event  3,  1, PROVO_CANYON_HO_OH_WORD_ROOM, 1
+	warp_event  4,  1, PROVO_CANYON_HO_OH_WORD_ROOM, 2
 
 	def_coord_events
 

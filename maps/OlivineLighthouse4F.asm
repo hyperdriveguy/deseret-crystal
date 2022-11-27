@@ -4,16 +4,16 @@ OlivineLighthouse4F_MapScriptHeader:
 	def_callbacks
 
 	def_warp_events
-	warp_event 13,  3, OLIVINE_LIGHTHOUSE_3F, 1
-	warp_event  3,  5, OLIVINE_LIGHTHOUSE_5F, 2
-	warp_event  9,  7, OLIVINE_LIGHTHOUSE_5F, 3
-	warp_event  9,  5, OLIVINE_LIGHTHOUSE_3F, 3
-	warp_event 16,  9, OLIVINE_LIGHTHOUSE_3F, 6
-	warp_event 17,  9, OLIVINE_LIGHTHOUSE_3F, 7
-	warp_event  8,  3, OLIVINE_LIGHTHOUSE_3F, 8
-	warp_event  9,  3, OLIVINE_LIGHTHOUSE_3F, 9
-	warp_event 16,  7, OLIVINE_LIGHTHOUSE_5F, 4
-	warp_event 17,  7, OLIVINE_LIGHTHOUSE_5F, 5
+	warp_event 13,  3, OLIVINE_MOUNT_TIMPANOGOS_3F, 1
+	warp_event  3,  5, OLIVINE_MOUNT_TIMPANOGOS_5F, 2
+	warp_event  9,  7, OLIVINE_MOUNT_TIMPANOGOS_5F, 3
+	warp_event  9,  5, OLIVINE_MOUNT_TIMPANOGOS_3F, 3
+	warp_event 16,  9, OLIVINE_MOUNT_TIMPANOGOS_3F, 6
+	warp_event 17,  9, OLIVINE_MOUNT_TIMPANOGOS_3F, 7
+	warp_event  8,  3, OLIVINE_MOUNT_TIMPANOGOS_3F, 8
+	warp_event  9,  3, OLIVINE_MOUNT_TIMPANOGOS_3F, 9
+	warp_event 16,  7, OLIVINE_MOUNT_TIMPANOGOS_5F, 4
+	warp_event 17,  7, OLIVINE_MOUNT_TIMPANOGOS_5F, 5
 
 	def_coord_events
 
@@ -21,7 +21,7 @@ OlivineLighthouse4F_MapScriptHeader:
 
 	def_object_events
 	object_event  7, 14, SPRITE_SAILOR, SPRITEMOVEDATA_STANDING_LEFT, 0, 0, -1, -1, 0, OBJECTTYPE_TRAINER, 3, TrainerSailorKent, -1
-	object_event 11,  2, SPRITE_LASS, SPRITEMOVEDATA_STANDING_DOWN, 0, 0, -1, -1, 0, OBJECTTYPE_GENERICTRAINER, 1, GenericTrainerLassConnie, EVENT_OLIVINE_LIGHTHOUSE_JASMINE
+	object_event 11,  2, SPRITE_LASS, SPRITEMOVEDATA_STANDING_DOWN, 0, 0, -1, -1, 0, OBJECTTYPE_GENERICTRAINER, 1, GenericTrainerLassConnie, EVENT_OLIVINE_MOUNT_TIMPANOGOS_JASMINE
 
 GenericTrainerLassConnie:
 	generictrainer LASS, CONNIE, EVENT_BEAT_LASS_CONNIE, LassConnieSeenText, LassConnieBeatenText

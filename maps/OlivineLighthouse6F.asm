@@ -4,23 +4,23 @@ OlivineLighthouse6F_MapScriptHeader:
 	def_callbacks
 
 	def_warp_events
-	warp_event  9, 15, OLIVINE_LIGHTHOUSE_5F, 1
-	warp_event 16,  5, OLIVINE_LIGHTHOUSE_5F, 6
-	warp_event 17,  5, OLIVINE_LIGHTHOUSE_5F, 7
-	warp_event  9,  3, OLIVINE_LIGHTHOUSE_ROOF, 1
+	warp_event  9, 15, OLIVINE_MOUNT_TIMPANOGOS_5F, 1
+	warp_event 16,  5, OLIVINE_MOUNT_TIMPANOGOS_5F, 6
+	warp_event 17,  5, OLIVINE_MOUNT_TIMPANOGOS_5F, 7
+	warp_event  9,  3, OLIVINE_MOUNT_TIMPANOGOS_ROOF, 1
 
 	def_coord_events
 
 	def_bg_events
 
 	def_object_events
-	object_event  8,  8, SPRITE_JASMINE, SPRITEMOVEDATA_STANDING_DOWN, 0, 0, -1, -1, 0, OBJECTTYPE_SCRIPT, 0, OlivineLighthouseJasmine, EVENT_OLIVINE_LIGHTHOUSE_JASMINE
+	object_event  8,  8, SPRITE_JASMINE, SPRITEMOVEDATA_STANDING_DOWN, 0, 0, -1, -1, 0, OBJECTTYPE_SCRIPT, 0, OlivineLighthouseJasmine, EVENT_OLIVINE_MOUNT_TIMPANOGOS_JASMINE
 	object_event  9,  8, SPRITE_MON_ICON, SPRITEMOVEDATA_POKEMON, 0, AMPHAROS, -1, -1, PAL_NPC_BROWN, OBJECTTYPE_SCRIPT, 0, OlivineLighthouseAmphy, -1
-	itemball_event  3,  4, SUPER_POTION, 1, EVENT_OLIVINE_LIGHTHOUSE_6F_SUPER_POTION
+	itemball_event  3,  4, SUPER_POTION, 1, EVENT_OLIVINE_MOUNT_TIMPANOGOS_6F_SUPER_POTION
 
 	object_const_def
-	const OLIVINELIGHTHOUSE6F_JASMINE
-	const OLIVINELIGHTHOUSE6F_AMPHAROS
+	const OLIVINEMOUNT_TIMPANOGOS6F_JASMINE
+	const OLIVINEMOUNT_TIMPANOGOS6F_AMPHAROS
 
 OlivineLighthouseJasmine:
 	faceplayer
@@ -45,7 +45,7 @@ UnknownScript_0x60bab:
 	writetext JasmineDontBeOffendedText
 	waitbutton
 	closetext
-	turnobject OLIVINELIGHTHOUSE6F_JASMINE, RIGHT
+	turnobject OLIVINEMOUNT_TIMPANOGOS6F_JASMINE, RIGHT
 	pause 15
 	opentext
 	playmusic MUSIC_HEAL
@@ -60,32 +60,32 @@ UnknownScript_0x60bab:
 	pause 10
 	special FadeInPalettes
 	showtext AmphyPaluPaluluText
-	showemote EMOTE_BOLT, OLIVINELIGHTHOUSE6F_AMPHAROS, 15
+	showemote EMOTE_BOLT, OLIVINEMOUNT_TIMPANOGOS6F_AMPHAROS, 15
 	showtextfaceplayer JasmineThankYouText
 	setevent EVENT_JASMINE_RETURNED_TO_GYM
 	clearevent EVENT_OLIVINE_GYM_JASMINE
 	readvar VAR_FACING
 	ifequal DOWN, UnknownScript_0x60c17
 	ifequal RIGHT, UnknownScript_0x60c1e
-	applymovement OLIVINELIGHTHOUSE6F_JASMINE, OlivineLighthouseJasmineLeavesUpMovement
-	disappear OLIVINELIGHTHOUSE6F_JASMINE
+	applymovement OLIVINEMOUNT_TIMPANOGOS6F_JASMINE, OlivineLighthouseJasmineLeavesUpMovement
+	disappear OLIVINEMOUNT_TIMPANOGOS6F_JASMINE
 	end
 
 UnknownScript_0x60c17:
-	applymovement OLIVINELIGHTHOUSE6F_JASMINE, OlivineLighthouseJasmineLeavesDownMovement
-	disappear OLIVINELIGHTHOUSE6F_JASMINE
+	applymovement OLIVINEMOUNT_TIMPANOGOS6F_JASMINE, OlivineLighthouseJasmineLeavesDownMovement
+	disappear OLIVINEMOUNT_TIMPANOGOS6F_JASMINE
 	end
 
 UnknownScript_0x60c1e:
-	applymovement OLIVINELIGHTHOUSE6F_JASMINE, OlivineLighthouseJasmineLeavesRightMovement
-	disappear OLIVINELIGHTHOUSE6F_JASMINE
+	applymovement OLIVINEMOUNT_TIMPANOGOS6F_JASMINE, OlivineLighthouseJasmineLeavesRightMovement
+	disappear OLIVINEMOUNT_TIMPANOGOS6F_JASMINE
 	end
 
 UnknownScript_0x60c25:
 	writetext JasmineISeeText
 	waitbutton
 	closetext
-	turnobject OLIVINELIGHTHOUSE6F_JASMINE, RIGHT
+	turnobject OLIVINEMOUNT_TIMPANOGOS6F_JASMINE, RIGHT
 	pause 15
 	jumptext JasmineAmphyHangOnText
 

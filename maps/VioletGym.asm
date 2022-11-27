@@ -5,8 +5,8 @@ VioletGym_MapScriptHeader:
 	def_callbacks
 
 	def_warp_events
-	warp_event  4, 15, VIOLET_CITY, 2
-	warp_event  5, 15, VIOLET_CITY, 2
+	warp_event  4, 15, UTAH_LAKE, 2
+	warp_event  5, 15, UTAH_LAKE, 2
 
 	def_coord_events
 
@@ -37,7 +37,7 @@ VioletGymFalknerAwayScript:
 	special FadeOutPalettes
 	playsound SFX_ENTER_DOOR
 	waitsfx
-	warp VIOLET_CITY, 18, 22
+	warp UTAH_LAKE, 18, 22
 	end
 
 VioletGymFalknerScript:

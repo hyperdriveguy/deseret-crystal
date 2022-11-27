@@ -4,10 +4,10 @@ GoldenrodHarborGate_MapScriptHeader:
 	def_callbacks
 
 	def_warp_events
-	warp_event  0,  4, GOLDENROD_HARBOR, 1
-	warp_event  0,  5, GOLDENROD_HARBOR, 2
-	warp_event  9,  4, GOLDENROD_CITY, 16
-	warp_event  9,  5, GOLDENROD_CITY, 17
+	warp_event  0,  4, MILLCREEK_CANYON, 1
+	warp_event  0,  5, MILLCREEK_CANYON, 2
+	warp_event  9,  4, ROUTE_55, 16
+	warp_event  9,  5, ROUTE_55, 17
 
 	def_coord_events
 

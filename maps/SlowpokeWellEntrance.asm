@@ -4,16 +4,16 @@ SlowpokeWellEntrance_MapScriptHeader:
 	def_callbacks
 
 	def_warp_events
-	warp_event 11,  7, AZALEA_TOWN, 6
-	warp_event  7,  5, SLOWPOKE_WELL_B1F, 1
+	warp_event 11,  7, ROUTE_87, 6
+	warp_event  7,  5, VERNAL_CITY_B1F, 1
 
 	def_coord_events
 
 	def_bg_events
-	bg_event  6, 13, BGEVENT_ITEM + SUPER_POTION, EVENT_SLOWPOKE_WELL_ENTRANCE_HIDDEN_SUPER_POTION
+	bg_event  6, 13, BGEVENT_ITEM + SUPER_POTION, EVENT_VERNAL_CITY_ENTRANCE_HIDDEN_SUPER_POTION
 
 	def_object_events
-	object_event  8,  9, SPRITE_KURT, SPRITEMOVEDATA_SPINRANDOM_SLOW, 0, 0, -1, -1, 0, OBJECTTYPE_COMMAND, jumptextfaceplayer, SlowpokeWellEntranceKurtText, EVENT_SLOWPOKE_WELL_KURT
+	object_event  8,  9, SPRITE_KURT, SPRITEMOVEDATA_SPINRANDOM_SLOW, 0, 0, -1, -1, 0, OBJECTTYPE_COMMAND, jumptextfaceplayer, SlowpokeWellEntranceKurtText, EVENT_VERNAL_CITY_KURT
 
 SlowpokeWellEntranceKurtText:
 	text "Kurt: Hey there,"

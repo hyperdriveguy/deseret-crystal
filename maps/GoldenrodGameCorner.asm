@@ -4,8 +4,8 @@ GoldenrodGameCorner_MapScriptHeader:
 	def_callbacks
 
 	def_warp_events
-	warp_event  2, 13, GOLDENROD_CITY, 10
-	warp_event  3, 13, GOLDENROD_CITY, 10
+	warp_event  2, 13, ROUTE_55, 10
+	warp_event  3, 13, ROUTE_55, 10
 
 	def_coord_events
 

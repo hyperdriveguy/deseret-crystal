@@ -1233,7 +1233,7 @@ IrwinRumorScript:
 	iftrue UnknownScript_0xa08c0
 	checkflag ENGINE_RISINGBADGE
 	iftrue UnknownScript_0xa08b8
-	checkevent EVENT_CLEARED_RADIO_TOWER
+	checkevent EVENT_CLEARED_SALT_LAKE_VALLEY
 	iftrue UnknownScript_0xa08b0
 	checkevent EVENT_CLEARED_ROCKET_HIDEOUT
 	iftrue UnknownScript_0xa08a8

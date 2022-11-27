@@ -5,10 +5,10 @@ Route47_MapScriptHeader:
 	callback MAPCALLBACK_TILES, Route47TileScript
 
 	def_warp_events
-	warp_event 67, 21, CLIFF_EDGE_GATE, 2
-	warp_event 53, 21, CLIFF_CAVE, 1
-	warp_event 52, 17, CLIFF_CAVE, 2
-	warp_event 53, 29, CLIFF_CAVE, 3
+	warp_event 67, 21, LOGAN_CITY, 2
+	warp_event 53, 21, BEAR_LAKE, 1
+	warp_event 52, 17, BEAR_LAKE, 2
+	warp_event 53, 29, BEAR_LAKE, 3
 	warp_event 11, 23, QUIET_CAVE_1F, 1
 	warp_event  8, 23, EMBEDDED_TOWER, 1
 
@@ -49,8 +49,8 @@ Route47_MapScriptHeader:
 	def_bg_events
 	bg_event  8, 23, BGEVENT_IFNOTSET, Route47SealedCaveSign
 	bg_event 36, 32, BGEVENT_JUMPTEXT, Route47QuietCaveSignText
-	bg_event 34, 33, BGEVENT_ITEM + PEARL, EVENT_ROUTE_47_HIDDEN_PEARL
-	bg_event  5, 32, BGEVENT_ITEM + STARDUST, EVENT_ROUTE_47_HIDDEN_STARDUST
+	bg_event 34, 33, BGEVENT_ITEM + PEARL, EVENT_BEAR_LAKE_PASS_HIDDEN_PEARL
+	bg_event  5, 32, BGEVENT_ITEM + STARDUST, EVENT_BEAR_LAKE_PASS_HIDDEN_STARDUST
 
 	def_object_events
 	object_event 59, 26, SPRITE_HIKER, SPRITEMOVEDATA_STANDING_LEFT, 0, 0, -1, -1, 0, OBJECTTYPE_GENERICTRAINER, 3, GenericTrainerHikerDevin, EVENT_YELLOW_FOREST_ROCKET_TAKEOVER
@@ -64,13 +64,13 @@ Route47_MapScriptHeader:
 	object_event 36, 20, SPRITE_ROCKET, SPRITEMOVEDATA_STANDING_RIGHT, 0, 0, -1, -1, 0, OBJECTTYPE_GENERICTRAINER, 2, GenericTrainerGruntM23, EVENT_CLEARED_YELLOW_FOREST
 	object_event 25, 10, SPRITE_ROCKET, SPRITEMOVEDATA_STANDING_UP, 0, 0, -1, -1, 0, OBJECTTYPE_GENERICTRAINER, 3, GenericTrainerGruntM26, EVENT_CLEARED_YELLOW_FOREST
 	object_event 40, 25, SPRITE_ROCKET_GIRL, SPRITEMOVEDATA_STANDING_RIGHT, 0, 0, -1, -1, 0, OBJECTTYPE_COMMAND, jumptextfaceplayer, Route47RocketGirlText, EVENT_CLEARED_YELLOW_FOREST
-	itemball_event 39, 28, REVIVE, 1, EVENT_ROUTE_47_REVIVE
-	itemball_event  7, 32, MYSTIC_WATER, 1, EVENT_ROUTE_47_MYSTIC_WATER
-	itemball_event 31, 20, QUICK_CLAW, 1, EVENT_ROUTE_47_QUICK_CLAW
-	itemball_event  7,  6, MAX_REPEL, 1, EVENT_ROUTE_47_MAX_REPEL
+	itemball_event 39, 28, REVIVE, 1, EVENT_BEAR_LAKE_PASS_REVIVE
+	itemball_event  7, 32, MYSTIC_WATER, 1, EVENT_BEAR_LAKE_PASS_MYSTIC_WATER
+	itemball_event 31, 20, QUICK_CLAW, 1, EVENT_BEAR_LAKE_PASS_QUICK_CLAW
+	itemball_event  7,  6, MAX_REPEL, 1, EVENT_BEAR_LAKE_PASS_MAX_REPEL
 
 Route47TileScript:
-	checkevent EVENT_DOOR_OPENED_IN_RUINS_OF_ALPH
+	checkevent EVENT_DOOR_OPENED_IN_PROVO_CANYON
 	iffalse .locked
 	changeblock 8, 22, $9b
 .locked
@@ -85,73 +85,73 @@ Route47TileScript:
 
 .overhead_asm:
 	; bridge 1
-	changebridgeblock 42, 24, $e9, ROUTE_47
-	changebridgeblock 44, 24, $e7, ROUTE_47
-	changebridgeblock 46, 24, $e7, ROUTE_47
-	changebridgeblock 48, 24, $e7, ROUTE_47
-	changebridgeblock 50, 24, $ea, ROUTE_47
+	changebridgeblock 42, 24, $e9, BEAR_LAKE_PASS
+	changebridgeblock 44, 24, $e7, BEAR_LAKE_PASS
+	changebridgeblock 46, 24, $e7, BEAR_LAKE_PASS
+	changebridgeblock 48, 24, $e7, BEAR_LAKE_PASS
+	changebridgeblock 50, 24, $ea, BEAR_LAKE_PASS
 	; bridge 2
-	changebridgeblock 44, 18, $e8, ROUTE_47
-	changebridgeblock 46, 18, $e8, ROUTE_47
-	changebridgeblock 48, 18, $e8, ROUTE_47
+	changebridgeblock 44, 18, $e8, BEAR_LAKE_PASS
+	changebridgeblock 46, 18, $e8, BEAR_LAKE_PASS
+	changebridgeblock 48, 18, $e8, BEAR_LAKE_PASS
 	; bridge 3
-	changebridgeblock 20, 24, $e8, ROUTE_47
-	changebridgeblock 22, 24, $e8, ROUTE_47
-	changebridgeblock 24, 24, $e8, ROUTE_47
+	changebridgeblock 20, 24, $e8, BEAR_LAKE_PASS
+	changebridgeblock 22, 24, $e8, BEAR_LAKE_PASS
+	changebridgeblock 24, 24, $e8, BEAR_LAKE_PASS
 	; bridge 4
-	changebridgeblock 18, 16, $e9, ROUTE_47
-	changebridgeblock 20, 16, $e7, ROUTE_47
-	changebridgeblock 22, 16, $e7, ROUTE_47
-	changebridgeblock 24, 16, $e7, ROUTE_47
-	changebridgeblock 26, 16, $eb, ROUTE_47
+	changebridgeblock 18, 16, $e9, BEAR_LAKE_PASS
+	changebridgeblock 20, 16, $e7, BEAR_LAKE_PASS
+	changebridgeblock 22, 16, $e7, BEAR_LAKE_PASS
+	changebridgeblock 24, 16, $e7, BEAR_LAKE_PASS
+	changebridgeblock 26, 16, $eb, BEAR_LAKE_PASS
 	jmp BufferScreen
 
 .underfoot_asm:
 	; bridge 1
-	changebridgeblock 42, 24, $aa, ROUTE_47
-	changebridgeblock 44, 24, $e6, ROUTE_47
-	changebridgeblock 46, 24, $e6, ROUTE_47
-	changebridgeblock 48, 24, $e6, ROUTE_47
-	changebridgeblock 50, 24, $ab, ROUTE_47
+	changebridgeblock 42, 24, $aa, BEAR_LAKE_PASS
+	changebridgeblock 44, 24, $e6, BEAR_LAKE_PASS
+	changebridgeblock 46, 24, $e6, BEAR_LAKE_PASS
+	changebridgeblock 48, 24, $e6, BEAR_LAKE_PASS
+	changebridgeblock 50, 24, $ab, BEAR_LAKE_PASS
 	; bridge 2
-	changebridgeblock 44, 18, $e6, ROUTE_47
-	changebridgeblock 46, 18, $e6, ROUTE_47
-	changebridgeblock 48, 18, $e6, ROUTE_47
+	changebridgeblock 44, 18, $e6, BEAR_LAKE_PASS
+	changebridgeblock 46, 18, $e6, BEAR_LAKE_PASS
+	changebridgeblock 48, 18, $e6, BEAR_LAKE_PASS
 	; bridge 3
-	changebridgeblock 20, 24, $e6, ROUTE_47
-	changebridgeblock 22, 24, $e6, ROUTE_47
-	changebridgeblock 24, 24, $e6, ROUTE_47
+	changebridgeblock 20, 24, $e6, BEAR_LAKE_PASS
+	changebridgeblock 22, 24, $e6, BEAR_LAKE_PASS
+	changebridgeblock 24, 24, $e6, BEAR_LAKE_PASS
 	; bridge 4
-	changebridgeblock 18, 16, $aa, ROUTE_47
-	changebridgeblock 20, 16, $e6, ROUTE_47
-	changebridgeblock 22, 16, $e6, ROUTE_47
-	changebridgeblock 24, 16, $e6, ROUTE_47
-	changebridgeblock 26, 16, $b7, ROUTE_47
+	changebridgeblock 18, 16, $aa, BEAR_LAKE_PASS
+	changebridgeblock 20, 16, $e6, BEAR_LAKE_PASS
+	changebridgeblock 22, 16, $e6, BEAR_LAKE_PASS
+	changebridgeblock 24, 16, $e6, BEAR_LAKE_PASS
+	changebridgeblock 26, 16, $b7, BEAR_LAKE_PASS
 	jmp BufferScreen
 
 Route47Bridge1OverheadTrigger:
 	callthisasm
-	changebridgeblock 42, 24, $e9, ROUTE_47
-	changebridgeblock 44, 24, $e7, ROUTE_47
-	changebridgeblock 46, 24, $e7, ROUTE_47
-	changebridgeblock 48, 24, $e7, ROUTE_47
-	changebridgeblock 50, 24, $ea, ROUTE_47
+	changebridgeblock 42, 24, $e9, BEAR_LAKE_PASS
+	changebridgeblock 44, 24, $e7, BEAR_LAKE_PASS
+	changebridgeblock 46, 24, $e7, BEAR_LAKE_PASS
+	changebridgeblock 48, 24, $e7, BEAR_LAKE_PASS
+	changebridgeblock 50, 24, $ea, BEAR_LAKE_PASS
 	jr Route47_FinishOverheadBridge
 
 Route47Bridge1UnderfootTrigger:
 	callthisasm
-	changebridgeblock 42, 24, $aa, ROUTE_47
-	changebridgeblock 44, 24, $e6, ROUTE_47
-	changebridgeblock 46, 24, $e6, ROUTE_47
-	changebridgeblock 48, 24, $e6, ROUTE_47
-	changebridgeblock 50, 24, $ab, ROUTE_47
+	changebridgeblock 42, 24, $aa, BEAR_LAKE_PASS
+	changebridgeblock 44, 24, $e6, BEAR_LAKE_PASS
+	changebridgeblock 46, 24, $e6, BEAR_LAKE_PASS
+	changebridgeblock 48, 24, $e6, BEAR_LAKE_PASS
+	changebridgeblock 50, 24, $ab, BEAR_LAKE_PASS
 	jr Route47_FinishUnderfootBridge
 
 Route47Bridge2OverheadTrigger:
 	callthisasm
-	changebridgeblock 44, 18, $e8, ROUTE_47
-	changebridgeblock 46, 18, $e8, ROUTE_47
-	changebridgeblock 48, 18, $e8, ROUTE_47
+	changebridgeblock 44, 18, $e8, BEAR_LAKE_PASS
+	changebridgeblock 46, 18, $e8, BEAR_LAKE_PASS
+	changebridgeblock 48, 18, $e8, BEAR_LAKE_PASS
 	; fallthrough
 
 Route47_FinishOverheadBridge:
@@ -160,9 +160,9 @@ Route47_FinishOverheadBridge:
 
 Route47Bridge2UnderfootTrigger:
 	callthisasm
-	changebridgeblock 44, 18, $e6, ROUTE_47
-	changebridgeblock 46, 18, $e6, ROUTE_47
-	changebridgeblock 48, 18, $e6, ROUTE_47
+	changebridgeblock 44, 18, $e6, BEAR_LAKE_PASS
+	changebridgeblock 46, 18, $e6, BEAR_LAKE_PASS
+	changebridgeblock 48, 18, $e6, BEAR_LAKE_PASS
 	; fallthrough
 
 Route47_FinishUnderfootBridge:
@@ -174,34 +174,34 @@ Route47_FinishBridge:
 
 Route47Bridge3OverheadTrigger:
 	callthisasm
-	changebridgeblock 20, 24, $e8, ROUTE_47
-	changebridgeblock 22, 24, $e8, ROUTE_47
-	changebridgeblock 24, 24, $e8, ROUTE_47
+	changebridgeblock 20, 24, $e8, BEAR_LAKE_PASS
+	changebridgeblock 22, 24, $e8, BEAR_LAKE_PASS
+	changebridgeblock 24, 24, $e8, BEAR_LAKE_PASS
 	jr Route47_FinishOverheadBridge
 
 Route47Bridge3UnderfootTrigger:
 	callthisasm
-	changebridgeblock 20, 24, $e6, ROUTE_47
-	changebridgeblock 22, 24, $e6, ROUTE_47
-	changebridgeblock 24, 24, $e6, ROUTE_47
+	changebridgeblock 20, 24, $e6, BEAR_LAKE_PASS
+	changebridgeblock 22, 24, $e6, BEAR_LAKE_PASS
+	changebridgeblock 24, 24, $e6, BEAR_LAKE_PASS
 	jr Route47_FinishUnderfootBridge
 
 Route47Bridge4OverheadTrigger:
 	callthisasm
-	changebridgeblock 18, 16, $e9, ROUTE_47
-	changebridgeblock 20, 16, $e7, ROUTE_47
-	changebridgeblock 22, 16, $e7, ROUTE_47
-	changebridgeblock 24, 16, $e7, ROUTE_47
-	changebridgeblock 26, 16, $eb, ROUTE_47
+	changebridgeblock 18, 16, $e9, BEAR_LAKE_PASS
+	changebridgeblock 20, 16, $e7, BEAR_LAKE_PASS
+	changebridgeblock 22, 16, $e7, BEAR_LAKE_PASS
+	changebridgeblock 24, 16, $e7, BEAR_LAKE_PASS
+	changebridgeblock 26, 16, $eb, BEAR_LAKE_PASS
 	jr Route47_FinishOverheadBridge
 
 Route47Bridge4UnderfootTrigger:
 	callthisasm
-	changebridgeblock 18, 16, $aa, ROUTE_47
-	changebridgeblock 20, 16, $e6, ROUTE_47
-	changebridgeblock 22, 16, $e6, ROUTE_47
-	changebridgeblock 24, 16, $e6, ROUTE_47
-	changebridgeblock 26, 16, $b7, ROUTE_47
+	changebridgeblock 18, 16, $aa, BEAR_LAKE_PASS
+	changebridgeblock 20, 16, $e6, BEAR_LAKE_PASS
+	changebridgeblock 22, 16, $e6, BEAR_LAKE_PASS
+	changebridgeblock 24, 16, $e6, BEAR_LAKE_PASS
+	changebridgeblock 26, 16, $b7, BEAR_LAKE_PASS
 	jr Route47_FinishUnderfootBridge
 
 GenericTrainerHikerDevin:
@@ -409,7 +409,7 @@ Route47RocketGirlText:
 	done
 
 Route47SealedCaveSign:
-	dw EVENT_DOOR_OPENED_IN_RUINS_OF_ALPH
+	dw EVENT_DOOR_OPENED_IN_PROVO_CANYON
 	jumpthistext
 
 	text "There's a door-"

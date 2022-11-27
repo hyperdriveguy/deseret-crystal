@@ -5,8 +5,8 @@ Route31_MapScriptHeader:
 	callback MAPCALLBACK_NEWMAP, Route31CheckMomCall
 
 	def_warp_events
-	warp_event  4,  6, ROUTE_31_VIOLET_GATE, 3
-	warp_event  4,  7, ROUTE_31_VIOLET_GATE, 4
+	warp_event  4,  6, BYU_UNDERGROUND_VIOLET_GATE, 3
+	warp_event  4,  7, BYU_UNDERGROUND_VIOLET_GATE, 4
 	warp_event 34,  5, DARK_CAVE_VIOLET_ENTRANCE, 1
 
 	def_coord_events
@@ -20,11 +20,11 @@ Route31_MapScriptHeader:
 	object_event 17,  7, SPRITE_FAT_GUY, SPRITEMOVEDATA_STANDING_DOWN, 0, 0, -1, -1, 0, OBJECTTYPE_SCRIPT, 0, Route31MailRecipientScript, -1
 	object_event  9,  5, SPRITE_SCHOOLBOY, SPRITEMOVEDATA_WANDER, 1, 1, -1, -1, 0, OBJECTTYPE_COMMAND, jumptextfaceplayer, Route31YoungsterText, -1
 	object_event 21, 13, SPRITE_BUG_CATCHER, SPRITEMOVEDATA_STANDING_LEFT, 0, 0, -1, -1, 0, OBJECTTYPE_TRAINER, 5, TrainerBug_catcherWade1, -1
-	cuttree_event 13,  5, EVENT_ROUTE_31_CUT_TREE_1
-	cuttree_event 25, 10, EVENT_ROUTE_31_CUT_TREE_2
-	fruittree_event 16,  7, FRUITTREE_ROUTE_31, PERSIM_BERRY, PAL_NPC_RED
-	itemball_event 29,  5, POTION, 1, EVENT_ROUTE_31_POTION
-	itemball_event 19, 15, POKE_BALL, 1, EVENT_ROUTE_31_POKE_BALL
+	cuttree_event 13,  5, EVENT_BYU_UNDERGROUND_CUT_TREE_1
+	cuttree_event 25, 10, EVENT_BYU_UNDERGROUND_CUT_TREE_2
+	fruittree_event 16,  7, FRUITTREE_BYU_UNDERGROUND, PERSIM_BERRY, PAL_NPC_RED
+	itemball_event 29,  5, POTION, 1, EVENT_BYU_UNDERGROUND_POTION
+	itemball_event 19, 15, POKE_BALL, 1, EVENT_BYU_UNDERGROUND_POKE_BALL
 
 	object_const_def
 	const ROUTE31_COOLTRAINER_M
@@ -43,7 +43,7 @@ TrainerCooltrainermFinch:
 
 .Script:
 	endifjustbattled
-	checkevent EVENT_GOT_AIR_BALLOON_FROM_ROUTE_31_LEADER
+	checkevent EVENT_GOT_AIR_BALLOON_FROM_BYU_UNDERGROUND_LEADER
 	iftrue_jumptextfaceplayer .AfterText2
 	faceplayer
 	opentext
@@ -75,7 +75,7 @@ TrainerCooltrainermFinch:
 	promptbutton
 	verbosegiveitem AIR_BALLOON
 	iffalse_endtext
-	setevent EVENT_GOT_AIR_BALLOON_FROM_ROUTE_31_LEADER
+	setevent EVENT_GOT_AIR_BALLOON_FROM_BYU_UNDERGROUND_LEADER
 	jumpthisopenedtext
 
 .AfterText2:
@@ -201,7 +201,7 @@ TrainerBug_catcherWade1:
 	checkevent EVENT_BEAT_ELITE_FOUR
 	iftrue .LoadFight4
 .Fight3:
-	checkevent EVENT_CLEARED_RADIO_TOWER
+	checkevent EVENT_CLEARED_SALT_LAKE_VALLEY
 	iftrue .LoadFight3
 .Fight2:
 	checkflag ENGINE_FLYPOINT_MAHOGANY

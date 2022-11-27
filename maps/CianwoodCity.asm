@@ -9,10 +9,10 @@ CianwoodCity_MapScriptHeader:
 	warp_event  8, 43, CIANWOOD_GYM, 1
 	warp_event 23, 43, CIANWOOD_POKECENTER_1F, 1
 	warp_event 15, 47, CIANWOOD_PHARMACY, 1
-	warp_event  9, 31, CIANWOOD_CITY_PHOTO_STUDIO, 1
+	warp_event  9, 31, ROUTE_US89_PHOTO_STUDIO, 1
 	warp_event 15, 37, CIANWOOD_LUGIA_SPEECH_HOUSE, 1
 	warp_event  5, 17, MOVE_MANIACS_HOUSE, 1
-	warp_event  4, 25, CLIFF_EDGE_GATE, 1
+	warp_event  4, 25, LOGAN_CITY, 1
 
 	def_coord_events
 	coord_event 11, 16, 1, CianwoodCitySuicuneAndEusine
@@ -24,12 +24,12 @@ CianwoodCity_MapScriptHeader:
 	bg_event  8, 32, BGEVENT_JUMPTEXT, CianwoodPhotoStudioSignText
 	bg_event  6, 26, BGEVENT_JUMPTEXT, CianwoodCliffEdgeGateSignText
 	bg_event  8, 22, BGEVENT_JUMPTEXT, CianwoodMoveManiacSignText
-	bg_event  4, 19, BGEVENT_ITEM + REVIVE, EVENT_CIANWOOD_CITY_HIDDEN_REVIVE
-	bg_event  5, 29, BGEVENT_ITEM + MAX_ETHER, EVENT_CIANWOOD_CITY_HIDDEN_MAX_ETHER
+	bg_event  4, 19, BGEVENT_ITEM + REVIVE, EVENT_ROUTE_US89_HIDDEN_REVIVE
+	bg_event  5, 29, BGEVENT_ITEM + MAX_ETHER, EVENT_ROUTE_US89_HIDDEN_MAX_ETHER
 
 	def_object_events
-	object_event 11, 21, SPRITE_EUSINE, SPRITEMOVEDATA_STANDING_UP, 0, 0, -1, -1, 0, OBJECTTYPE_SCRIPT, 0, ObjectEvent, EVENT_CIANWOOD_CITY_EUSINE
-	object_event 10, 14, SPRITE_MON_ICON, SPRITEMOVEDATA_POKEMON, 0, SUICUNE, -1, -1, PAL_NPC_BLUE, OBJECTTYPE_SCRIPT, 0, ObjectEvent, EVENT_SAW_SUICUNE_AT_CIANWOOD_CITY
+	object_event 11, 21, SPRITE_EUSINE, SPRITEMOVEDATA_STANDING_UP, 0, 0, -1, -1, 0, OBJECTTYPE_SCRIPT, 0, ObjectEvent, EVENT_ROUTE_US89_EUSINE
+	object_event 10, 14, SPRITE_MON_ICON, SPRITEMOVEDATA_POKEMON, 0, SUICUNE, -1, -1, PAL_NPC_BLUE, OBJECTTYPE_SCRIPT, 0, ObjectEvent, EVENT_SAW_SUICUNE_AT_ROUTE_US89
 	object_event 21, 37, SPRITE_CAMPER, SPRITEMOVEDATA_SPINRANDOM_SLOW, 0, 0, -1, -1, 0, OBJECTTYPE_COMMAND, jumptextfaceplayer, CianwoodCityYoungsterText, -1
 	object_event 16, 33, SPRITE_POKEFAN_M, SPRITEMOVEDATA_WALK_LEFT_RIGHT, 0, 1, -1, -1, PAL_NPC_BROWN, OBJECTTYPE_COMMAND, jumptextfaceplayer, CianwoodCityPokefanMText, -1
 	object_event 14, 42, SPRITE_CUTE_GIRL, SPRITEMOVEDATA_WALK_UP_DOWN, 2, 0, -1, -1, PAL_NPC_RED, OBJECTTYPE_COMMAND, jumptextfaceplayer, CianwoodCityLassText, -1
@@ -50,7 +50,7 @@ CianwoodCity_MapScriptHeader:
 
 CianwoodCityFlyPointAndSuicune:
 	setflag ENGINE_FLYPOINT_CIANWOOD
-	setevent EVENT_EUSINE_IN_BURNED_TOWER
+	setevent EVENT_EUSINE_IN_PARK_CITY
 	checkevent EVENT_BEAT_EUSINE
 	iffalse .Done
 	disappear CIANWOODCITY_EUSINE

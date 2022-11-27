@@ -72,7 +72,7 @@ NoisyForestAnabelScript:
 	disappear NOISYFOREST_ANABEL
 	pause 15
 	special Special_FadeInQuickly
-	clearevent EVENT_BATTLE_TOWER_ANABEL
+	clearevent EVENT_ROUTE_67_ANABEL
 	end
 
 .ChallengeText:

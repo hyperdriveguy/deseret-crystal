@@ -4,9 +4,9 @@ Route35_MapScriptHeader:
 	def_callbacks
 
 	def_warp_events
-	warp_event 13, 33, ROUTE_35_GOLDENROD_GATE, 1
-	warp_event 14, 33, ROUTE_35_GOLDENROD_GATE, 2
-	warp_event  7,  5, ROUTE_35_NATIONAL_PARK_GATE, 3
+	warp_event 13, 33, TOOLE_CITY_GOLDENROD_GATE, 1
+	warp_event 14, 33, TOOLE_CITY_GOLDENROD_GATE, 2
+	warp_event  7,  5, TOOLE_CITY_WENDOVER_CITY_GATE, 3
 	warp_event 14, 16, HIDDEN_TREE_GROTTO, 1
 
 	def_coord_events
@@ -14,9 +14,9 @@ Route35_MapScriptHeader:
 	def_bg_events
 	bg_event  5,  7, BGEVENT_JUMPTEXT, Route35SignText
 	bg_event 15, 31, BGEVENT_JUMPTEXT, Route35SignText
-	bg_event  4, 11, BGEVENT_ITEM + NUGGET, EVENT_ROUTE_35_HIDDEN_NUGGET
-	bg_event 14, 15, BGEVENT_JUMPSTD, treegrotto, HIDDENGROTTO_ROUTE_35
-	bg_event 15, 15, BGEVENT_JUMPSTD, treegrotto, HIDDENGROTTO_ROUTE_35
+	bg_event  4, 11, BGEVENT_ITEM + NUGGET, EVENT_TOOLE_CITY_HIDDEN_NUGGET
+	bg_event 14, 15, BGEVENT_JUMPSTD, treegrotto, HIDDENGROTTO_TOOLE_CITY
+	bg_event 15, 15, BGEVENT_JUMPSTD, treegrotto, HIDDENGROTTO_TOOLE_CITY
 
 	def_object_events
 	object_event  8, 19, SPRITE_CAMPER, SPRITEMOVEDATA_SPINRANDOM_FAST, 0, 0, -1, -1, 0, OBJECTTYPE_GENERICTRAINER, 2, GenericTrainerCamperIvan, -1
@@ -28,9 +28,9 @@ Route35_MapScriptHeader:
 	object_event 20,  7, SPRITE_BUG_CATCHER, SPRITEMOVEDATA_STANDING_DOWN, 0, 2, -1, -1, 0, OBJECTTYPE_TRAINER, 3, TrainerBug_catcherArnie1, -1
 	object_event  9, 10, SPRITE_JUGGLER, SPRITEMOVEDATA_SPINRANDOM_FAST, 0, 0, -1, -1, 0, OBJECTTYPE_TRAINER, 2, TrainerJugglerIrwin, -1
 	object_event  9,  6, SPRITE_OFFICER, SPRITEMOVEDATA_STANDING_DOWN, 0, 0, -1, -1, 0, OBJECTTYPE_SCRIPT, 0, TrainerOfficerDirk, -1
-	cuttree_event 21,  6, EVENT_ROUTE_35_CUT_TREE
-	fruittree_event  6, 25, FRUITTREE_ROUTE_35, LEPPA_BERRY, PAL_NPC_RED
-	tmhmball_event 17, 16, TM_HONE_CLAWS, EVENT_ROUTE_35_TM_HONE_CLAWS
+	cuttree_event 21,  6, EVENT_TOOLE_CITY_CUT_TREE
+	fruittree_event  6, 25, FRUITTREE_TOOLE_CITY, LEPPA_BERRY, PAL_NPC_RED
+	tmhmball_event 17, 16, TM_HONE_CLAWS, EVENT_TOOLE_CITY_TM_HONE_CLAWS
 
 GenericTrainerBreederTheresa:
 	generictrainer BREEDER, THERESA, EVENT_BEAT_BREEDER_THERESA, BreederTheresaSeenText, BreederTheresaBeatenText

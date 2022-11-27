@@ -558,7 +558,7 @@ ProfElmSpeech:
 	call FadeToBlack
 	call ClearTileMap
 
-	ld de, MUSIC_ROUTE_30
+	ld de, MUSIC_MTC_CAMPUS
 	call PlayMusic
 
 	ld c, 31

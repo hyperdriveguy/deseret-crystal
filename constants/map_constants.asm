@@ -34,13 +34,13 @@ ENDM
 	map_const OLIVINE_GOOD_ROD_HOUSE,                      4,  4 ;  6
 	map_const OLIVINE_CAFE,                                5,  4 ;  7
 	map_const OLIVINE_MART,                                6,  4 ;  8
-	map_const ROUTE_38_ECRUTEAK_GATE,                      5,  4 ;  9
-	map_const ROUTE_39_BARN,                               4,  4 ; 10
-	map_const ROUTE_39_FARMHOUSE,                          4,  4 ; 11
-	map_const ROUTE_38,                                   20,  9 ; 12
-	map_const ROUTE_39,                                   10, 20 ; 13
-	map_const OLIVINE_CITY,                               33, 16 ; 14
-	map_const ROUTE_35_COAST,                             26, 14 ; 15
+	map_const PARK_CITY_SLOPES_ECRUTEAK_GATE,                      5,  4 ;  9
+	map_const JORDANELLE_PASS_BARN,                               4,  4 ; 10
+	map_const JORDANELLE_PASS_FARMHOUSE,                          4,  4 ; 11
+	map_const PARK_CITY_SLOPES,                                   20,  9 ; 12
+	map_const JORDANELLE_PASS,                                   10, 20 ; 13
+	map_const UTAH_POINT,                               33, 16 ; 14
+	map_const SALT_FLATS,                             26, 14 ; 15
 
 	newgroup                                                     ;  2
 	map_const MAHOGANY_RED_GYARADOS_SPEECH_HOUSE,          4,  4 ;  1
@@ -52,49 +52,49 @@ ENDM
 	map_const MAHOGANY_TOWN,                              10,  9 ;  7
 
 	newgroup                                                     ;  3
-	map_const SPROUT_TOWER_1F,                             8,  8 ;  1
-	map_const SPROUT_TOWER_2F,                             8,  8 ;  2
-	map_const SPROUT_TOWER_3F,                             8,  8 ;  3
-	map_const TIN_TOWER_1F,                                8,  8 ;  4
-	map_const TIN_TOWER_2F,                                8,  8 ;  5
-	map_const TIN_TOWER_3F,                                8,  8 ;  6
-	map_const TIN_TOWER_4F,                                8,  8 ;  7
-	map_const TIN_TOWER_5F,                                8,  8 ;  8
-	map_const TIN_TOWER_6F,                                8,  8 ;  9
-	map_const TIN_TOWER_7F,                                8,  8 ; 10
-	map_const TIN_TOWER_8F,                                8,  8 ; 11
-	map_const TIN_TOWER_9F,                                8,  8 ; 12
-	map_const TIN_TOWER_10F,                               8,  8 ; 13
-	map_const BURNED_TOWER_1F,                             8,  8 ; 14
-	map_const BURNED_TOWER_B1F,                           10,  9 ; 15
-	map_const NATIONAL_PARK,                              21, 27 ; 16
-	map_const NATIONAL_PARK_BUG_CONTEST,                  21, 27 ; 17
-	map_const ROUTE_35_NATIONAL_PARK_GATE,                10,  4 ; 19
-	map_const ROUTE_36_NATIONAL_PARK_GATE,                 5,  4 ; 18
-	map_const RADIO_TOWER_1F,                              9,  4 ; 20
-	map_const RADIO_TOWER_2F,                              9,  4 ; 21
-	map_const RADIO_TOWER_3F,                              9,  4 ; 22
-	map_const RADIO_TOWER_4F,                              9,  4 ; 23
-	map_const RADIO_TOWER_5F,                              9,  4 ; 24
-	map_const UNION_CAVE_1F,                              10, 24 ; 25
-	map_const UNION_CAVE_B1F_NORTH,                       10, 13 ; 26
-	map_const UNION_CAVE_B1F_SOUTH,                       10, 18 ; 27
-	map_const UNION_CAVE_B2F,                             10, 18 ; 28
-	map_const SLOWPOKE_WELL_ENTRANCE,                      8,  9 ; 29
-	map_const SLOWPOKE_WELL_B1F,                          10,  9 ; 30
-	map_const SLOWPOKE_WELL_B2F,                          10,  9 ; 31
-	map_const OLIVINE_LIGHTHOUSE_1F,                      10,  9 ; 32
-	map_const OLIVINE_LIGHTHOUSE_2F,                      10,  9 ; 33
-	map_const OLIVINE_LIGHTHOUSE_3F,                      10,  9 ; 34
-	map_const OLIVINE_LIGHTHOUSE_4F,                      10,  9 ; 35
-	map_const OLIVINE_LIGHTHOUSE_5F,                      10,  9 ; 36
-	map_const OLIVINE_LIGHTHOUSE_6F,                      10,  9 ; 37
-	map_const OLIVINE_LIGHTHOUSE_ROOF,                    10, 10 ; 38
+	map_const OREM_CITY_1F,                             8,  8 ;  1
+	map_const OREM_CITY_2F,                             8,  8 ;  2
+	map_const OREM_CITY_3F,                             8,  8 ;  3
+	map_const ROUTE_I80_WEST_1F,                                8,  8 ;  4
+	map_const ROUTE_I80_WEST_2F,                                8,  8 ;  5
+	map_const ROUTE_I80_WEST_3F,                                8,  8 ;  6
+	map_const ROUTE_I80_WEST_4F,                                8,  8 ;  7
+	map_const ROUTE_I80_WEST_5F,                                8,  8 ;  8
+	map_const ROUTE_I80_WEST_6F,                                8,  8 ;  9
+	map_const ROUTE_I80_WEST_7F,                                8,  8 ; 10
+	map_const ROUTE_I80_WEST_8F,                                8,  8 ; 11
+	map_const ROUTE_I80_WEST_9F,                                8,  8 ; 12
+	map_const ROUTE_I80_WEST_10F,                               8,  8 ; 13
+	map_const PARK_CITY_1F,                             8,  8 ; 14
+	map_const PARK_CITY_B1F,                           10,  9 ; 15
+	map_const WENDOVER_CITY,                              21, 27 ; 16
+	map_const WENDOVER_CITY_BUG_CONTEST,                  21, 27 ; 17
+	map_const TOOLE_CITY_WENDOVER_CITY_GATE,                10,  4 ; 19
+	map_const SALT_LAKE_CITY_WENDOVER_CITY_GATE,                 5,  4 ; 18
+	map_const SALT_LAKE_VALLEY_1F,                              9,  4 ; 20
+	map_const SALT_LAKE_VALLEY_2F,                              9,  4 ; 21
+	map_const SALT_LAKE_VALLEY_3F,                              9,  4 ; 22
+	map_const SALT_LAKE_VALLEY_4F,                              9,  4 ; 23
+	map_const SALT_LAKE_VALLEY_5F,                              9,  4 ; 24
+	map_const ROUTE_US40_1F,                              10, 24 ; 25
+	map_const ROUTE_US40_B1F_NORTH,                       10, 13 ; 26
+	map_const ROUTE_US40_B1F_SOUTH,                       10, 18 ; 27
+	map_const ROUTE_US40_B2F,                             10, 18 ; 28
+	map_const VERNAL_CITY_ENTRANCE,                      8,  9 ; 29
+	map_const VERNAL_CITY_B1F,                          10,  9 ; 30
+	map_const VERNAL_CITY_B2F,                          10,  9 ; 31
+	map_const OLIVINE_MOUNT_TIMPANOGOS_1F,                      10,  9 ; 32
+	map_const OLIVINE_MOUNT_TIMPANOGOS_2F,                      10,  9 ; 33
+	map_const OLIVINE_MOUNT_TIMPANOGOS_3F,                      10,  9 ; 34
+	map_const OLIVINE_MOUNT_TIMPANOGOS_4F,                      10,  9 ; 35
+	map_const OLIVINE_MOUNT_TIMPANOGOS_5F,                      10,  9 ; 36
+	map_const OLIVINE_MOUNT_TIMPANOGOS_6F,                      10,  9 ; 37
+	map_const OLIVINE_MOUNT_TIMPANOGOS_ROOF,                    10, 10 ; 38
 	map_const MAHOGANY_MART_1F,                            4,  4 ; 39
 	map_const TEAM_ROCKET_BASE_B1F,                       15,  9 ; 40
 	map_const TEAM_ROCKET_BASE_B2F,                       15,  9 ; 41
 	map_const TEAM_ROCKET_BASE_B3F,                       15,  9 ; 42
-	map_const ILEX_FOREST,                                17, 24 ; 43
+	map_const EXCAVATION_SITE,                                17, 24 ; 43
 	map_const WAREHOUSE_ENTRANCE,                          9, 18 ; 44
 	map_const UNDERGROUND_PATH_SWITCH_ROOM_ENTRANCES,     13, 14 ; 45
 	map_const GOLDENROD_DEPT_STORE_B1F,                   10,  9 ; 46
@@ -148,11 +148,11 @@ ENDM
 	map_const ECRUTEAK_MART,                               6,  4 ;  6
 	map_const ECRUTEAK_GYM,                                5,  9 ;  7
 	map_const ECRUTEAK_ITEMFINDER_HOUSE,                   4,  4 ;  8
-	map_const ECRUTEAK_CITY,                              20, 18 ;  9
-	map_const ROUTE_36,                                   32,  9 ; 10
-	map_const ROUTE_36_RUINS_OF_ALPH_GATE,                 5,  4 ; 11
-	map_const ROUTE_36_VIOLET_GATE,                        5,  4 ; 12
-	map_const ROUTE_37,                                   10, 10 ; 13
+	map_const ANTELOPE_ISLAND,                              20, 18 ;  9
+	map_const SALT_LAKE_CITY,                                   32,  9 ; 10
+	map_const SALT_LAKE_CITY_PROVO_CANYON_GATE,                 5,  4 ; 11
+	map_const SALT_LAKE_CITY_VIOLET_GATE,                        5,  4 ; 12
+	map_const TEMPLE_SQUARE,                                   10, 10 ; 13
 	map_const VALERIES_HOUSE,                              4,  4 ; 14
 	map_const ECRUTEAK_CHERISH_BALL_HOUSE,                 4,  4 ; 15
 	map_const ECRUTEAK_DESTINY_KNOT_HOUSE,                 4,  4 ; 16
@@ -222,8 +222,8 @@ ENDM
 	map_const AZALEA_MART,                                 6,  4 ;  3
 	map_const KURTS_HOUSE,                                 8,  4 ;  4
 	map_const AZALEA_GYM,                                  5,  8 ;  5
-	map_const ROUTE_33,                                   10,  9 ;  6
-	map_const AZALEA_TOWN,                                20,  9 ;  7
+	map_const DUCHESNE_CITY,                                   10,  9 ;  6
+	map_const ROUTE_87,                                20,  9 ;  7
 
 	newgroup                                                     ;  9
 	map_const LAKE_OF_RAGE_HIDDEN_POWER_HOUSE,             4,  4 ;  1
@@ -234,28 +234,28 @@ ENDM
 	map_const LAKE_OF_RAGE,                               20, 18 ;  6
 
 	newgroup                                                     ; 10
-	map_const ROUTE_32,                                   10, 45 ;  1
-	map_const ROUTE_32_COAST,                             15, 36 ;  2
-	map_const VIOLET_CITY,                                20, 20 ;  3
+	map_const TIMPANOGOS_PASS,                                   10, 45 ;  1
+	map_const HEBER_CITY,                             15, 36 ;  2
+	map_const UTAH_LAKE,                                20, 20 ;  3
 	map_const VIOLET_MART,                                 6,  4 ;  4
 	map_const VIOLET_GYM,                                  5,  8 ;  5
 	map_const EARLS_POKEMON_ACADEMY,                       4,  8 ;  6
 	map_const VIOLET_NICKNAME_SPEECH_HOUSE,                4,  4 ;  7
 	map_const VIOLET_POKECENTER_1F,                        6,  4 ;  8
 	map_const VIOLET_ONIX_TRADE_HOUSE,                     4,  4 ;  9
-	map_const ROUTE_32_RUINS_OF_ALPH_GATE,                 5,  4 ; 10
-	map_const ROUTE_32_POKECENTER_1F,                      6,  4 ; 11
-	map_const ROUTE_32_COAST_HOUSE,                        4,  4 ; 12
-	map_const MAGNET_TUNNEL_EAST,                         10, 11 ; 13
-	map_const VIOLET_OUTSKIRTS,                           20,  8 ; 14
+	map_const TIMPANOGOS_PASS_PROVO_CANYON_GATE,                 5,  4 ; 10
+	map_const TIMPANOGOS_PASS_POKECENTER_1F,                      6,  4 ; 11
+	map_const HEBER_CITY_HOUSE,                        4,  4 ; 12
+	map_const ROUTE_I80_EAST_EAST,                         10, 11 ; 13
+	map_const GENEVA_STEEL_PLANT,                           20,  8 ; 14
 
 	newgroup                                                     ; 11
-	map_const ROUTE_34,                                   10, 27 ;  1
-	map_const ROUTE_34_COAST,                              9, 34 ;  2
-	map_const ROUTE_35,                                   12, 18 ;  3
-	map_const STORMY_BEACH,                               22, 11 ;  4
-	map_const MURKY_SWAMP,                                23, 19 ;  5
-	map_const GOLDENROD_CITY,                             22, 18 ;  6
+	map_const ROUTE_191,                                   10, 27 ;  1
+	map_const CARBON_POWER_PLANT,                              9, 34 ;  2
+	map_const TOOLE_CITY,                                   12, 18 ;  3
+	map_const CARBON_ROAD,                               22, 11 ;  4
+	map_const PRICE_CITY,                                23, 19 ;  5
+	map_const ROUTE_55,                             22, 18 ;  6
 	map_const GOLDENROD_GYM,                              10,  9 ;  7
 	map_const GOLDENROD_BIKE_SHOP,                         4,  4 ;  8
 	map_const GOLDENROD_HAPPINESS_RATER,                   4,  4 ;  9
@@ -275,17 +275,17 @@ ENDM
 	map_const GOLDENROD_GAME_CORNER,                      10,  7 ; 23
 	map_const GOLDENROD_POKECOM_CENTER_1F,                16,  8 ; 24
 	map_const GOLDENROD_POKECOM_CENTER_OFFICE,             6,  4 ; 25
-	map_const ILEX_FOREST_AZALEA_GATE,                     5,  4 ; 26
-	map_const ROUTE_34_ILEX_FOREST_GATE,                   5,  4 ; 27
-	map_const ROUTE_35_GOLDENROD_GATE,                     5,  4 ; 28
+	map_const EXCAVATION_SITE_AZALEA_GATE,                     5,  4 ; 26
+	map_const ROUTE_191_EXCAVATION_SITE_GATE,                   5,  4 ; 27
+	map_const TOOLE_CITY_GOLDENROD_GATE,                     5,  4 ; 28
 	map_const DAYCARE,                                     4,  4 ; 29
 	map_const GOLDENROD_HP_UP_HOUSE,                       4,  4 ; 30
 	map_const GOLDENROD_NET_BALL_HOUSE,                    4,  4 ; 31
 	map_const GOLDENROD_BAND_HOUSE,                        4,  4 ; 32
 	map_const GOLDENROD_MUSEUM_1F,                         7,  4 ; 33
 	map_const GOLDENROD_MUSEUM_2F,                         7,  4 ; 34
-	map_const MAGNET_TUNNEL_WEST,                         10, 11 ; 35
-	map_const MAGNET_TUNNEL_INSIDE,                       23, 13 ; 36
+	map_const ROUTE_I80_EAST_WEST,                         10, 11 ; 35
+	map_const ROUTE_I80_EAST_INSIDE,                       23, 13 ; 36
 
 	newgroup                                                     ; 12
 	map_const ROUTE_6,                                    15, 16 ;  1
@@ -341,7 +341,7 @@ ENDM
 	map_const OLIVINE_PORT_PASSAGE,                        4, 15 ;  8
 	map_const MOUNT_MOON_SQUARE,                          15,  9 ;  9
 	map_const MOUNT_MOON_GIFT_SHOP,                        4,  4 ; 10
-	map_const TIN_TOWER_ROOF,                              7,  9 ; 11
+	map_const ROUTE_I80_WEST_ROOF,                              7,  9 ; 11
 
 	newgroup                                                     ; 16
 	map_const ROUTE_23,                                   12, 70 ;  1
@@ -353,7 +353,7 @@ ENDM
 	map_const KARENS_ROOM,                                 5,  9 ;  7
 	map_const LANCES_ROOM,                                 7, 12 ;  8
 	map_const HALL_OF_FAME,                                5,  7 ;  9
-	map_const BELLCHIME_TRAIL,                            12,  7 ; 10
+	map_const GREAT_SALT_LAKE,                            12,  7 ; 10
 
 	newgroup                                                     ; 17
 	map_const ROUTE_12_SOUTH,                             10, 44 ;  1
@@ -393,16 +393,16 @@ ENDM
 	map_const SOUL_HOUSE_B1F,                             10,  9 ; 12
 	map_const SOUL_HOUSE_B2F,                             10,  9 ; 13
 	map_const SOUL_HOUSE_B3F,                              4,  9 ; 14
-	map_const LAV_RADIO_TOWER_1F,                         10,  4 ; 15
-	map_const LAV_RADIO_TOWER_2F,                          9,  4 ; 16
-	map_const LAV_RADIO_TOWER_3F,                          9,  4 ; 17
-	map_const LAV_RADIO_TOWER_4F,                          9,  4 ; 18
-	map_const LAV_RADIO_TOWER_5F,                          7,  4 ; 19
-	map_const HAUNTED_RADIO_TOWER_2F,                      9,  4 ; 20
-	map_const HAUNTED_RADIO_TOWER_3F,                      9,  4 ; 21
-	map_const HAUNTED_RADIO_TOWER_4F,                      9,  4 ; 22
-	map_const HAUNTED_RADIO_TOWER_5F,                      8,  9 ; 23
-	map_const HAUNTED_RADIO_TOWER_6F,                      8,  9 ; 24
+	map_const LAV_SALT_LAKE_VALLEY_1F,                         10,  4 ; 15
+	map_const LAV_SALT_LAKE_VALLEY_2F,                          9,  4 ; 16
+	map_const LAV_SALT_LAKE_VALLEY_3F,                          9,  4 ; 17
+	map_const LAV_SALT_LAKE_VALLEY_4F,                          9,  4 ; 18
+	map_const LAV_SALT_LAKE_VALLEY_5F,                          7,  4 ; 19
+	map_const HAUNTED_SALT_LAKE_VALLEY_2F,                      9,  4 ; 20
+	map_const HAUNTED_SALT_LAKE_VALLEY_3F,                      9,  4 ; 21
+	map_const HAUNTED_SALT_LAKE_VALLEY_4F,                      9,  4 ; 22
+	map_const HAUNTED_SALT_LAKE_VALLEY_5F,                      8,  9 ; 23
+	map_const HAUNTED_SALT_LAKE_VALLEY_6F,                      8,  9 ; 24
 
 	newgroup                                                     ; 19
 	map_const ROUTE_28,                                   19,  9 ;  1
@@ -494,23 +494,23 @@ ENDM
 	map_const CELADON_OUTSKIRTS,                          10,  6 ; 62
 
 	newgroup                                                     ; 22
-	map_const ROUTE_40,                                   10, 20 ;  1
-	map_const ROUTE_41,                                   32, 27 ;  2
-	map_const CIANWOOD_CITY,                              15, 27 ;  3
+	map_const TIMPANOGOS_CAVE,                                   10, 20 ;  1
+	map_const UNION_STATION,                                   32, 27 ;  2
+	map_const ROUTE_US89,                              15, 27 ;  3
 	map_const MANIAS_HOUSE,                                4,  4 ;  4
 	map_const CIANWOOD_GYM,                                5,  9 ;  5
 	map_const CIANWOOD_POKECENTER_1F,                      6,  4 ;  6
 	map_const CIANWOOD_PHARMACY,                           4,  4 ;  7
-	map_const CIANWOOD_CITY_PHOTO_STUDIO,                  4,  4 ;  8
+	map_const ROUTE_US89_PHOTO_STUDIO,                  4,  4 ;  8
 	map_const CIANWOOD_LUGIA_SPEECH_HOUSE,                 4,  4 ;  9
 	map_const MOVE_MANIACS_HOUSE,                          4,  4 ; 10
-	map_const BATTLE_TOWER_1F,                            11,  8 ; 11
-	map_const BATTLE_TOWER_2F,                            11,  5 ; 12
-	map_const BATTLE_TOWER_BATTLE_ROOM,                    4,  4 ; 13
-	map_const BATTLE_TOWER_ELEVATOR,                       2,  2 ; 14
-	map_const BATTLE_TOWER_HALLWAY,                       11,  2 ; 15
-	map_const ROUTE_40_BATTLE_TOWER_GATE,                  5,  4 ; 16
-	map_const BATTLE_TOWER_OUTSIDE,                       10, 13 ; 17
+	map_const ROUTE_67_1F,                            11,  8 ; 11
+	map_const ROUTE_67_2F,                            11,  5 ; 12
+	map_const ROUTE_67_BATTLE_ROOM,                    4,  4 ; 13
+	map_const ROUTE_67_ELEVATOR,                       2,  2 ; 14
+	map_const ROUTE_67_HALLWAY,                       11,  2 ; 15
+	map_const TIMPANOGOS_CAVE_ROUTE_67_GATE,                  5,  4 ; 16
+	map_const ROUTE_67_OUTSIDE,                       10, 13 ; 17
 
 	newgroup                                                     ; 23
 	map_const ROUTE_2_SOUTH,                              10, 18 ;  1
@@ -536,8 +536,8 @@ ENDM
 	newgroup                                                     ; 24
 	map_const ROUTE_26,                                   10, 54 ;  1
 	map_const ROUTE_27,                                   40,  9 ;  2
-	map_const ROUTE_29,                                   30,  9 ;  3
-	map_const NEW_BARK_TOWN,                              10,  9 ;  4
+	map_const ROUTE_I15,                                   30,  9 ;  3
+	map_const NEPHI_CITY,                              9,  10 ;  4
 	map_const ELMS_LAB,                                    5,  6 ;  5
 	map_const PLAYERS_HOUSE_1F,                            6,  4 ;  6
 	map_const PLAYERS_HOUSE_2F,                            4,  3 ;  7
@@ -548,7 +548,7 @@ ENDM
 	map_const ROUTE_26_HEAL_SPEECH_HOUSE,                  4,  4 ; 12
 	map_const ROUTE_26_DAY_OF_WEEK_SIBLINGS_HOUSE,         4,  4 ; 13
 	map_const ROUTE_27_REST_HOUSE,                         4,  4 ; 14
-	map_const ROUTE_29_46_GATE,                            5,  4 ; 15
+	map_const ROUTE_I15_46_GATE,                            5,  4 ; 15
 
 	newgroup                                                     ; 25
 	map_const FIGHTING_DOJO,                               5,  6 ;  1
@@ -573,23 +573,23 @@ ENDM
 	map_const SAFFRON_RICH_SPEECH_HOUSE,                   4,  4 ; 20
 
 	newgroup                                                     ; 26
-	map_const ROUTE_30,                                   13, 27 ;  1
-	map_const ROUTE_31,                                   22,  9 ;  2
-	map_const CHERRYGROVE_BAY,                            15, 25 ;  3
-	map_const CHERRYGROVE_CITY,                           20, 11 ;  4
+	map_const MTC_CAMPUS,                                   13, 27 ;  1
+	map_const BYU_UNDERGROUND,                                   22,  9 ;  2
+	map_const BYU_CAMPUS,                            15, 25 ;  3
+	map_const PROVO_CITY,                           20, 11 ;  4
 	map_const CHERRYGROVE_MART,                            6,  4 ;  5
 	map_const CHERRYGROVE_POKECENTER_1F,                   6,  4 ;  6
 	map_const CHERRYGROVE_GYM_SPEECH_HOUSE,                4,  4 ;  7
 	map_const GUIDE_GENTS_HOUSE,                           4,  4 ;  8
 	map_const CHERRYGROVE_EVOLUTION_SPEECH_HOUSE,          4,  4 ;  9
-	map_const ROUTE_30_BERRY_SPEECH_HOUSE,                 4,  4 ; 10
+	map_const MTC_CAMPUS_BERRY_SPEECH_HOUSE,                 4,  4 ; 10
 	map_const MR_POKEMONS_HOUSE,                           4,  4 ; 11
-	map_const ROUTE_31_VIOLET_GATE,                        5,  4 ; 12
+	map_const BYU_UNDERGROUND_VIOLET_GATE,                        5,  4 ; 12
 
 	newgroup                                                     ; 27
-	map_const CLIFF_EDGE_GATE,                            10, 11 ;  1
-	map_const CLIFF_CAVE,                                  6, 18 ;  2
-	map_const ROUTE_47,                                   39, 19 ;  3
+	map_const LOGAN_CITY,                            10, 11 ;  1
+	map_const BEAR_LAKE,                                  6, 18 ;  2
+	map_const BEAR_LAKE_PASS,                                   39, 19 ;  3
 	map_const ROUTE_48,                                   18, 11 ;  4
 	map_const QUIET_CAVE_1F,                              18, 18 ;  5
 	map_const QUIET_CAVE_B1F,                             18, 18 ;  6
@@ -606,27 +606,27 @@ ENDM
 	map_const DIM_CAVE_5F,                                17, 17 ;  7
 
 	newgroup                                                     ; 29
-	map_const GOLDENROD_HARBOR,                           24, 18 ;  1
-	map_const GOLDENROD_HARBOR_GATE,                       5,  4 ;  2
+	map_const MILLCREEK_CANYON,                           24, 18 ;  1
+	map_const MILLCREEK_CANYON_GATE,                       5,  4 ;  2
 
 	newgroup                                                     ; 30
-	map_const RUINS_OF_ALPH_OUTSIDE,                      11, 21 ;  1
-	map_const RUINS_OF_ALPH_HO_OH_CHAMBER,                 4,  5 ;  2
-	map_const RUINS_OF_ALPH_KABUTO_CHAMBER,                4,  5 ;  3
-	map_const RUINS_OF_ALPH_OMANYTE_CHAMBER,               4,  5 ;  4
-	map_const RUINS_OF_ALPH_AERODACTYL_CHAMBER,            4,  5 ;  5
-	map_const RUINS_OF_ALPH_ENTRANCE_CHAMBER,              4,  4 ;  6
-	map_const RUINS_OF_ALPH_INNER_CHAMBER,                10, 14 ;  7
-	map_const RUINS_OF_ALPH_RESEARCH_CENTER,               4,  4 ;  8
-	map_const RUINS_OF_ALPH_HO_OH_ITEM_ROOM,               4,  5 ;  9
-	map_const RUINS_OF_ALPH_KABUTO_ITEM_ROOM,              4,  5 ; 10
-	map_const RUINS_OF_ALPH_OMANYTE_ITEM_ROOM,             4,  5 ; 11
-	map_const RUINS_OF_ALPH_AERODACTYL_ITEM_ROOM,          4,  5 ; 12
-	map_const RUINS_OF_ALPH_HO_OH_WORD_ROOM,              10, 12 ; 13
-	map_const RUINS_OF_ALPH_KABUTO_WORD_ROOM,             10,  7 ; 14
-	map_const RUINS_OF_ALPH_OMANYTE_WORD_ROOM,            10,  8 ; 15
-	map_const RUINS_OF_ALPH_AERODACTYL_WORD_ROOM,         10,  7 ; 16
-	map_const RUINS_OF_ALPH_SINJOH_CHAMBER,                5,  5 ; 17
+	map_const PROVO_CANYON_OUTSIDE,                      11, 21 ;  1
+	map_const PROVO_CANYON_HO_OH_CHAMBER,                 4,  5 ;  2
+	map_const PROVO_CANYON_KABUTO_CHAMBER,                4,  5 ;  3
+	map_const PROVO_CANYON_OMANYTE_CHAMBER,               4,  5 ;  4
+	map_const PROVO_CANYON_AERODACTYL_CHAMBER,            4,  5 ;  5
+	map_const PROVO_CANYON_ENTRANCE_CHAMBER,              4,  4 ;  6
+	map_const PROVO_CANYON_INNER_CHAMBER,                10, 14 ;  7
+	map_const PROVO_CANYON_RESEARCH_CENTER,               4,  4 ;  8
+	map_const PROVO_CANYON_HO_OH_ITEM_ROOM,               4,  5 ;  9
+	map_const PROVO_CANYON_KABUTO_ITEM_ROOM,              4,  5 ; 10
+	map_const PROVO_CANYON_OMANYTE_ITEM_ROOM,             4,  5 ; 11
+	map_const PROVO_CANYON_AERODACTYL_ITEM_ROOM,          4,  5 ; 12
+	map_const PROVO_CANYON_HO_OH_WORD_ROOM,              10, 12 ; 13
+	map_const PROVO_CANYON_KABUTO_WORD_ROOM,             10,  7 ; 14
+	map_const PROVO_CANYON_OMANYTE_WORD_ROOM,            10,  8 ; 15
+	map_const PROVO_CANYON_AERODACTYL_WORD_ROOM,         10,  7 ; 16
+	map_const PROVO_CANYON_SINJOH_CHAMBER,                5,  5 ; 17
 	map_const ROUTE_22_PAST,                               6,  6 ; 18
 
 	newgroup                                                     ; 31

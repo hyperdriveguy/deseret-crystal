@@ -6,10 +6,10 @@ DayCare_MapScriptHeader:
 	callback MAPCALLBACK_OBJECTS, DayCareEggCheckCallback
 
 	def_warp_events
-	warp_event  0,  4, ROUTE_34, 3
-	warp_event  0,  5, ROUTE_34, 4
-	warp_event  2,  7, ROUTE_34, 5
-	warp_event  3,  7, ROUTE_34, 5
+	warp_event  0,  4, ROUTE_191, 3
+	warp_event  0,  5, ROUTE_191, 4
+	warp_event  2,  7, ROUTE_191, 5
+	warp_event  3,  7, ROUTE_191, 5
 
 	def_coord_events
 
@@ -33,12 +33,12 @@ DayCareEggCheckCallback:
 	checkflag ENGINE_DAY_CARE_MAN_HAS_EGG
 	iftrue .PutDayCareManOutside
 	clearevent EVENT_DAYCARE_MAN_IN_DAYCARE
-	setevent EVENT_DAYCARE_MAN_ON_ROUTE_34
+	setevent EVENT_DAYCARE_MAN_ON_ROUTE_191
 	endcallback
 
 .PutDayCareManOutside:
 	setevent EVENT_DAYCARE_MAN_IN_DAYCARE
-	clearevent EVENT_DAYCARE_MAN_ON_ROUTE_34
+	clearevent EVENT_DAYCARE_MAN_ON_ROUTE_191
 	endcallback
 
 DayCare_MeetGrandma:

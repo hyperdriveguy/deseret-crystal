@@ -635,12 +635,12 @@ CheckFlyAllowedOnMap:
 	jr z, .goldenrod_dept_store_roof_group
 	cp GROUP_CELADON_MANSION_ROOF
 	jr z, .celadon_mansion_roof_group
-	cp GROUP_TIN_TOWER_ROOF
+	cp GROUP_ROUTE_I80_WEST_ROOF
 	jr z, .tin_tower_roof_group
-	cp GROUP_OLIVINE_LIGHTHOUSE_ROOF
+	cp GROUP_OLIVINE_MOUNT_TIMPANOGOS_ROOF
 	ret nz
 	ld a, [wMapNumber]
-	cp MAP_OLIVINE_LIGHTHOUSE_ROOF
+	cp MAP_OLIVINE_MOUNT_TIMPANOGOS_ROOF
 	ret
 .goldenrod_dept_store_roof_group
 	ld a, [wMapNumber]
@@ -652,7 +652,7 @@ CheckFlyAllowedOnMap:
 	ret
 .tin_tower_roof_group
 	ld a, [wMapNumber]
-	cp MAP_TIN_TOWER_ROOF
+	cp MAP_ROUTE_I80_WEST_ROOF
 	ret
 
 FlyFunction:

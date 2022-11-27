@@ -53,7 +53,7 @@ QuietCaveB3FMarleyScript:
 	disappear QUIETCAVEB3F_MARLEY
 	pause 15
 	special Special_FadeInQuickly
-	clearevent EVENT_BATTLE_TOWER_MARLEY
+	clearevent EVENT_ROUTE_67_MARLEY
 	end
 
 .ChallengeText:

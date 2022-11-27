@@ -4,11 +4,11 @@ OlivineLighthouse1F_MapScriptHeader:
 	def_callbacks
 
 	def_warp_events
-	warp_event 10, 17, OLIVINE_CITY, 8
-	warp_event 11, 17, OLIVINE_CITY, 8
-	warp_event  3, 11, OLIVINE_LIGHTHOUSE_2F, 1
-	warp_event 16, 13, OLIVINE_LIGHTHOUSE_2F, 3
-	warp_event 17, 13, OLIVINE_LIGHTHOUSE_2F, 4
+	warp_event 10, 17, UTAH_POINT, 8
+	warp_event 11, 17, UTAH_POINT, 8
+	warp_event  3, 11, OLIVINE_MOUNT_TIMPANOGOS_2F, 1
+	warp_event 16, 13, OLIVINE_MOUNT_TIMPANOGOS_2F, 3
+	warp_event 17, 13, OLIVINE_MOUNT_TIMPANOGOS_2F, 4
 
 	def_coord_events
 
@@ -19,7 +19,7 @@ OlivineLighthouse1F_MapScriptHeader:
 	object_event 16,  9, SPRITE_MATRON, SPRITEMOVEDATA_WALK_UP_DOWN, 2, 0, -1, -1, PAL_NPC_BROWN, OBJECTTYPE_COMMAND, jumptextfaceplayer, OlivineLighthouse1FPokefanFText, -1
 
 OlivineLighthouse1FSailorScript:
-	checkevent EVENT_GOT_FULL_RESTORE_FROM_LIGHTHOUSE
+	checkevent EVENT_GOT_FULL_RESTORE_FROM_MOUNT_TIMPANOGOS
 	iftrue_jumptextfaceplayer .Text2
 	faceplayer
 	opentext
@@ -27,7 +27,7 @@ OlivineLighthouse1FSailorScript:
 	promptbutton
 	verbosegiveitem FULL_RESTORE
 	iffalse_endtext
-	setevent EVENT_GOT_FULL_RESTORE_FROM_LIGHTHOUSE
+	setevent EVENT_GOT_FULL_RESTORE_FROM_MOUNT_TIMPANOGOS
 	jumpthisopenedtext
 
 .Text2:

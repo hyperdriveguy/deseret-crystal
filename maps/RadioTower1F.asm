@@ -4,9 +4,9 @@ RadioTower1F_MapScriptHeader:
 	def_callbacks
 
 	def_warp_events
-	warp_event  2,  7, GOLDENROD_CITY, 11
-	warp_event  3,  7, GOLDENROD_CITY, 11
-	warp_event 15,  0, RADIO_TOWER_2F, 2
+	warp_event  2,  7, ROUTE_55, 11
+	warp_event  3,  7, ROUTE_55, 11
+	warp_event 15,  0, SALT_LAKE_VALLEY_2F, 2
 
 	def_coord_events
 
@@ -15,20 +15,20 @@ RadioTower1F_MapScriptHeader:
 	bg_event 13,  0, BGEVENT_JUMPTEXT, RadioTower1FLuckyChannelSignText
 
 	def_object_events
-	object_event  8,  6, SPRITE_RECEPTIONIST, SPRITEMOVEDATA_STANDING_UP, 0, 0, -1, -1, PAL_NPC_BLUE, OBJECTTYPE_SCRIPT, 0, RadioTower1FLuckyNumberManScript, EVENT_GOLDENROD_CITY_CIVILIANS
+	object_event  8,  6, SPRITE_RECEPTIONIST, SPRITEMOVEDATA_STANDING_UP, 0, 0, -1, -1, PAL_NPC_BLUE, OBJECTTYPE_SCRIPT, 0, RadioTower1FLuckyNumberManScript, EVENT_ROUTE_55_CIVILIANS
 	object_event 14,  6, SPRITE_WHITNEY, SPRITEMOVEDATA_STANDING_LEFT, 0, 0, -1, -1, 0, OBJECTTYPE_SCRIPT, 0, RadioTower1FWhitneyScript, EVENT_GOLDENROD_GYM_WHITNEY
 	object_event  5,  6, SPRITE_RECEPTIONIST, SPRITEMOVEDATA_STANDING_LEFT, 0, 0, -1, -1, PAL_NPC_RED, OBJECTTYPE_SCRIPT, 0, RadioTower1FReceptionistScript, -1
-	object_event 17,  5, SPRITE_CUTE_GIRL, SPRITEMOVEDATA_STANDING_UP, 0, 0, -1, -1, PAL_NPC_RED, OBJECTTYPE_COMMAND, jumptextfaceplayer, RadioTower1FLassText, EVENT_GOLDENROD_CITY_CIVILIANS
-	object_event 17,  3, SPRITE_YOUNGSTER, SPRITEMOVEDATA_STANDING_DOWN, 0, 0, -1, -1, 0, OBJECTTYPE_COMMAND, jumptextfaceplayer, RadioTower1FYoungsterText, EVENT_GOLDENROD_CITY_CIVILIANS
-	object_event 14,  1, SPRITE_ROCKET, SPRITEMOVEDATA_STANDING_DOWN, 0, 0, -1, -1, 0, OBJECTTYPE_GENERICTRAINER, 3, GenericTrainerGruntM3, EVENT_RADIO_TOWER_ROCKET_TAKEOVER
-	object_event 12,  6, SPRITE_BATTLE_GIRL, SPRITEMOVEDATA_STANDING_UP, 0, 0, -1, -1, PAL_NPC_GREEN, OBJECTTYPE_SCRIPT, 0, RadioTower1FRadioCardWomanScript, EVENT_GOLDENROD_CITY_CIVILIANS
+	object_event 17,  5, SPRITE_CUTE_GIRL, SPRITEMOVEDATA_STANDING_UP, 0, 0, -1, -1, PAL_NPC_RED, OBJECTTYPE_COMMAND, jumptextfaceplayer, RadioTower1FLassText, EVENT_ROUTE_55_CIVILIANS
+	object_event 17,  3, SPRITE_YOUNGSTER, SPRITEMOVEDATA_STANDING_DOWN, 0, 0, -1, -1, 0, OBJECTTYPE_COMMAND, jumptextfaceplayer, RadioTower1FYoungsterText, EVENT_ROUTE_55_CIVILIANS
+	object_event 14,  1, SPRITE_ROCKET, SPRITEMOVEDATA_STANDING_DOWN, 0, 0, -1, -1, 0, OBJECTTYPE_GENERICTRAINER, 3, GenericTrainerGruntM3, EVENT_SALT_LAKE_VALLEY_ROCKET_TAKEOVER
+	object_event 12,  6, SPRITE_BATTLE_GIRL, SPRITEMOVEDATA_STANDING_UP, 0, 0, -1, -1, PAL_NPC_GREEN, OBJECTTYPE_SCRIPT, 0, RadioTower1FRadioCardWomanScript, EVENT_ROUTE_55_CIVILIANS
 
 	object_const_def
 	const RADIOTOWER1F_FELICITY
 	const RADIOTOWER1F_WHITNEY
 
 RadioTower1FReceptionistScript:
-	checkflag ENGINE_ROCKETS_IN_RADIO_TOWER
+	checkflag ENGINE_ROCKETS_IN_SALT_LAKE_VALLEY
 	iftrue_jumptextfaceplayer RadioTower1FReceptionistNoToursText
 	jumptextfaceplayer RadioTower1FReceptionistWelcomeText
 

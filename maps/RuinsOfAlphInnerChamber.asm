@@ -6,15 +6,15 @@ RuinsOfAlphInnerChamber_MapScriptHeader:
 	def_callbacks
 
 	def_warp_events
-	warp_event 10, 13, RUINS_OF_ALPH_ENTRANCE_CHAMBER, 3
-	warp_event  3, 15, RUINS_OF_ALPH_HO_OH_CHAMBER, 3
-	warp_event  4, 15, RUINS_OF_ALPH_HO_OH_CHAMBER, 4
-	warp_event 15,  3, RUINS_OF_ALPH_KABUTO_CHAMBER, 3
-	warp_event 16,  3, RUINS_OF_ALPH_KABUTO_CHAMBER, 4
-	warp_event  3, 21, RUINS_OF_ALPH_OMANYTE_CHAMBER, 3
-	warp_event  4, 21, RUINS_OF_ALPH_OMANYTE_CHAMBER, 4
-	warp_event 15, 24, RUINS_OF_ALPH_AERODACTYL_CHAMBER, 3
-	warp_event 16, 24, RUINS_OF_ALPH_AERODACTYL_CHAMBER, 4
+	warp_event 10, 13, PROVO_CANYON_ENTRANCE_CHAMBER, 3
+	warp_event  3, 15, PROVO_CANYON_HO_OH_CHAMBER, 3
+	warp_event  4, 15, PROVO_CANYON_HO_OH_CHAMBER, 4
+	warp_event 15,  3, PROVO_CANYON_KABUTO_CHAMBER, 3
+	warp_event 16,  3, PROVO_CANYON_KABUTO_CHAMBER, 4
+	warp_event  3, 21, PROVO_CANYON_OMANYTE_CHAMBER, 3
+	warp_event  4, 21, PROVO_CANYON_OMANYTE_CHAMBER, 4
+	warp_event 15, 24, PROVO_CANYON_AERODACTYL_CHAMBER, 3
+	warp_event 16, 24, PROVO_CANYON_AERODACTYL_CHAMBER, 4
 
 	def_coord_events
 
@@ -49,10 +49,10 @@ RuinsOfAlphInnerChamber_MapScriptHeader:
 	bg_event 17, 24, BGEVENT_JUMPTEXT, RuinsofAlphStatueText
 
 	def_object_events
-	object_event  3,  7, SPRITE_FISHER, SPRITEMOVEDATA_SPINRANDOM_SLOW, 0, 0, -1, -1, PAL_NPC_GREEN, OBJECTTYPE_COMMAND, jumptextfaceplayer, RuinsOfAlphInnerChamberFisherText, EVENT_RUINS_OF_ALPH_INNER_CHAMBER_TOURISTS
-	object_event 14, 14, SPRITE_POKEFAN_F, SPRITEMOVEDATA_WANDER, 1, 1, -1, -1, PAL_NPC_RED, OBJECTTYPE_COMMAND, jumptextfaceplayer, RuinsOfAlphInnerChamberTeacherText, EVENT_RUINS_OF_ALPH_INNER_CHAMBER_TOURISTS
-	object_event 11, 19, SPRITE_GRAMPS, SPRITEMOVEDATA_STANDING_UP, 0, 0, -1, -1, 0, OBJECTTYPE_COMMAND, jumptextfaceplayer, RuinsOfAlphInnerChamberGrampsText, EVENT_RUINS_OF_ALPH_INNER_CHAMBER_TOURISTS
-	object_event  7, 11, SPRITE_SCIENTIST, SPRITEMOVEDATA_STANDING_UP, 0, 0, -1, -1, PAL_NPC_BROWN, OBJECTTYPE_COMMAND, jumptextfaceplayer, RuinsOfAlphInnerChamberScientistText, EVENT_RUINS_OF_ALPH_INNER_CHAMBER_TOURISTS
+	object_event  3,  7, SPRITE_FISHER, SPRITEMOVEDATA_SPINRANDOM_SLOW, 0, 0, -1, -1, PAL_NPC_GREEN, OBJECTTYPE_COMMAND, jumptextfaceplayer, RuinsOfAlphInnerChamberFisherText, EVENT_PROVO_CANYON_INNER_CHAMBER_TOURISTS
+	object_event 14, 14, SPRITE_POKEFAN_F, SPRITEMOVEDATA_WANDER, 1, 1, -1, -1, PAL_NPC_RED, OBJECTTYPE_COMMAND, jumptextfaceplayer, RuinsOfAlphInnerChamberTeacherText, EVENT_PROVO_CANYON_INNER_CHAMBER_TOURISTS
+	object_event 11, 19, SPRITE_GRAMPS, SPRITEMOVEDATA_STANDING_UP, 0, 0, -1, -1, 0, OBJECTTYPE_COMMAND, jumptextfaceplayer, RuinsOfAlphInnerChamberGrampsText, EVENT_PROVO_CANYON_INNER_CHAMBER_TOURISTS
+	object_event  7, 11, SPRITE_SCIENTIST, SPRITEMOVEDATA_STANDING_UP, 0, 0, -1, -1, PAL_NPC_BROWN, OBJECTTYPE_COMMAND, jumptextfaceplayer, RuinsOfAlphInnerChamberScientistText, EVENT_PROVO_CANYON_INNER_CHAMBER_TOURISTS
 
 RuinsofAlphInnerChamberTrigger1:
 	sdefer RuinsOfAlphInnerChamberStrangePresenceScript
@@ -63,7 +63,7 @@ RuinsOfAlphInnerChamberStrangePresenceScript:
 	showtext RuinsOfAlphStrangePresenceText
 	setscene $0
 	setevent EVENT_MADE_UNOWN_APPEAR_IN_RUINS
-	clearevent EVENT_RUINS_OF_ALPH_OUTSIDE_TOURIST_FISHER
+	clearevent EVENT_PROVO_CANYON_OUTSIDE_TOURIST_FISHER
 	end
 
 RuinsOfAlphStrangePresenceText:

@@ -4,7 +4,7 @@ OlivineLighthouseRoof_MapScriptHeader:
 	def_callbacks
 
 	def_warp_events
-	warp_event  9,  3, OLIVINE_LIGHTHOUSE_6F, 4
+	warp_event  9,  3, OLIVINE_MOUNT_TIMPANOGOS_6F, 4
 
 	def_coord_events
 
@@ -12,10 +12,10 @@ OlivineLighthouseRoof_MapScriptHeader:
 
 	def_object_events
 	object_event  4, 13, SPRITE_SKYLA, SPRITEMOVEDATA_WANDER, 1, 1, -1, -1, 0, OBJECTTYPE_SCRIPT, 0, OlivineLighthouseRoofSkylaScript, -1
-	itemball_event 16,  8, SILVER_LEAF, 1, EVENT_OLIVINE_LIGHTHOUSE_ROOF_SILVER_LEAF
+	itemball_event 16,  8, SILVER_LEAF, 1, EVENT_OLIVINE_MOUNT_TIMPANOGOS_ROOF_SILVER_LEAF
 
 	object_const_def
-	const OLIVINELIGHTHOUSEROOF_SKYLA
+	const OLIVINEMOUNT_TIMPANOGOSROOF_SKYLA
 
 OlivineLighthouseRoofSkylaScript:
 	faceplayer
@@ -43,7 +43,7 @@ OlivineLighthouseRoofSkylaScript:
 	waitbutton
 	closetext
 	winlosstext .BeatenText, 0
-	setlasttalked OLIVINELIGHTHOUSEROOF_SKYLA
+	setlasttalked OLIVINEMOUNT_TIMPANOGOSROOF_SKYLA
 	checkevent EVENT_BEAT_ELITE_FOUR_AGAIN
 	iftrue .Rematch2
 	checkevent EVENT_BEAT_ELITE_FOUR

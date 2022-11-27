@@ -357,7 +357,7 @@ RespawnOneOffs:
 	ld a, SUDOWOODO - 1
 	call CheckCaughtMon
 	jr nz, .CaughtSudowoodo
-	eventflagreset EVENT_ROUTE_36_SUDOWOODO
+	eventflagreset EVENT_SALT_LAKE_CITY_SUDOWOODO
 .CaughtSudowoodo
 
 	ld a, ARTICUNO - 1
@@ -430,7 +430,7 @@ RespawnOneOffs:
 	ld a, HO_OH - 1
 	call CheckCaughtMon
 	ret nz
-	eventflagreset EVENT_TIN_TOWER_ROOF_HO_OH
+	eventflagreset EVENT_ROUTE_I80_WEST_ROOF_HO_OH
 	eventflagreset EVENT_FOUGHT_HO_OH
 	ret
 
@@ -452,9 +452,9 @@ RespawnRoamingEntei:
 	ld [wRoamMon2Species], a
 	ld a, 50
 	ld [wRoamMon2Level], a
-	ld a, GROUP_ROUTE_37
+	ld a, GROUP_TEMPLE_SQUARE
 	ld [wRoamMon2MapGroup], a
-	ld a, MAP_ROUTE_37
+	ld a, MAP_TEMPLE_SQUARE
 	ld [wRoamMon2MapNumber], a
 	xor a ; generate new stats
 	ld [wRoamMon2HP], a
@@ -465,9 +465,9 @@ RespawnRoamingSuicune:
 	ld [wRoamMon3Species], a
 	ld a, 50
 	ld [wRoamMon3Level], a
-	ld a, GROUP_ROUTE_38
+	ld a, GROUP_PARK_CITY_SLOPES
 	ld [wRoamMon3MapGroup], a
-	ld a, MAP_ROUTE_38
+	ld a, MAP_PARK_CITY_SLOPES
 	ld [wRoamMon3MapNumber], a
 	xor a ; generate new stats
 	ld [wRoamMon3HP], a

@@ -4,8 +4,8 @@ AzaleaGym_MapScriptHeader:
 	def_callbacks
 
 	def_warp_events
-	warp_event  4, 15, AZALEA_TOWN, 5
-	warp_event  5, 15, AZALEA_TOWN, 5
+	warp_event  4, 15, ROUTE_87, 5
+	warp_event  5, 15, ROUTE_87, 5
 
 	def_coord_events
 
@@ -51,7 +51,7 @@ AzaleaGymBugsyScript:
 	playsound SFX_GET_BADGE
 	waitsfx
 	setflag ENGINE_HIVEBADGE
-	setmapscene AZALEA_TOWN, $1
+	setmapscene ROUTE_87, $1
 	setevent EVENT_BEAT_TWINS_AMY_AND_MAY
 	setevent EVENT_BEAT_BUG_CATCHER_BENNY
 	setevent EVENT_BEAT_BUG_CATCHER_AL

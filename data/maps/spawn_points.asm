@@ -25,15 +25,15 @@ SpawnPoints:
 	spawn CINNABAR_ISLAND,            11, 16
 	spawn INDIGO_PLATEAU,             11,  6
 
-	spawn NEW_BARK_TOWN,              15,  6
-	spawn CHERRYGROVE_CITY,           29,  4
-	spawn VIOLET_CITY,                31, 30
-	spawn ROUTE_32,                   11, 74
-	spawn AZALEA_TOWN,                15, 10
-	spawn CIANWOOD_CITY,              23, 44
-	spawn GOLDENROD_CITY,             18, 28
-	spawn OLIVINE_CITY,               13, 18
-	spawn ECRUTEAK_CITY,              23, 28
+	spawn NEPHI_CITY,              15,  6
+	spawn PROVO_CITY,           29,  4
+	spawn UTAH_LAKE,                31, 30
+	spawn TIMPANOGOS_PASS,                   11, 74
+	spawn ROUTE_87,                15, 10
+	spawn ROUTE_US89,              23, 44
+	spawn ROUTE_55,             18, 28
+	spawn UTAH_POINT,               13, 18
+	spawn ANTELOPE_ISLAND,              23, 28
 	spawn MAHOGANY_TOWN,              15, 14
 	spawn ROUTE_48,                   11,  6
 	spawn LAKE_OF_RAGE,               21, 29

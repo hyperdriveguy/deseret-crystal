@@ -4,8 +4,8 @@ OlivineGoodRodHouse_MapScriptHeader:
 	def_callbacks
 
 	def_warp_events
-	warp_event  2,  7, OLIVINE_CITY, 5
-	warp_event  3,  7, OLIVINE_CITY, 5
+	warp_event  2,  7, UTAH_POINT, 5
+	warp_event  3,  7, UTAH_POINT, 5
 
 	def_coord_events
 

@@ -4,8 +4,8 @@ Route39_MapScriptHeader:
 	def_callbacks
 
 	def_warp_events
-	warp_event  1,  3, ROUTE_39_BARN, 1
-	warp_event  5,  3, ROUTE_39_FARMHOUSE, 1
+	warp_event  1,  3, JORDANELLE_PASS_BARN, 1
+	warp_event  5,  3, JORDANELLE_PASS_FARMHOUSE, 1
 
 	def_coord_events
 
@@ -13,7 +13,7 @@ Route39_MapScriptHeader:
 	bg_event  5, 31, BGEVENT_JUMPTEXT, Route39TrainerTipsText
 	bg_event  9,  5, BGEVENT_JUMPTEXT, MoomooFarmSignText
 	bg_event 15,  7, BGEVENT_JUMPTEXT, Route39SignText
-	bg_event  5, 13, BGEVENT_ITEM + NUGGET, EVENT_ROUTE_39_HIDDEN_NUGGET
+	bg_event  5, 13, BGEVENT_ITEM + NUGGET, EVENT_JORDANELLE_PASS_HIDDEN_NUGGET
 
 	def_object_events
 	object_event  7, 14, SPRITE_COWGIRL, SPRITEMOVEDATA_WANDER, 1, 2, -1, -1, 0, OBJECTTYPE_SCRIPT, 0, Route39CowgirlAnnieScript, -1
@@ -25,10 +25,10 @@ Route39_MapScriptHeader:
 	pokemon_event  4, 15, MILTANK, -1, -1, PAL_NPC_RED, Route39MiltankText, -1
 	pokemon_event  8, 13, MILTANK, -1, -1, PAL_NPC_RED, Route39MiltankText, -1
 	object_event 13,  7, SPRITE_PSYCHIC, SPRITEMOVEDATA_SPINRANDOM_FAST, 0, 0, -1, -1, 0, OBJECTTYPE_GENERICTRAINER, 1, GenericTrainerPsychicNorman, -1
-	fruittree_event  9,  3, FRUITTREE_ROUTE_39, CHESTO_BERRY, PAL_NPC_PURPLE
+	fruittree_event  9,  3, FRUITTREE_JORDANELLE_PASS, CHESTO_BERRY, PAL_NPC_PURPLE
 	object_event  4, 22, SPRITE_POKEFAN_F, SPRITEMOVEDATA_STANDING_DOWN, 0, 0, -1, -1, 0, OBJECTTYPE_SCRIPT, 0, TrainerPokefanfJaime, -1
 	object_event  4, 30, SPRITE_BEAUTY, SPRITEMOVEDATA_WALK_LEFT_RIGHT, 0, 1, -1, -1, PAL_NPC_GREEN, OBJECTTYPE_COMMAND, jumptextfaceplayer, Route39BeautyText, -1
-	tmhmball_event  1,  7, TM_BULLDOZE, EVENT_ROUTE_39_TM_BULLDOZE
+	tmhmball_event  1,  7, TM_BULLDOZE, EVENT_JORDANELLE_PASS_TM_BULLDOZE
 
 	object_const_def
 	const ROUTE39_COWGIRL
@@ -111,7 +111,7 @@ GenericTrainerPokefanfRuth:
 	done
 
 Route39CowgirlAnnieScript:
-	checkevent EVENT_GOT_PP_MAX_FROM_ROUTE_39_LEADER
+	checkevent EVENT_GOT_PP_MAX_FROM_JORDANELLE_PASS_LEADER
 	iftrue_jumptextfaceplayer .AfterText2
 	faceplayer
 	checkevent EVENT_BEAT_COWGIRL_ANNIE
@@ -157,7 +157,7 @@ Route39CowgirlAnnieScript:
 	promptbutton
 	verbosegiveitem PP_MAX
 	iffalse_endtext
-	setevent EVENT_GOT_PP_MAX_FROM_ROUTE_39_LEADER
+	setevent EVENT_GOT_PP_MAX_FROM_JORDANELLE_PASS_LEADER
 	jumpthisopenedtext
 
 .AfterText2:

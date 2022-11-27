@@ -4,7 +4,7 @@ SlowpokeWellB2F_MapScriptHeader:
 	def_callbacks
 
 	def_warp_events
-	warp_event  9, 11, SLOWPOKE_WELL_B1F, 2
+	warp_event  9, 11, VERNAL_CITY_B1F, 2
 
 	def_coord_events
 
@@ -12,10 +12,10 @@ SlowpokeWellB2F_MapScriptHeader:
 
 	def_object_events
 	object_event  5,  4, SPRITE_GYM_GUY, SPRITEMOVEDATA_WANDER, 2, 1, -1, -1, 0, OBJECTTYPE_SCRIPT, 1, SlowpokeWellB2FGymGuideScript, -1
-	itemball_event 15,  5, DAMP_ROCK, 1, EVENT_SLOWPOKE_WELL_B2F_DAMP_ROCK
+	itemball_event 15,  5, DAMP_ROCK, 1, EVENT_VERNAL_CITY_B2F_DAMP_ROCK
 
 SlowpokeWellB2FGymGuideScript:
-	checkevent EVENT_GOT_KINGS_ROCK_IN_SLOWPOKE_WELL
+	checkevent EVENT_GOT_KINGS_ROCK_IN_VERNAL_CITY
 	iftrue_jumptextfaceplayer SlowpokeWellB2FGymGuideText_GotKingsRock
 	faceplayer
 	opentext
@@ -23,7 +23,7 @@ SlowpokeWellB2FGymGuideScript:
 	promptbutton
 	verbosegiveitem KINGS_ROCK
 	iffalse_endtext
-	setevent EVENT_GOT_KINGS_ROCK_IN_SLOWPOKE_WELL
+	setevent EVENT_GOT_KINGS_ROCK_IN_VERNAL_CITY
 	endtext
 
 SlowpokeWellB2FGymGuideText:

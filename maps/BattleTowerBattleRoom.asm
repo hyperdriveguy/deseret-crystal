@@ -5,15 +5,15 @@ BattleTowerBattleRoom_MapScriptHeader:
 	def_callbacks
 
 	def_warp_events
-	warp_event  3,  7, BATTLE_TOWER_HALLWAY, 4
-	warp_event  4,  7, BATTLE_TOWER_HALLWAY, 4
+	warp_event  3,  7, ROUTE_67_HALLWAY, 4
+	warp_event  4,  7, ROUTE_67_HALLWAY, 4
 
 	def_coord_events
 
 	def_bg_events
 
 	def_object_events
-	object_event  4,  0, SPRITE_SCHOOLBOY, SPRITEMOVEDATA_STANDING_DOWN, 0, 0, -1, -1, 0, OBJECTTYPE_SCRIPT, 0, ObjectEvent, EVENT_BATTLE_TOWER_BATTLE_ROOM_YOUNGSTER
+	object_event  4,  0, SPRITE_SCHOOLBOY, SPRITEMOVEDATA_STANDING_DOWN, 0, 0, -1, -1, 0, OBJECTTYPE_SCRIPT, 0, ObjectEvent, EVENT_ROUTE_67_BATTLE_ROOM_YOUNGSTER
 	object_event  2,  6, SPRITE_RECEPTIONIST, SPRITEMOVEDATA_STANDING_RIGHT, 0, 0, -1, -1, PAL_NPC_BLUE, OBJECTTYPE_SCRIPT, 0, ObjectEvent, -1
 
 	object_const_def
@@ -128,7 +128,7 @@ Script_BeatenAllTowerTrainers:
 	special Special_BattleTower_SetChallengeState
 	; fallthrough
 Script_ReturnToBattleTowerLobby:
-	warpfacing UP, BATTLE_TOWER_1F, 10, 8
+	warpfacing UP, ROUTE_67_1F, 10, 8
 	end
 
 MovementData_BattleTowerBattleRoomPlayerWalksIn:

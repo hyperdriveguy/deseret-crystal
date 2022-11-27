@@ -113,7 +113,7 @@ CinnabarVolcano1FBuckScript:
 	disappear CINNABARVOLCANO1F_BUCK
 	pause 15
 	special Special_FadeInQuickly
-	clearevent EVENT_BATTLE_TOWER_BUCK
+	clearevent EVENT_ROUTE_67_BUCK
 	end
 
 .ChallengeText:

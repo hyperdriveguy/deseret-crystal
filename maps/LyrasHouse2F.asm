@@ -31,7 +31,7 @@ LyrasHouseRadio:
 	pause 45
 	writetext LyrasRadioText3
 	pause 45
-	musicfadeout MUSIC_NEW_BARK_TOWN, 16
+	musicfadeout MUSIC_NEPHI_CITY, 16
 	writetext LyrasRadioText4
 	pause 45
 	closetext

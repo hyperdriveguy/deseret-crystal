@@ -5,8 +5,8 @@ Route34_MapScriptHeader:
 	callback MAPCALLBACK_OBJECTS, Route34EggCheckCallback
 
 	def_warp_events
-	warp_event 13, 37, ROUTE_34_ILEX_FOREST_GATE, 1
-	warp_event 14, 37, ROUTE_34_ILEX_FOREST_GATE, 2
+	warp_event 13, 37, ROUTE_191_EXCAVATION_SITE_GATE, 1
+	warp_event 14, 37, ROUTE_191_EXCAVATION_SITE_GATE, 2
 	warp_event 11, 14, DAYCARE, 1
 	warp_event 11, 15, DAYCARE, 2
 	warp_event 13, 15, DAYCARE, 3
@@ -20,13 +20,13 @@ Route34_MapScriptHeader:
 	bg_event 12,  6, BGEVENT_JUMPTEXT, Route34SignText
 	bg_event 13, 33, BGEVENT_JUMPTEXT, Route34TrainerTipsText
 	bg_event 10, 13, BGEVENT_JUMPTEXT, DayCareSignText
-	bg_event  8, 32, BGEVENT_ITEM + RARE_CANDY, EVENT_ROUTE_34_HIDDEN_RARE_CANDY
-	bg_event 17, 19, BGEVENT_ITEM + SUPER_POTION, EVENT_ROUTE_34_HIDDEN_SUPER_POTION
+	bg_event  8, 32, BGEVENT_ITEM + RARE_CANDY, EVENT_ROUTE_191_HIDDEN_RARE_CANDY
+	bg_event 17, 19, BGEVENT_ITEM + SUPER_POTION, EVENT_ROUTE_191_HIDDEN_SUPER_POTION
 
 	def_object_events
 	object_event 11, 20, SPRITE_RICH_BOY, SPRITEMOVEDATA_STANDING_DOWN, 0, 0, -1, -1, 0, OBJECTTYPE_SCRIPT, 0, Route34RichBoyIrvingScript, -1
-	object_event 10, 15, SPRITE_GRAMPS, SPRITEMOVEDATA_STANDING_DOWN, 0, 0, -1, -1, 0, OBJECTTYPE_SCRIPT, 0, DayCareManScript_Outside, EVENT_DAYCARE_MAN_ON_ROUTE_34
-	object_event  8, 12, SPRITE_LYRA, SPRITEMOVEDATA_STANDING_DOWN, 0, 0, -1, -1, 0, OBJECTTYPE_SCRIPT, 0, ObjectEvent, EVENT_LYRA_ROUTE_34
+	object_event 10, 15, SPRITE_GRAMPS, SPRITEMOVEDATA_STANDING_DOWN, 0, 0, -1, -1, 0, OBJECTTYPE_SCRIPT, 0, DayCareManScript_Outside, EVENT_DAYCARE_MAN_ON_ROUTE_191
+	object_event  8, 12, SPRITE_LYRA, SPRITEMOVEDATA_STANDING_DOWN, 0, 0, -1, -1, 0, OBJECTTYPE_SCRIPT, 0, ObjectEvent, EVENT_LYRA_ROUTE_191
 	object_event 13,  7, SPRITE_CAMPER, SPRITEMOVEDATA_STANDING_LEFT, 0, 0, -1, -1, 0, OBJECTTYPE_TRAINER, 5, TrainerCamperTodd1, -1
 	object_event 15, 32, SPRITE_BREEDER, SPRITEMOVEDATA_STANDING_DOWN, 0, 0, -1, -1, 0, OBJECTTYPE_GENERICTRAINER, 3, GenericTrainerBreederJulie, -1
 	object_event 10, 26, SPRITE_PICNICKER, SPRITEMOVEDATA_STANDING_RIGHT, 0, 0, -1, -1, 0, OBJECTTYPE_TRAINER, 3, TrainerPicnickerGina1, -1
@@ -37,7 +37,7 @@ Route34_MapScriptHeader:
 	object_event 11, 48, SPRITE_ACE_TRAINER_F, SPRITEMOVEDATA_STANDING_LEFT, 0, 0, -1, -1, 0, OBJECTTYPE_TRAINER, 5, TrainerCooltrainerfIrene, -1
 	object_event  3, 48, SPRITE_ACE_TRAINER_F, SPRITEMOVEDATA_STANDING_RIGHT, 0, 0, -1, -1, 0, OBJECTTYPE_TRAINER, 3, TrainerCooltrainerfJenn, -1
 	object_event  6, 51, SPRITE_ACE_TRAINER_F, SPRITEMOVEDATA_STANDING_UP, 0, 0, -1, -1, 0, OBJECTTYPE_TRAINER, 2, TrainerCooltrainerfKate, -1
-	itemball_event  7, 30, NUGGET, 1, EVENT_ROUTE_34_NUGGET
+	itemball_event  7, 30, NUGGET, 1, EVENT_ROUTE_191_NUGGET
 
 	object_const_def
 	const ROUTE34_RICH_BOY
@@ -50,12 +50,12 @@ Route34EggCheckCallback:
 	checkscene
 	iftrue .PutDayCareManOutside
 	clearevent EVENT_DAYCARE_MAN_IN_DAYCARE
-	setevent EVENT_DAYCARE_MAN_ON_ROUTE_34
+	setevent EVENT_DAYCARE_MAN_ON_ROUTE_191
 	sjump .CheckMon1
 
 .PutDayCareManOutside:
 	setevent EVENT_DAYCARE_MAN_IN_DAYCARE
-	clearevent EVENT_DAYCARE_MAN_ON_ROUTE_34
+	clearevent EVENT_DAYCARE_MAN_ON_ROUTE_191
 	sjump .CheckMon1
 
 .CheckMon1:
@@ -115,7 +115,7 @@ Route34LyraTrigger2:
 	turnobject ROUTE34_LYRA, DOWN
 	pause 10
 	showtext Route34LyraChallengeText
-	setevent EVENT_LYRA_ROUTE_34
+	setevent EVENT_LYRA_ROUTE_191
 	checkevent EVENT_GOT_TOTODILE_FROM_ELM
 	iftrue .Totodile
 	checkevent EVENT_GOT_CHIKORITA_FROM_ELM
@@ -345,7 +345,7 @@ TrainerPicnickerGina1:
 	checkevent EVENT_BEAT_ELITE_FOUR
 	iftrue .LoadFight3
 .Fight2:
-	checkevent EVENT_CLEARED_RADIO_TOWER
+	checkevent EVENT_CLEARED_SALT_LAKE_VALLEY
 	iftrue .LoadFight2
 .Fight1:
 	checkflag ENGINE_FLYPOINT_MAHOGANY
@@ -443,7 +443,7 @@ GenericTrainerBreederJulie:
 	done
 
 Route34RichBoyIrvingScript:
-	checkevent EVENT_GOT_BIG_NUGGET_FROM_ROUTE_34_LEADER
+	checkevent EVENT_GOT_BIG_NUGGET_FROM_ROUTE_191_LEADER
 	iftrue_jumptextfaceplayer .AfterText2
 	faceplayer
 	checkevent EVENT_BEAT_RICH_BOY_IRVING
@@ -477,7 +477,7 @@ Route34RichBoyIrvingScript:
 	promptbutton
 	verbosegiveitem BIG_NUGGET
 	iffalse_endtext
-	setevent EVENT_GOT_BIG_NUGGET_FROM_ROUTE_34_LEADER
+	setevent EVENT_GOT_BIG_NUGGET_FROM_ROUTE_191_LEADER
 	jumpthisopenedtext
 
 .AfterText2:

@@ -2051,11 +2051,11 @@ LoadMapTileset::
 GetOvercastIndex::
 ; Some maps are overcast, depending on certain conditions
 	ld a, [wMapGroup]
-	cp GROUP_AZALEA_TOWN ; GROUP_ROUTE_33
+	cp GROUP_ROUTE_87 ; GROUP_DUCHESNE_CITY
 	jr z, .azalea_route_33
 	cp GROUP_LAKE_OF_RAGE ; GROUP_ROUTE_43
 	jr z, .lake_of_rage_route_43
-	cp GROUP_STORMY_BEACH ; GROUP_GOLDENROD_CITY, GROUP_ROUTE_34, GROUP_ROUTE_34_COAST
+	cp GROUP_CARBON_ROAD ; GROUP_ROUTE_55, GROUP_ROUTE_191, GROUP_CARBON_POWER_PLANT
 	jr z, .stormy_beach
 .not_overcast:
 	xor a ; NOT_OVERCAST
@@ -2064,13 +2064,13 @@ GetOvercastIndex::
 .azalea_route_33:
 ; Azalea Town and Route 33
 	ld a, [wMapNumber]
-	cp MAP_AZALEA_TOWN
+	cp MAP_ROUTE_87
 	jr z, .azalea_town
-	cp MAP_ROUTE_33
+	cp MAP_DUCHESNE_CITY
 	jr nz, .not_overcast
 .azalea_town
 ; Not overcast until Slowpokes appear (Team Rocket beaten)
-	eventflagcheck EVENT_AZALEA_TOWN_SLOWPOKES
+	eventflagcheck EVENT_ROUTE_87_SLOWPOKES
 	jr nz, .not_overcast
 ; Overcast on Sunday, Tuesday, Thursday, and Saturday
 	call GetWeekday
@@ -2110,18 +2110,18 @@ GetOvercastIndex::
 ; Stormy Beach or Goldenrod City, Route 34, and Route 34 Coast
 	ld a, [wMapNumber]
 ; Stormy Beach is always overcast
-	cp MAP_STORMY_BEACH
+	cp MAP_CARBON_ROAD
 	jr z, .overcast_stormy_beach
-	cp MAP_ROUTE_34_COAST
+	cp MAP_CARBON_POWER_PLANT
 	jr z, .maybe_stormy_beach
-	cp MAP_ROUTE_34
+	cp MAP_ROUTE_191
 	jr z, .maybe_stormy_beach
-	cp MAP_GOLDENROD_CITY
+	cp MAP_ROUTE_55
 	jr nz, .not_overcast
 ; Only overcast while Team Rocket is present
 .maybe_stormy_beach
-	eventflagcheck EVENT_GOLDENROD_CITY_ROCKET_TAKEOVER
+	eventflagcheck EVENT_ROUTE_55_ROCKET_TAKEOVER
 	jr nz, .not_overcast
 .overcast_stormy_beach
-	ld a, STORMY_BEACH_OVERCAST
+	ld a, CARBON_ROAD_OVERCAST
 	ret

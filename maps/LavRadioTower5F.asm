@@ -4,7 +4,7 @@ LavRadioTower5F_MapScriptHeader:
 	def_callbacks
 
 	def_warp_events
-	warp_event  8,  0, LAV_RADIO_TOWER_4F, 2
+	warp_event  8,  0, LAV_SALT_LAKE_VALLEY_4F, 2
 
 	def_coord_events
 

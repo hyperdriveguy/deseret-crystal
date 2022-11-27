@@ -4,8 +4,8 @@ EcruteakDestinyKnotHouse_MapScriptHeader:
 	def_callbacks
 
 	def_warp_events
-	warp_event  3,  7, ECRUTEAK_CITY, 17
-	warp_event  4,  7, ECRUTEAK_CITY, 17
+	warp_event  3,  7, ANTELOPE_ISLAND, 17
+	warp_event  4,  7, ANTELOPE_ISLAND, 17
 
 	def_coord_events
 

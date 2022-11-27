@@ -16,29 +16,29 @@ PhoneContacts:
 	phone TRAINER_NONE, PHONECONTACT_BILL,     N_A,                       %1111, BillPhoneScript1,    %0000, BillPhoneScript2
 	phone TRAINER_NONE, PHONECONTACT_ELM,      ELMS_LAB,                  %1111, ElmPhoneScript1,     %0000, ElmPhoneScript2
 	phone TRAINER_NONE, PHONECONTACT_LYRA,     LYRAS_HOUSE_1F,            %1111, LyraPhoneScript,     %0000, LyraPhoneScript2
-	phone SCHOOLBOY,    JACK1,                 NATIONAL_PARK,             %1111, JackPhoneScript1,    %1111, JackPhoneScript2
-	phone POKEFANF,     BEVERLY1,              NATIONAL_PARK,             %1111, BeverlyPhoneScript1, %1111, BeverlyPhoneScript2
-	phone SAILOR,       HUEY1,                 OLIVINE_LIGHTHOUSE_2F,     %1111, HueyPhoneScript1,    %1111, HueyPhoneScript2
+	phone SCHOOLBOY,    JACK1,                 WENDOVER_CITY,             %1111, JackPhoneScript1,    %1111, JackPhoneScript2
+	phone POKEFANF,     BEVERLY1,              WENDOVER_CITY,             %1111, BeverlyPhoneScript1, %1111, BeverlyPhoneScript2
+	phone SAILOR,       HUEY1,                 OLIVINE_MOUNT_TIMPANOGOS_2F,     %1111, HueyPhoneScript1,    %1111, HueyPhoneScript2
 	phone TRAINER_NONE, PHONE_00,              N_A,                       %0000, UnusedPhoneScript,   %0000, UnusedPhoneScript
 	phone TRAINER_NONE, PHONE_00,              N_A,                       %0000, UnusedPhoneScript,   %0000, UnusedPhoneScript
 	phone COOLTRAINERM, GAVEN1,                ROUTE_26,                  %1111, GavenPhoneScript1,   %1111, GavenPhoneScript2
 	phone COOLTRAINERF, BETH1,                 ROUTE_26,                  %1111, BethPhoneScript1,    %1111, BethPhoneScript2
 	phone BIRD_KEEPER,  JOSE1,                 ROUTE_27,                  %1111, JosePhoneScript1,    %1111, JosePhoneScript2
 	phone COOLTRAINERF, REENA1,                ROUTE_27,                  %1111, ReenaPhoneScript1,   %1111, ReenaPhoneScript2
-	phone YOUNGSTER,    JOEY1,                 ROUTE_30,                  %1111, JoeyPhoneScript1,    %1111, JoeyPhoneScript2
-	phone BUG_CATCHER,  WADE1,                 ROUTE_31,                  %1111, WadePhoneScript1,    %1111, WadePhoneScript2
-	phone FISHER,       RALPH1,                ROUTE_32,                  %1111, RalphPhoneScript1,   %1111, RalphPhoneScript2
-	phone PICNICKER,    LIZ1,                  ROUTE_32,                  %1111, LizPhoneScript1,     %1111, LizPhoneScript2
-	phone HIKER,        ANTHONY1,              ROUTE_33,                  %1111, AnthonyPhoneScript1, %1111, AnthonyPhoneScript2
-	phone CAMPER,       TODD1,                 ROUTE_34,                  %1111, ToddPhoneScript1,    %1111, ToddPhoneScript2
-	phone PICNICKER,    GINA1,                 ROUTE_34,                  %1111, GinaPhoneScript1,    %1111, GinaPhoneScript2
-	phone JUGGLER,      IRWIN1,                ROUTE_35,                  %1111, IrwinPhoneScript1,   %1111, IrwinPhoneScript2
-	phone BUG_CATCHER,  ARNIE1,                ROUTE_35,                  %1111, ArniePhoneScript1,   %1111, ArniePhoneScript2
-	phone SCHOOLBOY,    ALAN1,                 ROUTE_36,                  %1111, AlanPhoneScript1,    %1111, AlanPhoneScript2
+	phone YOUNGSTER,    JOEY1,                 MTC_CAMPUS,                  %1111, JoeyPhoneScript1,    %1111, JoeyPhoneScript2
+	phone BUG_CATCHER,  WADE1,                 BYU_UNDERGROUND,                  %1111, WadePhoneScript1,    %1111, WadePhoneScript2
+	phone FISHER,       RALPH1,                TIMPANOGOS_PASS,                  %1111, RalphPhoneScript1,   %1111, RalphPhoneScript2
+	phone PICNICKER,    LIZ1,                  TIMPANOGOS_PASS,                  %1111, LizPhoneScript1,     %1111, LizPhoneScript2
+	phone HIKER,        ANTHONY1,              DUCHESNE_CITY,                  %1111, AnthonyPhoneScript1, %1111, AnthonyPhoneScript2
+	phone CAMPER,       TODD1,                 ROUTE_191,                  %1111, ToddPhoneScript1,    %1111, ToddPhoneScript2
+	phone PICNICKER,    GINA1,                 ROUTE_191,                  %1111, GinaPhoneScript1,    %1111, GinaPhoneScript2
+	phone JUGGLER,      IRWIN1,                TOOLE_CITY,                  %1111, IrwinPhoneScript1,   %1111, IrwinPhoneScript2
+	phone BUG_CATCHER,  ARNIE1,                TOOLE_CITY,                  %1111, ArniePhoneScript1,   %1111, ArniePhoneScript2
+	phone SCHOOLBOY,    ALAN1,                 SALT_LAKE_CITY,                  %1111, AlanPhoneScript1,    %1111, AlanPhoneScript2
 	phone TRAINER_NONE, PHONE_00,              N_A,                       %0000, UnusedPhoneScript,   %0000, UnusedPhoneScript
-	phone LASS,         DANA1,                 ROUTE_38,                  %1111, DanaPhoneScript1,    %1111, DanaPhoneScript2
-	phone SCHOOLBOY,    CHAD1,                 ROUTE_38,                  %1111, ChadPhoneScript1,    %1111, ChadPhoneScript2
-	phone POKEFANM,     DEREK1,                ROUTE_39,                  %1111, DerekPhoneScript1,   %1111, DerekPhoneScript2
+	phone LASS,         DANA1,                 PARK_CITY_SLOPES,                  %1111, DanaPhoneScript1,    %1111, DanaPhoneScript2
+	phone SCHOOLBOY,    CHAD1,                 PARK_CITY_SLOPES,                  %1111, ChadPhoneScript1,    %1111, ChadPhoneScript2
+	phone POKEFANM,     DEREK1,                JORDANELLE_PASS,                  %1111, DerekPhoneScript1,   %1111, DerekPhoneScript2
 	phone FISHER,       TULLY1,                ROUTE_42,                  %1111, TullyPhoneScript1,   %1111, TullyPhoneScript2
 	phone POKEMANIAC,   BRENT1,                ROUTE_43,                  %1111, BrentPhoneScript1,   %1111, BrentPhoneScript2
 	phone PICNICKER,    TIFFANY1,              ROUTE_43,                  %1111, TiffanyPhoneScript1, %1111, TiffanyPhoneScript2

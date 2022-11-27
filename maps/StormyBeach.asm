@@ -4,13 +4,13 @@ StormyBeach_MapScriptHeader:
 	def_callbacks
 
 	def_warp_events
-	warp_event 30,  4, MURKY_SWAMP, 1
-	warp_event 31,  4, MURKY_SWAMP, 2
+	warp_event 30,  4, PRICE_CITY, 1
+	warp_event 31,  4, PRICE_CITY, 2
 
 	def_coord_events
 
 	def_bg_events
-	bg_event 17,  6, BGEVENT_ITEM + STARDUST, EVENT_STORMY_BEACH_HIDDEN_STARDUST
+	bg_event 17,  6, BGEVENT_ITEM + STARDUST, EVENT_CARBON_ROAD_HIDDEN_STARDUST
 
 	def_object_events
 	object_event  5, 13, SPRITE_SWIMMER_GIRL, SPRITEMOVEDATA_STANDING_RIGHT, 0, 0, -1, -1, 0, OBJECTTYPE_GENERICTRAINER, 4, GenericTrainerSwimmerfBarbara, -1
@@ -19,7 +19,7 @@ StormyBeach_MapScriptHeader:
 	object_event 24, 11, SPRITE_PICNICKER, SPRITEMOVEDATA_SPINRANDOM_SLOW, 0, 0, -1, -1, 0, OBJECTTYPE_GENERICTRAINER, 3, GenericTrainerPicnickerLily, -1
 	object_event 26, 17, SPRITE_SWIMMER_GUY, SPRITEMOVEDATA_SWIM_AROUND, 1, 1, -1, -1, PAL_NPC_BLUE, OBJECTTYPE_COMMAND, jumptextfaceplayer, StormyBeachSwimmermText, -1
 	object_event 32, 12, SPRITE_GRAMPS, SPRITEMOVEDATA_WALK_LEFT_RIGHT, 0, 1, -1, -1, PAL_NPC_PURPLE, OBJECTTYPE_COMMAND, jumptextfaceplayer, StormyBeachGrampsText, -1
-	itemball_event 34,  7, ZINC, 1, EVENT_STORMY_BEACH_ZINC
+	itemball_event 34,  7, ZINC, 1, EVENT_CARBON_ROAD_ZINC
 	smashrock_event 16, 6
 	smashrock_event 17, 7
 	smashrock_event 12, 9

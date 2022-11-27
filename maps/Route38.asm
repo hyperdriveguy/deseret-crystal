@@ -4,8 +4,8 @@ Route38_MapScriptHeader:
 	def_callbacks
 
 	def_warp_events
-	warp_event 35,  8, ROUTE_38_ECRUTEAK_GATE, 1
-	warp_event 35,  9, ROUTE_38_ECRUTEAK_GATE, 2
+	warp_event 35,  8, PARK_CITY_SLOPES_ECRUTEAK_GATE, 1
+	warp_event 35,  9, PARK_CITY_SLOPES_ECRUTEAK_GATE, 2
 
 	def_coord_events
 
@@ -19,7 +19,7 @@ Route38_MapScriptHeader:
 	object_event 12, 15, SPRITE_BIRD_KEEPER, SPRITEMOVEDATA_SPINRANDOM_FAST, 0, 0, -1, -1, 0, OBJECTTYPE_GENERICTRAINER, 1, GenericTrainerBird_keeperToby, -1
 	object_event 19,  9, SPRITE_BEAUTY, SPRITEMOVEDATA_STANDING_DOWN, 0, 0, -1, -1, 0, OBJECTTYPE_GENERICTRAINER, 1, GenericTrainerBeautyValencia, -1
 	object_event 24,  5, SPRITE_SAILOR, SPRITEMOVEDATA_SPINCOUNTERCLOCKWISE, 0, 0, -1, -1, 0, OBJECTTYPE_GENERICTRAINER, 2, GenericTrainerSailorHarry, -1
-	fruittree_event 12, 10, FRUITTREE_ROUTE_38, SITRUS_BERRY, PAL_NPC_BROWN
+	fruittree_event 12, 10, FRUITTREE_PARK_CITY_SLOPES, SITRUS_BERRY, PAL_NPC_BROWN
 	object_event  5,  8, SPRITE_BEAUTY, SPRITEMOVEDATA_SPINRANDOM_FAST, 0, 0, -1, -1, 0, OBJECTTYPE_GENERICTRAINER, 1, GenericTrainerBeautyOlivia, -1
 
 GenericTrainerBird_keeperToby:
@@ -88,7 +88,7 @@ TrainerLassDana1:
 	checkevent EVENT_BEAT_ELITE_FOUR
 	iftrue .LoadFight3
 .Fight2:
-	checkevent EVENT_CLEARED_RADIO_TOWER
+	checkevent EVENT_CLEARED_SALT_LAKE_VALLEY
 	iftrue .LoadFight2
 .Fight1:
 	checkflag ENGINE_FLYPOINT_CIANWOOD
@@ -196,7 +196,7 @@ TrainerSchoolboyChad1:
 	checkevent EVENT_BEAT_ELITE_FOUR
 	iftrue .LoadFight3
 .Fight2:
-	checkevent EVENT_CLEARED_RADIO_TOWER
+	checkevent EVENT_CLEARED_SALT_LAKE_VALLEY
 	iftrue .LoadFight2
 .Fight1:
 	checkflag ENGINE_FLYPOINT_MAHOGANY

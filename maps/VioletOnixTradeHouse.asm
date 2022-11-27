@@ -4,8 +4,8 @@ VioletOnixTradeHouse_MapScriptHeader:
 	def_callbacks
 
 	def_warp_events
-	warp_event  3,  7, VIOLET_CITY, 6
-	warp_event  4,  7, VIOLET_CITY, 6
+	warp_event  3,  7, UTAH_LAKE, 6
+	warp_event  4,  7, UTAH_LAKE, 6
 
 	def_coord_events
 

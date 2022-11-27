@@ -17,9 +17,9 @@ EcruteakCity_MapScriptHeader:
 	warp_event  6, 27, ECRUTEAK_GYM, 1
 	warp_event 13, 27, ECRUTEAK_ITEMFINDER_HOUSE, 1
 	warp_event  5, 17, VALERIES_HOUSE, 1
-	warp_event  5,  5, BURNED_TOWER_1F, 1
-	warp_event  0, 18, ROUTE_38_ECRUTEAK_GATE, 3
-	warp_event  0, 19, ROUTE_38_ECRUTEAK_GATE, 4
+	warp_event  5,  5, PARK_CITY_1F, 1
+	warp_event  0, 18, PARK_CITY_SLOPES_ECRUTEAK_GATE, 3
+	warp_event  0, 19, PARK_CITY_SLOPES_ECRUTEAK_GATE, 4
 	warp_event 29, 27, ECRUTEAK_CHERISH_BALL_HOUSE, 1
 	warp_event 13, 17, ECRUTEAK_DESTINY_KNOT_HOUSE, 1
 
@@ -30,12 +30,12 @@ EcruteakCity_MapScriptHeader:
 	bg_event  8, 28, BGEVENT_JUMPTEXT, EcruteakGymSignText
 	bg_event 21, 21, BGEVENT_JUMPTEXT, EcruteakDanceTheaterSignText
 	bg_event  2, 10, BGEVENT_JUMPTEXT, BurnedTowerSignText
-	bg_event 25, 14, BGEVENT_ITEM + HYPER_POTION, EVENT_ECRUTEAK_CITY_HIDDEN_HYPER_POTION
+	bg_event 25, 14, BGEVENT_ITEM + HYPER_POTION, EVENT_ANTELOPE_ISLAND_HIDDEN_HYPER_POTION
 	bg_event 15, 11, BGEVENT_JUMPTEXT, EcruteakShrineSignText
 	bg_event 21, 11, BGEVENT_JUMPTEXT, EcruteakBarrierStationSignText
-	bg_event 33, 16, BGEVENT_ITEM + RARE_CANDY, EVENT_ECRUTEAK_CITY_HIDDEN_RARE_CANDY
-	bg_event  1, 17, BGEVENT_ITEM + ULTRA_BALL, EVENT_ECRUTEAK_CITY_HIDDEN_ULTRA_BALL
-	bg_event  6,  6, BGEVENT_ITEM + ETHER, EVENT_ECRUTEAK_CITY_HIDDEN_ETHER
+	bg_event 33, 16, BGEVENT_ITEM + RARE_CANDY, EVENT_ANTELOPE_ISLAND_HIDDEN_RARE_CANDY
+	bg_event  1, 17, BGEVENT_ITEM + ULTRA_BALL, EVENT_ANTELOPE_ISLAND_HIDDEN_ULTRA_BALL
+	bg_event  6,  6, BGEVENT_ITEM + ETHER, EVENT_ANTELOPE_ISLAND_HIDDEN_ETHER
 
 	def_object_events
 	object_event 20, 15, SPRITE_GRAMPS, SPRITEMOVEDATA_WANDER, 1, 1, -1, -1, 0, OBJECTTYPE_COMMAND, jumptextfaceplayer, EcruteakCityGramps1Text, -1
@@ -44,7 +44,7 @@ EcruteakCity_MapScriptHeader:
 	object_event  3,  9, SPRITE_CUTE_GIRL, SPRITEMOVEDATA_STANDING_UP, 0, 0, -1, -1, PAL_NPC_RED, OBJECTTYPE_SCRIPT, 0, EcruteakCityLass2Script, -1
 	object_event  9, 22, SPRITE_FISHER, SPRITEMOVEDATA_WALK_LEFT_RIGHT, 0, 1, -1, -1, 0, OBJECTTYPE_SCRIPT, 0, EcruteakCityFisherScript, -1
 	object_event 11, 16, SPRITE_SCHOOLBOY, SPRITEMOVEDATA_WANDER, 1, 1, -1, -1, PAL_NPC_RED, OBJECTTYPE_COMMAND, jumptextfaceplayer, EcruteakCityYoungsterText, -1
-	object_event  3,  7, SPRITE_GRAMPS, SPRITEMOVEDATA_WANDER, 1, 1, -1, -1, PAL_NPC_GREEN, OBJECTTYPE_COMMAND, jumptextfaceplayer, EcruteakCityGramps3Text, EVENT_ECRUTEAK_CITY_GRAMPS
+	object_event  3,  7, SPRITE_GRAMPS, SPRITEMOVEDATA_WANDER, 1, 1, -1, -1, PAL_NPC_GREEN, OBJECTTYPE_COMMAND, jumptextfaceplayer, EcruteakCityGramps3Text, EVENT_ANTELOPE_ISLAND_GRAMPS
 	object_event 11, 11, SPRITE_HEX_MANIAC, SPRITEMOVEDATA_STANDING_LEFT, 0, 0, -1, (1 << EVE) | (1 << NITE), 0, OBJECTTYPE_COMMAND, jumptextfaceplayer, EcruteakCityHexManiacText, -1
 	object_event 11, 11, SPRITE_SIGHTSEER_M, SPRITEMOVEDATA_STANDING_DOWN, 0, 0, -1, (1 << MORN) | (1 << DAY), 0, OBJECTTYPE_COMMAND, jumptextfaceplayer, EcruteakCitySightseerMText, -1
 	pokemon_event 12, 11, SMEARGLE, -1, (1 << MORN) | (1 << DAY), PAL_NPC_BROWN, EcruteakCitySmeargleText, -1

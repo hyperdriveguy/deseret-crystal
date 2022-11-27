@@ -299,7 +299,7 @@ Gen2ToGen2LinkComms:
 	jmp ExitLinkCommunications
 
 .ready_to_trade
-	ld de, MUSIC_ROUTE_30
+	ld de, MUSIC_MTC_CAMPUS
 	call PlayMusic
 	jmp InitTradeMenuDisplay
 

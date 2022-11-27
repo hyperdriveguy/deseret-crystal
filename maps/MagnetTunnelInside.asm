@@ -5,8 +5,8 @@ MagnetTunnelInside_MapScriptHeader:
 	callback MAPCALLBACK_TILES, MagnetTunnelInsideTileCallback
 
 	def_warp_events
-	warp_event  5, 19, MAGNET_TUNNEL_WEST, 1
-	warp_event 43,  3, MAGNET_TUNNEL_EAST, 1
+	warp_event  5, 19, ROUTE_I80_EAST_WEST, 1
+	warp_event 43,  3, ROUTE_I80_EAST_EAST, 1
 
 	def_coord_events
 
@@ -21,10 +21,10 @@ MagnetTunnelInside_MapScriptHeader:
 	bg_event 35,  9, BGEVENT_UP, MagnetTunnelInsideMachine4
 
 	def_object_events
-	object_event  3, 10, SPRITE_N64, SPRITEMOVEDATA_STANDING_LEFT, 0, 0, -1, -1, PAL_NPC_ROCK, OBJECTTYPE_COMMAND, jumptext, MagnetTunnelInsideLodestoneText, EVENT_MAGNET_TUNNEL_LODESTONE_1
-	object_event 20, 23, SPRITE_N64, SPRITEMOVEDATA_STANDING_LEFT, 0, 0, -1, -1, PAL_NPC_ROCK, OBJECTTYPE_COMMAND, jumptext, MagnetTunnelInsideLodestoneText, EVENT_MAGNET_TUNNEL_LODESTONE_2
-	object_event 20,  5, SPRITE_N64, SPRITEMOVEDATA_STANDING_LEFT, 0, 0, -1, -1, PAL_NPC_ROCK, OBJECTTYPE_COMMAND, jumptext, MagnetTunnelInsideLodestoneText, EVENT_MAGNET_TUNNEL_LODESTONE_3
-	object_event 31,  8, SPRITE_N64, SPRITEMOVEDATA_STANDING_LEFT, 0, 0, -1, -1, PAL_NPC_ROCK, OBJECTTYPE_COMMAND, jumptext, MagnetTunnelInsideLodestoneText, EVENT_MAGNET_TUNNEL_LODESTONE_4
+	object_event  3, 10, SPRITE_N64, SPRITEMOVEDATA_STANDING_LEFT, 0, 0, -1, -1, PAL_NPC_ROCK, OBJECTTYPE_COMMAND, jumptext, MagnetTunnelInsideLodestoneText, EVENT_ROUTE_I80_EAST_LODESTONE_1
+	object_event 20, 23, SPRITE_N64, SPRITEMOVEDATA_STANDING_LEFT, 0, 0, -1, -1, PAL_NPC_ROCK, OBJECTTYPE_COMMAND, jumptext, MagnetTunnelInsideLodestoneText, EVENT_ROUTE_I80_EAST_LODESTONE_2
+	object_event 20,  5, SPRITE_N64, SPRITEMOVEDATA_STANDING_LEFT, 0, 0, -1, -1, PAL_NPC_ROCK, OBJECTTYPE_COMMAND, jumptext, MagnetTunnelInsideLodestoneText, EVENT_ROUTE_I80_EAST_LODESTONE_3
+	object_event 31,  8, SPRITE_N64, SPRITEMOVEDATA_STANDING_LEFT, 0, 0, -1, -1, PAL_NPC_ROCK, OBJECTTYPE_COMMAND, jumptext, MagnetTunnelInsideLodestoneText, EVENT_ROUTE_I80_EAST_LODESTONE_4
 
 	object_const_def
 	const MAGNETTUNNELINSIDE_STONE_1
@@ -33,33 +33,33 @@ MagnetTunnelInside_MapScriptHeader:
 	const MAGNETTUNNELINSIDE_STONE_4
 
 MagnetTunnelInsideTileCallback:
-	checkevent EVENT_MAGNET_TUNNEL_LODESTONE_1
+	checkevent EVENT_ROUTE_I80_EAST_LODESTONE_1
 	iffalse .NoMachine1
 	changeblock 6, 10, $6b
 	changeblock 6, 8, $6d
 .NoMachine1
-	checkevent EVENT_MAGNET_TUNNEL_LODESTONE_2
+	checkevent EVENT_ROUTE_I80_EAST_LODESTONE_2
 	iffalse .NoMachine2
 	changeblock 22, 20, $66
 .NoMachine2
-	checkevent EVENT_MAGNET_TUNNEL_LODESTONE_3
+	checkevent EVENT_ROUTE_I80_EAST_LODESTONE_3
 	iffalse .NoMachine3
 	changeblock 20, 8, $6b
 	changeblock 20, 6, $6f
 .NoMachine3
-	checkevent EVENT_MAGNET_TUNNEL_LODESTONE_IN_PIT
+	checkevent EVENT_ROUTE_I80_EAST_LODESTONE_IN_PIT
 	iffalse .NoPit
 	changeblock 34, 4, $68
 	endcallback
 .NoPit
-	checkevent EVENT_MAGNET_TUNNEL_LODESTONE_4
+	checkevent EVENT_ROUTE_I80_EAST_LODESTONE_4
 	iffalse .NoMachine4
 	changeblock 34, 8, $66
 .NoMachine4
 	endcallback
 
 MagnetTunnelInsideMachine1:
-	checkevent EVENT_MAGNET_TUNNEL_LODESTONE_1
+	checkevent EVENT_ROUTE_I80_EAST_LODESTONE_1
 	iftrue_jumptextfaceplayer MagnetTunnelInsideMachineText3
 	opentext
 	writetext MagnetTunnelInsideMachineText1
@@ -92,7 +92,7 @@ MagnetTunnelInsideMachine1:
 	step_end
 
 MagnetTunnelInsideMachine2:
-	checkevent EVENT_MAGNET_TUNNEL_LODESTONE_2
+	checkevent EVENT_ROUTE_I80_EAST_LODESTONE_2
 	iftrue_jumptextfaceplayer MagnetTunnelInsideMachineText3
 	opentext
 	writetext MagnetTunnelInsideMachineText1
@@ -126,7 +126,7 @@ MagnetTunnelInsideMachine2:
 	step_end
 
 MagnetTunnelInsideMachine3:
-	checkevent EVENT_MAGNET_TUNNEL_LODESTONE_3
+	checkevent EVENT_ROUTE_I80_EAST_LODESTONE_3
 	iftrue_jumptextfaceplayer MagnetTunnelInsideMachineText3
 	opentext
 	writetext MagnetTunnelInsideMachineText1
@@ -157,7 +157,7 @@ MagnetTunnelInsideMachine3:
 	step_end
 
 MagnetTunnelInsideMachine4:
-	checkevent EVENT_MAGNET_TUNNEL_LODESTONE_4
+	checkevent EVENT_ROUTE_I80_EAST_LODESTONE_4
 	iftrue .MachineOn
 	opentext
 	writetext MagnetTunnelInsideMachineText1
@@ -189,7 +189,7 @@ MagnetTunnelInsideMachine4:
 	step_end
 
 .MachineOn:
-	checkevent EVENT_MAGNET_TUNNEL_LODESTONE_IN_PIT
+	checkevent EVENT_ROUTE_I80_EAST_LODESTONE_IN_PIT
 	iftrue_jumptext MagnetTunnelInsideMachineText0
 	opentext
 	writetext MagnetTunnelInsideMachineText4
@@ -211,7 +211,7 @@ MagnetTunnelInsideMachine4:
 	changeblock 34, 4, $68
 	reloadmappart
 	disappear MAGNETTUNNELINSIDE_STONE_4
-	setevent EVENT_MAGNET_TUNNEL_LODESTONE_IN_PIT
+	setevent EVENT_ROUTE_I80_EAST_LODESTONE_IN_PIT
 	end
 
 .StoneMovement2:

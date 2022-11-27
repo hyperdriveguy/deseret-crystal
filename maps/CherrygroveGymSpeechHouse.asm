@@ -4,8 +4,8 @@ CherrygroveGymSpeechHouse_MapScriptHeader:
 	def_callbacks
 
 	def_warp_events
-	warp_event  2,  7, CHERRYGROVE_CITY, 3
-	warp_event  3,  7, CHERRYGROVE_CITY, 3
+	warp_event  2,  7, PROVO_CITY, 3
+	warp_event  3,  7, PROVO_CITY, 3
 
 	def_coord_events
 

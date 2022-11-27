@@ -5,7 +5,7 @@ Route29_MapScriptHeader:
 	callback MAPCALLBACK_OBJECTS, Route29Tuscany
 
 	def_warp_events
-	warp_event 27,  1, ROUTE_29_46_GATE, 3
+	warp_event 27,  1, ROUTE_I15_46_GATE, 3
 
 	def_coord_events
 	coord_event 53,  8, 1, Route29Tutorial1
@@ -17,16 +17,16 @@ Route29_MapScriptHeader:
 	bg_event 23,  4, BGEVENT_JUMPTEXT, Route29AdvancedTipsSignText
 
 	def_object_events
-	object_event 50, 12, SPRITE_LYRA, SPRITEMOVEDATA_SPINRANDOM_SLOW, 0, 0, -1, -1, 0, OBJECTTYPE_SCRIPT, 0, ObjectEvent, EVENT_LYRA_ROUTE_29
-	object_event 29, 12, SPRITE_POKEFAN_F, SPRITEMOVEDATA_SPINRANDOM_SLOW, 0, 0, -1, -1, PAL_NPC_PURPLE, OBJECTTYPE_SCRIPT, 0, TuscanyScript, EVENT_ROUTE_29_TUSCANY_OF_TUESDAY
+	object_event 50, 12, SPRITE_LYRA, SPRITEMOVEDATA_SPINRANDOM_SLOW, 0, 0, -1, -1, 0, OBJECTTYPE_SCRIPT, 0, ObjectEvent, EVENT_LYRA_ROUTE_I15
+	object_event 29, 12, SPRITE_POKEFAN_F, SPRITEMOVEDATA_SPINRANDOM_SLOW, 0, 0, -1, -1, PAL_NPC_PURPLE, OBJECTTYPE_SCRIPT, 0, TuscanyScript, EVENT_ROUTE_I15_TUSCANY_OF_TUESDAY
 	object_event 27, 16, SPRITE_SCHOOLBOY, SPRITEMOVEDATA_WALK_UP_DOWN, 1, 0, -1, -1, PAL_NPC_GREEN, OBJECTTYPE_COMMAND, jumptextfaceplayer, Route29YoungsterText, -1
 	object_event 15, 11, SPRITE_TEACHER, SPRITEMOVEDATA_WALK_LEFT_RIGHT, 0, 1, -1, -1, 0, OBJECTTYPE_COMMAND, jumptextfaceplayer, Route29TeacherText, -1
-	cuttree_event 30,  9, EVENT_ROUTE_29_CUT_TREE_1
-	cuttree_event 21, 11, EVENT_ROUTE_29_CUT_TREE_2
-	fruittree_event 12,  2, FRUITTREE_ROUTE_29, ORAN_BERRY, PAL_NPC_BLUE
+	cuttree_event 30,  9, EVENT_ROUTE_I15_CUT_TREE_1
+	cuttree_event 21, 11, EVENT_ROUTE_I15_CUT_TREE_2
+	fruittree_event 12,  2, FRUITTREE_ROUTE_I15, ORAN_BERRY, PAL_NPC_BLUE
 	object_event 25,  3, SPRITE_FAT_GUY, SPRITEMOVEDATA_STANDING_UP, 0, 0, -1, -1, PAL_NPC_BLUE, OBJECTTYPE_COMMAND, jumptextfaceplayer, Route29FisherText, -1
 	object_event 13,  4, SPRITE_COOL_DUDE, SPRITEMOVEDATA_STANDING_DOWN, 0, 0, -1, -1, PAL_NPC_RED, OBJECTTYPE_SCRIPT, 0, Route29CooltrainerMScript, -1
-	itemball_event 48,  2, POTION, 1, EVENT_ROUTE_29_POTION
+	itemball_event 48,  2, POTION, 1, EVENT_ROUTE_I15_POTION
 
 	object_const_def
 	const ROUTE29_LYRA
@@ -100,7 +100,7 @@ Route29FinishTutorial:
 	disappear ROUTE29_LYRA
 	setscene $0
 	setevent EVENT_LEARNED_TO_CATCH_POKEMON
-	playmusic MUSIC_ROUTE_29
+	playmusic MUSIC_ROUTE_I15
 	end
 
 Route29RefusedTutorial:

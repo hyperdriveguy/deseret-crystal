@@ -188,25 +188,25 @@ EMOTE_FROM_MEM EQU -1
 ; FruitTreeItems indexes (see data/items/fruit_trees.asm)
 	const_def 1
 ; Apricorn trees come first, then Berry trees
-	const FRUITTREE_AZALEA_TOWN     ; 01
-	const FRUITTREE_ROUTE_37_1      ; 02
-	const FRUITTREE_ROUTE_37_2      ; 03
-	const FRUITTREE_ROUTE_37_3      ; 04
+	const FRUITTREE_ROUTE_87     ; 01
+	const FRUITTREE_TEMPLE_SQUARE_1      ; 02
+	const FRUITTREE_TEMPLE_SQUARE_2      ; 03
+	const FRUITTREE_TEMPLE_SQUARE_3      ; 04
 	const FRUITTREE_ROUTE_42_1      ; 05
 	const FRUITTREE_ROUTE_42_2      ; 06
 	const FRUITTREE_ROUTE_42_3      ; 07
 FIRST_BERRY_TREE EQU const_value
-	const FRUITTREE_ROUTE_29        ; 08
-	const FRUITTREE_ROUTE_30_1      ; 09
-	const FRUITTREE_ROUTE_30_2      ; 0a
-	const FRUITTREE_ROUTE_31        ; 0b
-	const FRUITTREE_VIOLET_CITY     ; 0c
-	const FRUITTREE_ROUTE_32_COAST  ; 0d
-	const FRUITTREE_ROUTE_33        ; 0e
-	const FRUITTREE_ROUTE_35        ; 0f
-	const FRUITTREE_ROUTE_36        ; 10
-	const FRUITTREE_ROUTE_38        ; 11
-	const FRUITTREE_ROUTE_39        ; 12
+	const FRUITTREE_ROUTE_I15        ; 08
+	const FRUITTREE_MTC_CAMPUS_1      ; 09
+	const FRUITTREE_MTC_CAMPUS_2      ; 0a
+	const FRUITTREE_BYU_UNDERGROUND        ; 0b
+	const FRUITTREE_UTAH_LAKE     ; 0c
+	const FRUITTREE_HEBER_CITY  ; 0d
+	const FRUITTREE_DUCHESNE_CITY        ; 0e
+	const FRUITTREE_TOOLE_CITY        ; 0f
+	const FRUITTREE_SALT_LAKE_CITY        ; 10
+	const FRUITTREE_PARK_CITY_SLOPES        ; 11
+	const FRUITTREE_JORDANELLE_PASS        ; 12
 	const FRUITTREE_ROUTE_43        ; 13
 	const FRUITTREE_ROUTE_44        ; 14
 	const FRUITTREE_ROUTE_45        ; 15
@@ -229,9 +229,9 @@ NUM_FRUIT_TREES EQU const_value - 1
 ; hidden grottoes
 ; HiddenGrottoData indexes (see data/events/hidden_grottoes/grottoes.asm)
 	const_def 1
-	const HIDDENGROTTO_ROUTE_32           ; 01
-	const HIDDENGROTTO_ILEX_FOREST        ; 02
-	const HIDDENGROTTO_ROUTE_35           ; 03
+	const HIDDENGROTTO_TIMPANOGOS_PASS           ; 01
+	const HIDDENGROTTO_EXCAVATION_SITE        ; 02
+	const HIDDENGROTTO_TOOLE_CITY           ; 03
 	const HIDDENGROTTO_LAKE_OF_RAGE       ; 04
 	const HIDDENGROTTO_05                 ; 05
 	const HIDDENGROTTO_06                 ; 06

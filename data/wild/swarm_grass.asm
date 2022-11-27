@@ -29,7 +29,7 @@
 	wildmon 4, DUNSPARCE
 
 ; Yanma swarm
-	map_id ROUTE_35
+	map_id TOOLE_CITY
 	db 10 percent, 10 percent, 10 percent ; encounter rates: morn/day/nite
 	; morn
 	wildmon 12, NIDORAN_M

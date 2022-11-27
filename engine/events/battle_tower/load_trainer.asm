@@ -517,7 +517,8 @@ BT_AppendOTMon:
 	ld [hli], a
 	ld a, BATTLETOWER_FORCED_LEVEL
 	ld [hli], a
-	ld a, BATTLE_TOWER
+	; Battle Tower
+	ld a, ROUTE_67
 	ld [hli], a
 
 	; Set EVs

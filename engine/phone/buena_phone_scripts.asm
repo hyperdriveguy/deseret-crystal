@@ -1,5 +1,5 @@
 BuenaPhoneScript1:
-	checkflag ENGINE_ROCKETS_IN_RADIO_TOWER
+	checkflag ENGINE_ROCKETS_IN_SALT_LAKE_VALLEY
 	iftrue BuenaPhoneScript_Rocket
 	readvar VAR_HOUR
 	ifgreater 17, BuenaPhoneScript_AfterMidnight1
@@ -7,7 +7,7 @@ BuenaPhoneScript1:
 	sjump BuenaPhoneScript_Random1
 
 BuenaPhoneScript2:
-	checkflag ENGINE_ROCKETS_IN_RADIO_TOWER
+	checkflag ENGINE_ROCKETS_IN_SALT_LAKE_VALLEY
 	iftrue BuenaPhoneScript_Rocket
 	scall BuenaPhoneScript_CheckTimeOfDay2
 	sjump BuenaPhoneScript_Random2

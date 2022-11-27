@@ -4,17 +4,17 @@ UnionCave1F_MapScriptHeader:
 	def_callbacks
 
 	def_warp_events
-	warp_event  3,  3, UNION_CAVE_B1F_NORTH, 3
-	warp_event  3, 45, UNION_CAVE_B1F_SOUTH, 1
-	warp_event 17, 43, ROUTE_33, 1
-	warp_event 17, 15, ROUTE_32, 4
+	warp_event  3,  3, ROUTE_US40_B1F_NORTH, 3
+	warp_event  3, 45, ROUTE_US40_B1F_SOUTH, 1
+	warp_event 17, 43, DUCHESNE_CITY, 1
+	warp_event 17, 15, TIMPANOGOS_PASS, 4
 
 	def_coord_events
 
 	def_bg_events
-	bg_event  7, 19, BGEVENT_ITEM + GREAT_BALL, EVENT_UNION_CAVE_1F_HIDDEN_GREAT_BALL
-	bg_event  2, 33, BGEVENT_ITEM + BIG_PEARL, EVENT_UNION_CAVE_1F_HIDDEN_BIG_PEARL
-	bg_event  8, 33, BGEVENT_ITEM + PARALYZEHEAL, EVENT_UNION_CAVE_1F_HIDDEN_PARALYZEHEAL
+	bg_event  7, 19, BGEVENT_ITEM + GREAT_BALL, EVENT_ROUTE_US40_1F_HIDDEN_GREAT_BALL
+	bg_event  2, 33, BGEVENT_ITEM + BIG_PEARL, EVENT_ROUTE_US40_1F_HIDDEN_BIG_PEARL
+	bg_event  8, 33, BGEVENT_ITEM + PARALYZEHEAL, EVENT_ROUTE_US40_1F_HIDDEN_PARALYZEHEAL
 
 	def_object_events
 	object_event  3, 18, SPRITE_HIKER, SPRITEMOVEDATA_STANDING_RIGHT, 0, 0, -1, -1, 0, OBJECTTYPE_GENERICTRAINER, 2, GenericTrainerHikerDaniel, -1
@@ -23,10 +23,10 @@ UnionCave1F_MapScriptHeader:
 	object_event 15, 39, SPRITE_FIREBREATHER, SPRITEMOVEDATA_STANDING_LEFT, 0, 0, -1, -1, 0, OBJECTTYPE_GENERICTRAINER, 4, GenericTrainerFirebreatherRay, -1
 	object_event 11, 32, SPRITE_FIREBREATHER, SPRITEMOVEDATA_STANDING_RIGHT, 0, 0, -1, -1, 0, OBJECTTYPE_GENERICTRAINER, 4, GenericTrainerFirebreatherBill, -1
 	object_event  5,  3, SPRITE_HIKER, SPRITEMOVEDATA_STANDING_DOWN, 0, 0, -1, -1, PAL_NPC_GREEN, OBJECTTYPE_GENERICTRAINER, 2, GenericTrainerRuin_maniacJones, -1
-	itemball_event 15, 33, GREAT_BALL, 1, EVENT_UNION_CAVE_1F_GREAT_BALL
-	itemball_event  2,  8, X_ATTACK, 1, EVENT_UNION_CAVE_1F_X_ATTACK
-	itemball_event  3, 28, POTION, 1, EVENT_UNION_CAVE_1F_POTION
-	itemball_event 12, 45, AWAKENING, 1, EVENT_UNION_CAVE_1F_AWAKENING
+	itemball_event 15, 33, GREAT_BALL, 1, EVENT_ROUTE_US40_1F_GREAT_BALL
+	itemball_event  2,  8, X_ATTACK, 1, EVENT_ROUTE_US40_1F_X_ATTACK
+	itemball_event  3, 28, POTION, 1, EVENT_ROUTE_US40_1F_POTION
+	itemball_event 12, 45, AWAKENING, 1, EVENT_ROUTE_US40_1F_AWAKENING
 
 GenericTrainerPokemaniacLarry:
 	generictrainer POKEMANIAC, LARRY, EVENT_BEAT_POKEMANIAC_LARRY, PokemaniacLarrySeenText, PokemaniacLarryBeatenText

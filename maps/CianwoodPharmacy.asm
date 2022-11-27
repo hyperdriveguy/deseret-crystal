@@ -4,8 +4,8 @@ CianwoodPharmacy_MapScriptHeader:
 	def_callbacks
 
 	def_warp_events
-	warp_event  3,  7, CIANWOOD_CITY, 4
-	warp_event  4,  7, CIANWOOD_CITY, 4
+	warp_event  3,  7, ROUTE_US89, 4
+	warp_event  4,  7, ROUTE_US89, 4
 
 	def_coord_events
 

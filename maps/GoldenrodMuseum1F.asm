@@ -4,8 +4,8 @@ GoldenrodMuseum1F_MapScriptHeader:
 	def_callbacks
 
 	def_warp_events
-	warp_event  6,  7, GOLDENROD_CITY, 18
-	warp_event  7,  7, GOLDENROD_CITY, 18
+	warp_event  6,  7, ROUTE_55, 18
+	warp_event  7,  7, ROUTE_55, 18
 	warp_event 13,  7, GOLDENROD_MUSEUM_2F, 1
 
 	def_coord_events
