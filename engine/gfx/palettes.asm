@@ -1253,41 +1253,41 @@ if !DEF(MONOCHROME)
 	RGB 31, 15, 00
 	RGB 15, 07, 00
 	RGB 00, 00, 00
-; border and Mt. Silver
-	RGB 29, 17, 10
+; border, salt flats
+	RGB 28, 31, 20
 	RGB 21, 21, 21
 	RGB 13, 13, 13
 	RGB 00, 00, 00
-; water and shores
-	RGB 20, 13, 08
-	RGB 00, 24, 15
-	RGB 00, 17, 19
-	RGB 00, 20, 22
-; land and mountains
-	RGB 00, 20, 12
-	RGB 00, 24, 15
-	RGB 29, 17, 10
-	RGB 20, 13, 08
-; water routes
-	RGB 17, 27, 30
-	RGB 00, 11, 19
-	RGB 00, 17, 19
-	RGB 00, 20, 22
-; cities
-	RGB 31, 05, 09
-	RGB 00, 24, 15
-	RGB 24, 00, 04
-	RGB 04, 04, 04
-; land routes
+; barren land, water, POI
+	RGB 28, 31, 20
+	RGB 00, 10, 20
+	RGB 18, 17, 14
+	RGB 31, 00, 00
+; mountain ranges
+	RGB 28, 31, 20
+	RGB 18, 17, 14
+	RGB 14, 16, 12
+	RGB 00, 00, 00
+; snowy mountains
 	RGB 31, 31, 31
-	RGB 00, 24, 15
-	RGB 00, 16, 10
-	RGB 04, 04, 04
-; decorations
-	RGB 31, 22, 05
-	RGB 00, 24, 15
-	RGB 29, 17, 10
-	RGB 04, 04, 04
+	RGB 00, 15, 31
+	RGB 14, 17, 12
+	RGB 00, 00, 00
+; farmland, barren land
+	RGB 28, 31, 20
+	RGB 09, 14, 07
+	RGB 18, 17, 14
+	RGB 00, 00, 00
+; city (blue)
+	RGB 28, 31, 20
+	RGB 00, 15, 31
+	RGB 00, 07, 15
+	RGB 00, 00, 00
+; city (blue, capital)
+	RGB 30, 26, 02
+	RGB 00, 15, 31
+	RGB 00, 07, 15
+	RGB 00, 00, 00
 else
 	MONOCHROME_RGB_FOUR
 

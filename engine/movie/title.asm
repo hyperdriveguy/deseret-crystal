@@ -112,8 +112,8 @@ _TitleScreen:
 	call DrawTitleGraphic
 
 ; Draw copyright text
-	hlbgcoord 4, 0, vBGMap1
-	lb bc, 1, 13
+	hlbgcoord 3, 0, vBGMap1
+	lb bc, 1, 14
 	lb de, $0c, 0
 	call DrawTitleGraphic
 
@@ -367,9 +367,9 @@ TitleScreenPalettes:
 ; BG
 if !DEF(MONOCHROME)
 	RGB 00, 00, 00
-	RGB 19, 00, 00
-	RGB 15, 08, 31
-	RGB 15, 08, 31
+	RGB 25, 25, 00
+	RGB 25, 25, 25
+	RGB 00, 00, 00
 
 	RGB 00, 00, 00
 	RGB 31, 31, 31
@@ -408,8 +408,8 @@ if !DEF(MONOCHROME)
 
 ; OBJ
 	RGB 00, 00, 00
-	RGB 10, 00, 15
-	RGB 17, 05, 22
+	RGB 10, 00, 00
+	RGB 20, 20, 00
 	RGB 19, 09, 31
 
 	RGB 31, 31, 31
